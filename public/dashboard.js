@@ -1,5 +1,6 @@
 import { SKILLS, SKILL_IDS, QTYPES, OBJECTIVE, BAND_STEPS, scoreAttempt, typeStats, roundBand, formatBand, daysUntil, todayISO, lessonFor, buildPlan, planStreak, weekPlan, PLAN_PHASES, FOCUS_LABEL } from "/shared.js";
-import { $, h, api, fmtDay, fmtDate, armedButton, renameCurrentProfile } from "/ui.js";
+import { $, h, api, icon, fmtDay, fmtDate, armedButton, renameCurrentProfile } from "/ui.js";
+import { lessonStats, focusLessons, lessonCard } from "/lesson-card.js";
 
 // Starting tests for the diagnostic: the newest Cambridge set on engnovate.
 const DIAGNOSTIC = {
@@ -33,60 +34,49 @@ function series(list, skill) {
 
 function render() {
   const list = scored();
-  const module = { academic: "Academic", general: "General Training" }[state.settings.module];
-  $("#who").textContent = ["Persiapan IELTS", state.profile?.name, module].filter(Boolean).join(" · ");
-  renderKpis(list);
-  renderPlan(list);
+  renderHeader();
+  renderToday(list);
   renderDiagnostic(list);
+  renderActive(list);
+  renderBandStats(list);
   renderSkills(list);
   renderTypes(list);
   renderHistory(list);
 }
 
-// ---------- KPIs ----------
-function kpi(label, value, note) {
-  return h("div", { class: "kpi" }, h("h2", { text: label }), value, h("p", { class: "kpi-note" }, note));
-}
+// ---------- header ----------
 function settingsLink(text) {
   return h("button", { class: "link-btn inline", type: "button", onclick: openSettings, text });
 }
 
-function renderKpis(list) {
-  const { examDate, targetBand } = state.settings;
+function renderHeader() {
+  const { examDate, targetBand, module } = state.settings;
+  const name = state.profile?.name;
+  $("#hello").textContent = name ? `Halo, ${name}` : "Dashboard";
+  $("#who").textContent = [{ academic: "IELTS Academic", general: "IELTS General Training" }[module] || "Persiapan IELTS", targetBand ? `target ${formatBand(targetBand)}` : null].filter(Boolean).join(" · ");
   const days = daysUntil(examDate);
-  const exam = examDate
-    ? kpi("Ujian", h("p", { class: "kpi-value" }, days >= 0 ? String(days) : "—", h("small", { text: days >= 0 ? "hari lagi" : "sudah lewat" })), [fmtDate(examDate), " · ", settingsLink("Ubah")])
-    : kpi("Ujian", h("p", { class: "kpi-value", text: "—" }), settingsLink("Atur tanggal ujian"));
+  $("#countdown").replaceChildren(...(examDate
+    ? [days > 0 ? `${days} hari lagi menuju ujian, ${fmtDate(examDate)}. ` : days === 0 ? "Hari ini hari ujian. Semangat! " : `Ujian ${fmtDate(examDate)} sudah lewat. `, settingsLink("Ubah")]
+    : ["Tanggal ujian belum diatur. ", settingsLink("Atur sekarang")]));
+}
 
+// ---------- band summary: overall estimate and target ----------
+function renderBandStats(list) {
+  const { targetBand } = state.settings;
   const latest = Object.fromEntries(SKILL_IDS.map((s) => [s, series(list, s).at(-1)?.score.band ?? null]));
   const missing = SKILL_IDS.filter((s) => latest[s] == null);
   const overall = missing.length ? null : roundBand(SKILL_IDS.reduce((sum, s) => sum + latest[s], 0) / 4);
-  const parts = SKILL_IDS.map((s) => `${SKILLS[s].short} ${formatBand(latest[s])}`).join(" · ");
-  const overallKpi = kpi(
-    "Perkiraan overall",
-    h("p", { class: "kpi-value", text: formatBand(overall) }),
-    overall != null ? `Dari tes terakhir: ${parts}` : `Butuh skor ${missing.map((s) => SKILLS[s].label).join(", ")}`
-  );
+  const stat = (label, value) => h("div", { class: "band-stat" }, h("span", { class: "bs-label", text: label }), h("span", { class: "bs-value", text: value }));
+  $("#band-stats").replaceChildren(stat("Overall", formatBand(overall)), stat("Target", formatBand(targetBand)));
 
-  let targetNote;
-  if (targetBand == null) targetNote = settingsLink("Atur target band");
+  const parts = [overall != null ? `Perkiraan overall dari tes terakhir: ${SKILL_IDS.map((s) => `${SKILLS[s].short} ${formatBand(latest[s])}`).join(" · ")}.` : `Perkiraan overall muncul setelah ada skor ${missing.map((s) => SKILLS[s].label).join(", ")}.`];
+  if (targetBand == null) parts.push(" ", settingsLink("Atur target band"));
   else {
     const below = SKILL_IDS.filter((s) => latest[s] != null && latest[s] < targetBand).map((s) => SKILLS[s].label);
-    if (overall != null && overall >= targetBand) targetNote = "✓ Overall sudah di target";
-    else if (below.length) targetNote = `Di bawah target: ${below.join(", ")}`;
-    else targetNote = list.length ? "Skill yang tercatat sudah di target" : "Belum ada skor untuk dibandingkan";
+    if (overall != null && overall >= targetBand) parts.push(" ✓ Overall sudah di target.");
+    else if (below.length) parts.push(` Di bawah target: ${below.join(", ")}.`);
   }
-  const target = kpi("Target tiap skill", h("p", { class: "kpi-value", text: formatBand(targetBand) }), targetNote);
-
-  const weekAgo = todayISO(new Date(Date.now() - 6 * 86400000));
-  const week = list.filter((a) => a.date >= weekAgo);
-  const minutes = week.reduce((m, a) => m + (a.minutes || 0), 0);
-  const count = kpi(
-    "Tes tercatat",
-    h("p", { class: "kpi-value", text: String(list.length) }),
-    `${week.length} dalam 7 hari terakhir${minutes ? ` · ${minutes} menit` : ""}`
-  );
-  $("#kpis").replaceChildren(exam, overallKpi, target, count);
+  $("#band-note").replaceChildren(...parts);
 }
 
 // ---------- today's plan ----------
@@ -107,8 +97,38 @@ function autoDone(task, list, today) {
   return false;
 }
 
-async function renderPlan(list, force = false) {
-  const box = $("#plan");
+// Decorative colour per kind of task; the title always says what it is.
+const TONE = { diagnostic: "blue", lesson: "blue", engnovate: "blue", mock: "blue", writing: "orange", speaking: "pink", cards: "green", journal: "green" };
+
+// Progress ring for the minutes tile.
+function ring(fraction) {
+  const r = 34;
+  const len = 2 * Math.PI * r;
+  const f = Math.max(0, Math.min(1, fraction));
+  const root = svg("svg", { class: "ring", viewBox: "0 0 84 84", "aria-hidden": "true" });
+  root.append(
+    svg("circle", { class: "ring-track", cx: 42, cy: 42, r }),
+    svg("circle", { class: "ring-fill", cx: 42, cy: 42, r, "stroke-dasharray": `${(f * len).toFixed(1)} ${len.toFixed(1)}`, transform: "rotate(-90 42 42)", visibility: f > 0 ? "visible" : "hidden" }));
+  return h("span", { class: "ring-wrap" }, root, h("span", { class: "ring-core" }, icon("clock")));
+}
+
+// Two glossy speech bubbles for the Speaking tile.
+const BUBBLES = `<svg viewBox="0 0 132 92" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="bub-a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFA8D8"/><stop offset="1" stop-color="#F0559E"/></linearGradient>
+    <linearGradient id="bub-b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D6ECFF" stop-opacity=".96"/><stop offset="1" stop-color="#7FB4FF" stop-opacity=".9"/></linearGradient>
+    <filter id="bub-s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#B0306E" flood-opacity=".25"/></filter>
+  </defs>
+  <g filter="url(#bub-s)">
+    <path d="M22 30h52a14 14 0 0 1 14 14v18a14 14 0 0 1-14 14H40l-14 12v-12h-4A14 14 0 0 1 8 62V44a14 14 0 0 1 14-14Z" fill="url(#bub-a)"/>
+    <path d="M58 8h52a14 14 0 0 1 14 14v18a14 14 0 0 1-14 14h-4v12l-14-12H58a14 14 0 0 1-14-14V22A14 14 0 0 1 58 8Z" fill="url(#bub-b)" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="1.5"/>
+  </g>
+  <path d="M60 14h40" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#FFFFFF"><circle cx="72" cy="33" r="3.6"/><circle cx="84" cy="33" r="3.6"/><circle cx="96" cy="33" r="3.6"/></g>
+</svg>`;
+
+async function renderToday(list, force = false) {
+  const box = $("#today");
   const today = todayISO();
   const latest = Object.fromEntries(SKILL_IDS.map((s) => [s, series(list, s).at(-1)?.score.band ?? null]));
   const fresh = buildPlan({
@@ -124,7 +144,6 @@ async function renderPlan(list, force = false) {
       day = { tasks: fresh.tasks, done: [] };
     }
   }
-  box.hidden = false;
   const phase = PLAN_PHASES[fresh.phase];
   const done = new Set(day.done || []);
   for (const task of day.tasks) {
@@ -138,21 +157,26 @@ async function renderPlan(list, force = false) {
   const finished = day.tasks.filter((t) => done.has(t.id)).length;
   const streak = planStreak({ ...(state.plan || {}), [today]: day }, today);
 
+  const minutesDone = day.tasks.filter((t) => done.has(t.id)).reduce((n, t) => n + t.minutes, 0);
+
   const rows = day.tasks.map((task) => {
     const isDone = done.has(task.id);
     const tick = h("button", { class: "tick", type: "button", role: "checkbox", "aria-checked": String(isDone), "aria-label": `Tandai selesai: ${task.title}` });
     tick.addEventListener("click", async () => {
       const next = tick.getAttribute("aria-checked") !== "true";
       tick.setAttribute("aria-checked", String(next));
-      tick.closest(".task").classList.toggle("done", next);
+      tick.closest(".td-task").classList.toggle("done", next);
       const saved = await api("/api/plan", { method: "POST", body: { date: today, id: task.id, done: next } });
       state.plan[today] = saved;
-      renderPlan(list);
+      renderToday(list);
     });
     const link = task.external
-      ? h("a", { class: "task-title ext", href: task.href, target: "_blank", rel: "noopener", text: task.title })
-      : h("a", { class: "task-title", href: task.href, text: task.title });
-    return h("li", { class: `task${isDone ? " done" : ""}` }, tick, h("div", { class: "task-body" }, link, task.detail ? h("p", { class: "hint", text: task.detail }) : null), h("span", { class: "mins", text: `${task.minutes} mnt` }));
+      ? h("a", { class: "td-title ext", href: task.href, target: "_blank", rel: "noopener", text: task.title })
+      : h("a", { class: "td-title", href: task.href, text: task.title });
+    return h("li", { class: `td-task${isDone ? " done" : ""}` },
+      h("span", { class: `td-bar ${TONE[task.id.split(":")[0]] || "blue"}`, "aria-hidden": "true" }),
+      h("div", { class: "td-body" }, link, h("span", { class: "td-meta", title: task.detail || null, text: [`${task.minutes} mnt`, task.detail].filter(Boolean).join(" · ") })),
+      tick);
   });
 
   const week = weekPlan(today, latest, state.settings.targetBand).map((d) => {
@@ -164,19 +188,52 @@ async function renderPlan(list, force = false) {
   });
 
   const redo = h("button", { class: "link-btn", type: "button", text: "Susun ulang", title: "Buat ulang rencana hari ini dari data terbaru" });
-  redo.addEventListener("click", () => renderPlan(list, true));
-  const daysText = fresh.daysLeft == null ? "tanggal ujian belum diatur" : fresh.daysLeft > 0 ? `${fresh.daysLeft} hari lagi` : "";
-  box.replaceChildren(
-    h("div", { class: "card-head" },
-      h("div", {}, h("p", { class: "eyebrow", text: [`Fase ${phase.name}`, daysText].filter(Boolean).join(" · ") }), h("h2", { id: "plan-title", text: "Rencana hari ini" }), h("p", { class: "card-note", text: phase.note })),
-      h("div", { class: "plan-meta" },
-        h("p", { class: "plan-progress" }, h("b", { text: `${finished}/${day.tasks.length}` }), " selesai"),
-        streak ? h("p", { class: "hint", text: `${streak} hari berturut-turut` }) : null)),
-    day.tasks.length ? h("ul", { class: "tasks" }, rows) : h("p", { class: "empty", text: "Tidak ada tugas untuk hari ini." }),
-    h("div", { class: "plan-foot" },
-      h("span", { class: "hint", text: `±${total} menit · waktumu ${state.settings.minutesPerDay || 45} menit per hari` }),
-      redo),
+  redo.addEventListener("click", () => renderToday(list, true));
+  const now = new Date();
+
+  const todayTile = h("article", { class: "tile lime today-tile", "aria-labelledby": "plan-title" },
+    h("div", { class: "td-date" },
+      h("h2", { id: "plan-title", class: "sr", text: "Rencana hari ini" }),
+      h("p", { class: "td-day", text: now.toLocaleDateString("id-ID", { day: "numeric", month: "short" }) }),
+      h("p", { class: "td-phase", text: `Fase ${phase.name}` }),
+      h("p", { class: "td-weekday", text: now.toLocaleDateString("id-ID", { weekday: "long" }) })),
+    h("div", { class: "td-list" },
+      day.tasks.length ? h("ul", { class: "td-tasks" }, rows) : h("p", { class: "td-empty", text: "Tidak ada tugas untuk hari ini." }),
+      h("div", { class: "td-foot" },
+        h("span", {}, h("b", { text: `${finished}/${day.tasks.length}` }), " selesai"),
+        redo)));
+
+  const minutesTile = h("article", { class: "tile blue min-tile" },
+    h("h2", { class: "tile-label", text: "Belajar hari ini" }),
+    h("p", { class: "mt-value" }, String(minutesDone), h("small", { text: "mnt" })),
+    h("p", { class: "mt-sub", text: `dari ±${total} menit rencana` }),
+    h("p", { class: "mt-streak", text: streak ? `${streak} hari berturut-turut` : "Mulai rantai belajarmu hari ini" }),
+    ring(total ? minutesDone / total : 0));
+
+  const speakTile = h("article", { class: "tile pink speak-tile" });
+  const art = h("span", { class: "sp-art" });
+  art.innerHTML = BUBBLES; // fixed markup above
+  speakTile.append(art,
+    h("h2", { class: "sp-title", text: "Yuk, latihan bicara!" }),
+    h("p", { class: "sp-sub", text: "Speaking Part 1 · ±5 menit" }),
+    h("a", { class: "btn primary sm", href: "/speaking", text: "Mulai" }));
+
+  const weekTile = h("div", { class: "tile week-tile" },
+    h("p", { class: "tile-label", text: `Minggu ini${streak ? ` · ${streak} hari berturut-turut` : ""}` }),
     h("ol", { class: "week", "aria-label": "Fokus minggu ini" }, week));
+
+  box.replaceChildren(todayTile, speakTile, minutesTile, weekTile);
+}
+
+// ---------- materi untukmu ----------
+function renderActive(list) {
+  const card = $("#active");
+  card.hidden = !lessons.length;
+  if (card.hidden) return;
+  const stats = lessonStats(list);
+  const focus = focusLessons(lessons, stats);
+  $("#active-note").textContent = focus.weak ? "Tipe soal yang paling banyak membuang poin di tesmu." : "Mulai dari tipe soal yang paling sering keluar di ujian.";
+  $("#active-list").replaceChildren(...focus.list.map((l, i) => lessonCard(l, { stats: stats.get(l.id), drillAttempts: state.drillAttempts || [], index: i })));
 }
 
 // ---------- diagnostic ----------
@@ -319,7 +376,7 @@ function renderSkills(list) {
   sparkJobs.length = 0;
   const cards = SKILL_IDS.map((skill) => {
     const pts = series(list, skill);
-    const card = h("article", { class: "card skill" }, h("h3", { text: SKILLS[skill].label }));
+    const card = h("article", { class: "skill" }, h("h3", { text: SKILLS[skill].label }));
     if (!pts.length) {
       const n = list.filter((a) => a.skill === skill).length;
       card.append(h("p", { class: "none", text: n ? "Sudah dicatat, tapi tanpa band." : "Belum ada tes." }));
@@ -392,6 +449,12 @@ function partsLabel(a) {
 
 function renderHistory(list) {
   const body = $("#history-body");
+  const weekAgo = todayISO(new Date(Date.now() - 6 * 86400000));
+  const week = list.filter((a) => a.date >= weekAgo);
+  const minutes = week.reduce((m, a) => m + (a.minutes || 0), 0);
+  $("#history-note").textContent = list.length
+    ? `${list.length} tes tercatat · ${week.length} dalam 7 hari terakhir${minutes ? ` (${minutes} menit)` : ""}. Yang terbaru di atas.`
+    : "Semua hasil yang sudah dicatat, yang terbaru di atas.";
   if (!list.length) {
     body.replaceChildren(h("p", { class: "empty" }, "Belum ada. ", h("a", { href: "/log", text: "Catat tes pertamamu" }), "."));
     return;
@@ -468,5 +531,5 @@ async function load() {
   }
 }
 load().catch((err) => {
-  $("#kpis").replaceChildren(h("p", { class: "empty", text: `Gagal memuat data: ${err.message}` }));
+  $("#today").replaceChildren(h("p", { class: "empty pad-top", text: `Gagal memuat data: ${err.message}` }));
 });

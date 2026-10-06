@@ -13,15 +13,24 @@
 </head>
 <body>
 <main class="picker">
+  <header class="picker-top">
+    <span class="brand"><span class="brand-mark" id="picker-mark"></span><span>IELTS Coach</span></span>
+  </header>
   <div class="picker-head">
-    <span class="brand-mark big" id="picker-mark"></span>
-    <p class="greeting" id="greeting"></p>
+    <p class="eyebrow" id="greeting">Semangat!</p>
     <h1>Pilih peranmu</h1>
-    <p class="sub">Tes, latihan, jurnal, kartu, dan tulisan masing-masing tersimpan terpisah.</p>
   </div>
-  <blockquote class="motivation"><p id="motivation"></p></blockquote>
-  <div class="who-grid" id="who"></div>
-  <p class="hint picker-foot">Simpan link pribadimu sebagai bookmark untuk langsung masuk. Nama, peran, modul, dan target bisa diubah di Pengaturan.</p>
+  <section class="bento picker-bento" aria-label="Profil">
+    <article class="tile lime hero-tile">
+      <div class="hero-count" id="hero-count"></div>
+      <figure class="hero-quote">
+        <figcaption class="tile-label">Penyemangat hari ini</figcaption>
+        <blockquote><p id="motivation"></p></blockquote>
+      </figure>
+    </article>
+    <div class="who-grid" id="who"></div>
+  </section>
+  <p class="hint picker-foot">Tes, latihan, jurnal, kartu, dan tulisan masing-masing tersimpan terpisah. Simpan link pribadimu sebagai bookmark untuk langsung masuk; nama, peran, modul, dan target bisa diubah di Pengaturan.</p>
 </main>
 <script type="module" src="/profiles.js"></script>
 </body>

@@ -36,6 +36,7 @@ const PAGES = {
   "/cards.js": "cards.js",
   "/md.js": "md.js",
   "/learn.js": "learn.js",
+  "/lesson-card.js": "lesson-card.js",
   "/lesson.js": "lesson.js",
   "/app.css": "app.css",
   "/shared.js": "shared.js",

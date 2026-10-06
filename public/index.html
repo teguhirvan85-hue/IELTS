@@ -18,14 +18,12 @@
   <header class="top">
     <div>
       <p class="eyebrow" id="who">Persiapan IELTS</p>
-      <h1>Dashboard</h1>
-      <p class="sub">Kerjakan tes di engnovate, catat hasilnya di sini, lalu fokus ke tipe soal yang paling banyak membuang poin.</p>
+      <h1 id="hello">Dashboard</h1>
+      <p class="sub" id="countdown"></p>
     </div>
   </header>
 
-  <section class="kpis" id="kpis" aria-label="Ringkasan"></section>
-
-  <section class="card plan" id="plan" aria-labelledby="plan-title" hidden></section>
+  <section class="bento today-bento" id="today" aria-label="Hari ini"></section>
 
   <section class="card" id="diagnostic" hidden>
     <div class="card-head">
@@ -37,16 +35,31 @@
     <ol class="steps" id="diag-steps"></ol>
   </section>
 
-  <section aria-labelledby="skills-title">
-    <div class="section-head">
-      <h2 id="skills-title" class="eyebrow">Band per skill</h2>
-      <div class="legend" aria-hidden="true">
-        <span class="lg"><svg width="10" height="10"><circle class="dot" cx="5" cy="5" r="4"/></svg>Full test</span>
-        <span class="lg"><svg width="10" height="10"><circle class="ring" cx="5" cy="5" r="3.5"/></svg>Latihan per bagian (perkiraan)</span>
-        <span class="lg"><svg width="16" height="2"><line class="tline" x1="0" y1="1" x2="16" y2="1"/></svg>Target</span>
+  <section class="card" id="active" aria-labelledby="active-title">
+    <div class="card-head row">
+      <div>
+        <h2 id="active-title">Materi untukmu</h2>
+        <p class="card-note" id="active-note"></p>
       </div>
+      <a class="btn soft sm" href="/learn">Lihat semua <span aria-hidden="true">›</span></a>
     </div>
-    <div class="skills" id="skills"></div>
+    <div class="lesson-grid pad" id="active-list"></div>
+  </section>
+
+  <section class="card" aria-labelledby="skills-title">
+    <div class="card-head">
+      <div>
+        <h2 id="skills-title">Band per skill</h2>
+        <p class="card-note" id="band-note"></p>
+      </div>
+      <div class="band-stats" id="band-stats"></div>
+    </div>
+    <div class="skills pad" id="skills"></div>
+    <div class="legend pad-foot" aria-hidden="true">
+      <span class="lg"><svg width="10" height="10"><circle class="dot" cx="5" cy="5" r="4"/></svg>Full test</span>
+      <span class="lg"><svg width="10" height="10"><circle class="ring" cx="5" cy="5" r="3.5"/></svg>Latihan per bagian (perkiraan)</span>
+      <span class="lg"><svg width="16" height="2"><line class="tline" x1="0" y1="1" x2="16" y2="1"/></svg>Target</span>
+    </div>
   </section>
 
   <section class="card" id="types">
@@ -67,7 +80,7 @@
     <div class="card-head">
       <div>
         <h2>Riwayat tes</h2>
-        <p class="card-note">Semua hasil yang sudah dicatat, yang terbaru di atas.</p>
+        <p class="card-note" id="history-note">Semua hasil yang sudah dicatat, yang terbaru di atas.</p>
       </div>
     </div>
     <div id="history-body"></div>
