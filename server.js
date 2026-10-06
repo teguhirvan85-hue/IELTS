@@ -15,7 +15,7 @@ import { loadBank, markSpeaking } from "./lib/speaking.js";
 import { loadPrompts, loadGuide, markEssay } from "./lib/writing.js";
 import { createContent } from "./lib/content.js";
 import { buildJournal, pruneMistakes } from "./lib/journal.js";
-import { gradeDrill, newSrs, schedule, reviewQueue, todayISO, essayWords } from "./public/shared.js";
+import { gradeDrill, newSrs, schedule, reviewQueue, todayISO, essayWords, slugify, planStreak } from "./public/shared.js";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT) || 3232;
@@ -43,6 +43,8 @@ const PAGES = {
   "/dashboard.js": "dashboard.js",
   "/log.js": "log.js",
   "/favicon.svg": "favicon.svg",
+  "/pilih": "profiles.html",
+  "/profiles.js": "profiles.js",
 };
 const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png", ".m4a": "audio/mp4" };
 const content = createContent(path.join(ROOT, "content"));
@@ -116,6 +118,8 @@ function send(res, status, body, type = "application/json; charset=utf-8", heade
   res.end(type.startsWith("application/json") ? JSON.stringify(body) : body);
 }
 
+const PROFILE_COOKIE = (id) => `profile=${id}; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly`;
+
 function cookies(req) {
   const out = {};
   for (const part of (req.headers.cookie || "").split(";")) {
@@ -155,7 +159,15 @@ async function api(req, res, url) {
 
   // ---------- profiles ----------
   if (p === "/api/profiles" && method === "GET") {
-    return send(res, 200, { active: P.id, profiles: Object.values(db.profiles).map(({ id, name }) => ({ id, name })) });
+    const chosen = Boolean(db.profiles[cookies(req).profile]);
+    const today = todayISO();
+    // Each learner's progress today and their streak, for the "who's studying?" cards.
+    const profiles = Object.values(db.profiles).map((x) => ({
+      id: x.id, name: x.name, role: x.settings.role, slug: slugify(x.name), module: x.settings.module, targetBand: x.settings.targetBand, examDate: x.settings.examDate,
+      today: { done: x.plan[today]?.done?.length || 0, total: x.plan[today]?.tasks?.length || 0 },
+      streak: planStreak(x.plan, today),
+    }));
+    return send(res, 200, { active: P.id, chosen, profiles });
   }
   if (p === "/api/profiles" && method === "POST") {
     const created = store.addProfile(cleanName((await readJson(req))?.name));
@@ -165,7 +177,7 @@ async function api(req, res, url) {
   const pm = p.match(/^\/api\/profiles\/(p[a-z0-9]{1,16})\/activate$/);
   if (pm && method === "POST") {
     if (!db.profiles[pm[1]]) return send(res, 404, { error: "Profil tidak ditemukan." });
-    return send(res, 200, { active: pm[1] }, undefined, { "set-cookie": `profile=${pm[1]}; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly` });
+    return send(res, 200, { active: pm[1] }, undefined, { "set-cookie": PROFILE_COOKIE(pm[1]) });
   }
 
   if (p === "/api/state" && method === "GET") {
@@ -487,7 +499,20 @@ const server = http.createServer(async (req, res) => {
   try {
     if (url.pathname.startsWith("/api/")) return await api(req, res, url);
     if (url.pathname.startsWith("/content/")) return sendContentFile(req, res, url.pathname);
+
+    // A personal link opens that learner's profile directly.
+    const link = url.pathname.match(/^\/p\/([a-z0-9-]{1,60})$/);
+    if (link) {
+      const target = Object.values(store.db.profiles).find((x) => slugify(x.name) === link[1] || x.id === link[1]);
+      res.writeHead(302, { location: target ? "/" : "/pilih", ...(target ? { "set-cookie": PROFILE_COOKIE(target.id) } : {}) });
+      return res.end();
+    }
     const file = /^\/learn\/[a-z0-9-]+$/.test(url.pathname) ? "lesson.html" : PAGES[url.pathname];
+    // With more than one learner, a browser that hasn't picked a profile starts at "who's studying?".
+    if (file?.endsWith(".html") && file !== "profiles.html" && Object.keys(store.db.profiles).length > 1 && !store.db.profiles[cookies(req).profile]) {
+      res.writeHead(302, { location: `/pilih?next=${encodeURIComponent(url.pathname + url.search)}` });
+      return res.end();
+    }
     if (!file || req.method !== "GET") return send(res, 404, "Not found", "text/plain; charset=utf-8");
     const body = fs.readFileSync(path.join(PUBLIC_DIR, file));
     return send(res, 200, body, TYPES[path.extname(file)]);

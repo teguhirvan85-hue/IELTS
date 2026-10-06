@@ -111,3 +111,11 @@ test("a version-1 database becomes the first profile, with a backup", async () =
   assert.equal(store.profile("nope").id, "p1");
   fs.rmSync(dir, { recursive: true });
 });
+
+test("profile links use a slug of the name", async () => {
+  const { slugify } = await import("../public/shared.js");
+  assert.equal(slugify("Istri"), "istri");
+  assert.equal(slugify("Dewi Ayu!"), "dewi-ayu");
+  assert.equal(slugify("José"), "jose");
+  assert.equal(slugify("!!!"), "profil");
+});

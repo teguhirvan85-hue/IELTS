@@ -430,6 +430,7 @@ form.targetBand.replaceChildren(h("option", { value: "", text: "Belum ditentukan
 function openSettings() {
   const s = state.settings;
   form.name.value = state.profile?.name || "";
+  form.role.value = s.role || "";
   form.examDate.value = s.examDate || "";
   form.targetBand.value = s.targetBand == null ? "" : String(s.targetBand);
   form.module.value = s.module || "";
@@ -444,7 +445,7 @@ form.addEventListener("submit", async (e) => {
   try {
     state.settings = await api("/api/settings", {
       method: "PUT",
-      body: { name: form.name.value, examDate: form.examDate.value || null, targetBand: form.targetBand.value === "" ? null : Number(form.targetBand.value), module: form.module.value || null, minutesPerDay: Number(form.minutesPerDay.value) },
+      body: { name: form.name.value, role: form.role.value, examDate: form.examDate.value || null, targetBand: form.targetBand.value === "" ? null : Number(form.targetBand.value), module: form.module.value || null, minutesPerDay: Number(form.minutesPerDay.value) },
     });
     state.profile = { ...state.profile, name: state.settings.name };
     renameCurrentProfile(state.settings.name);

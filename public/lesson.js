@@ -22,9 +22,27 @@ async function load() {
     ? `Di tes engnovate yang kamu catat: ${correct}/${total} benar (${Math.round((correct / total) * 100)}%).`
     : "";
 
+  // Focus on the learner's module: Academic learners skip the General Training notes and
+  // get GT-style drills last; General Training learners get them first.
+  const module = state.settings.module;
+  const text = module === "academic" ? withoutSection(body, "Di General Training") : body;
+  const ordered = [...drills].sort((a, b) => (module === "general" ? isGT(b) - isGT(a) : module === "academic" ? isGT(a) - isGT(b) : 0));
+
   // Lesson text is our own content; the renderer escapes it before adding markup.
-  $("#lesson-body").innerHTML = renderMarkdown(body);
-  renderDrills(drills, attempts);
+  $("#lesson-body").innerHTML = renderMarkdown(text);
+  renderDrills(ordered, attempts);
+}
+
+const isGT = (drill) => /General Training/.test(drill.variant || "");
+
+// Drops one "## Title" section (up to the next ## heading) from a lesson.
+function withoutSection(markdown, title) {
+  const lines = markdown.split("\n");
+  const start = lines.findIndex((l) => l.trim() === `## ${title}`);
+  if (start === -1) return markdown;
+  let end = lines.findIndex((l, i) => i > start && l.startsWith("## "));
+  if (end === -1) end = lines.length;
+  return [...lines.slice(0, start), ...lines.slice(end)].join("\n");
 }
 
 function renderDrills(drills, history) {
@@ -51,7 +69,7 @@ function drillCard(drill, history, all, index, switchTo) {
 
   const tabs = all.length > 1
     ? h("div", { class: "seg", role: "group", "aria-label": "Pilih latihan" },
-        all.map((d, i) => h("button", { type: "button", "aria-pressed": String(i === index), onclick: () => switchTo(i), text: `Latihan ${i + 1}${history.some((a) => a.drill === d.id) ? " ✓" : ""}` })))
+        all.map((d, i) => h("button", { type: "button", "aria-pressed": String(i === index), onclick: () => switchTo(i), text: `Latihan ${i + 1}${isGT(d) ? " · GT" : ""}${history.some((a) => a.drill === d.id) ? " ✓" : ""}` })))
     : null;
   const note = h("p", { class: "card-note", text: [drill.variant, `${count} soal · ±${drill.minutes} menit`, last ? `terakhir ${last.correct}/${last.total} benar` : null].filter(Boolean).join(" · ") });
   const source = renderSource(drill);

@@ -68,9 +68,13 @@ npm run audio    # buat audio Listening dari skrip (suara macOS + ffmpeg)
 ## Fase 4: profil + Writing lab
 
 - **Profil**: setiap orang punya tes, latihan, jurnal, kartu, esai, modul, dan target
-  sendiri. Ganti profil lewat pilihan di menu atas; nama, modul, tanggal ujian, dan target
-  diubah di Pengaturan (dashboard). Data versi lama dipindah ke profil pertama; salinannya
-  ada di `data/db.v1-backup.json`.
+  sendiri. Halaman `/pilih` ("Pilih peranmu") muncul kalau belum ada profil yang dipilih.
+  Isinya kalimat penyemangat yang berganti tiap hari, plus kartu per orang dengan peran,
+  hitung mundur ujian, progres tugas hari ini, dan hari berturut-turut. Tiap profil punya
+  link pribadi `/p/<nama>` yang langsung masuk. Klik nama di menu untuk ganti profil;
+  nama, peran, modul, tanggal ujian, dan target diubah di Pengaturan (dashboard). Di
+  materi, contoh dan latihan diurutkan sesuai modul profil. Data versi lama dipindah ke
+  profil pertama; salinannya ada di `data/db.v1-backup.json`.
 - **Writing** (`/writing`): bank soal Task 1 surat (GT, 9 soal), Task 1 grafik (Academic,
   8 soal dengan grafik garis, batang, pie, dan tabel), dan Task 2 (12 soal), plus soal
   sendiri. Ada panduan per task, timer 20/40 menit, penghitung kata, dan draf yang tersimpan

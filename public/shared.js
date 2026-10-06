@@ -612,3 +612,8 @@ export function weekPlan(today, latest, target) {
     return { date, focus, label: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"][weekday(date)] };
   });
 }
+
+// "Istri" → "istri", "Dewi Ayu" → "dewi-ayu": the personal link /p/<slug> of a profile.
+export function slugify(name) {
+  return String(name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "profil";
+}

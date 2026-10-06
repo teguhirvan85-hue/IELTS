@@ -88,17 +88,13 @@ const NAV = [
   { key: "cards", href: "/cards", label: "Kartu" },
 ];
 
-const profileSelects = [];
+// The profile button shows who is studying and opens the "who's studying?" screen.
+const profileButtons = [];
 function profilePicker() {
   const avatar = h("span", { class: "avatar", "aria-hidden": "true" });
-  const select = h("select", { "aria-label": "Profil" });
-  select.addEventListener("change", async () => {
-    await api(`/api/profiles/${select.value}/activate`, { method: "POST", body: {} });
-    // Drop ?id=… links: an attempt of one profile doesn't exist in the other.
-    location.href = location.pathname;
-  });
-  profileSelects.push({ select, avatar });
-  return h("label", { class: "profile" }, avatar, select, icon("chevron"));
+  const name = h("span", { class: "profile-name" });
+  profileButtons.push({ avatar, name });
+  return h("a", { class: "profile", href: "/pilih", title: "Ganti profil" }, avatar, name, icon("chevron"));
 }
 
 function renderNav() {
@@ -127,23 +123,23 @@ function renderNav() {
 async function fillProfiles() {
   try {
     const { active, profiles } = await api("/api/profiles");
-    const current = profiles.find((p) => p.id === active) || profiles[0];
-    for (const { select, avatar } of profileSelects) {
-      select.replaceChildren(...profiles.map((p) => h("option", { value: p.id, text: p.name })));
-      select.value = current.id;
+    const index = Math.max(0, profiles.findIndex((p) => p.id === active));
+    const current = profiles[index];
+    for (const { avatar, name } of profileButtons) {
       avatar.textContent = (current.name.trim()[0] || "?").toUpperCase();
+      avatar.className = `avatar c${index % 4}`;
+      name.textContent = current.name;
     }
   } catch {
-    // The page still works without the profile list.
+    // The page still works without the profile name.
   }
 }
 
 // Called after a profile is renamed in Pengaturan.
-export function renameCurrentProfile(name) {
-  for (const { select, avatar } of profileSelects) {
-    const opt = select.options[select.selectedIndex];
-    if (opt) opt.textContent = name;
-    avatar.textContent = (name.trim()[0] || "?").toUpperCase();
+export function renameCurrentProfile(newName) {
+  for (const { avatar, name } of profileButtons) {
+    name.textContent = newName;
+    avatar.textContent = (newName.trim()[0] || "?").toUpperCase();
   }
 }
 
