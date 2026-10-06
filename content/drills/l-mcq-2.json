@@ -1,0 +1,90 @@
+{
+  "id": "l-mcq-2",
+  "lesson": "l-mcq",
+  "skill": "listening",
+  "title": "First day in the IT support team",
+  "minutes": 5,
+  "variant": "Gaya Part 2 · Monolog",
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear the manager of an IT support team giving a talk to new staff on their first morning. First, you have some time to look at questions 1 to 5." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 5." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Good morning, everyone, and welcome to the IT support team at Norvale Freight. I'm Arun, and I manage the team. I know first days can be a bit overwhelming, so I'll keep this short and just cover what you really need to know this week." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Some of you have told me you're keen to start on real support calls straight away. I like the enthusiasm, but you won't be answering any calls on your own this week." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "For the first few days, you'll mostly be sitting beside an experienced colleague, watching how they deal with problems and asking as many questions as you like." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "You'll also see a security course on your training list. That's done online, and you've got a whole month to finish it, so there's no need to rush it this week." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Now, laptops. Normally you'd pick them up from the IT store on the third floor, but the store is being moved this week, so it's full of boxes. Instead, your team leaders will bring your laptops to your desks after lunch." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Reception will give you your ID badges, by the way, but not your laptops, so please don't queue there for them." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Next, passwords. In your last job you probably had to change your password every month or so. We stopped doing that last year, because people just added a number on the end each time." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "What we ask for now is length. Your password must be at least sixteen characters, and a short sentence that you'll remember works really well." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "You don't need to memorise all your passwords, either. Please keep them in the company password manager. The only thing we don't allow is writing them on paper and leaving them on your desk." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Lots of you have asked about working from home. The company allows two days a week, and whatever you may have heard, it doesn't have to be Mondays and Fridays. You agree the days with your team." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "However, for new staff it only starts once you've passed your three-month probation period, so for now I'll see you all in the office every day." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "One last thing, and it may sound a bit strange. If your own laptop goes wrong, please don't try to fix it yourself, and don't ask the person at the next desk either." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "Log a ticket in the system, exactly like any other member of staff would. That way every problem is recorded." },
+    { "speaker": "Manager", "voice": "Rishi", "text": "And please don't email me about it, because I'm in meetings most of the day and I won't see it. Right, let's go and meet your team leaders." }
+  ],
+  "instruction": "Choose the correct letter, A, B or C.",
+  "input": "choice",
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "What will new staff mainly do during their first week?",
+      "choices": [
+        { "key": "A", "text": "observe experienced colleagues at work" },
+        { "key": "B", "text": "answer support calls on their own" },
+        { "key": "C", "text": "complete an online security course" }
+      ],
+      "answer": "A",
+      "evidence": "you'll mostly be sitting beside an experienced colleague, watching how they deal with problems",
+      "explain": "\"Mostly ... sitting beside an experienced colleague, watching\" = mainly observe experienced colleagues. B dibantah tegas: \"you won't be answering any calls on your own this week\". C memang disebut, tapi waktunya sebulan (\"no need to rush it this week\")."
+    },
+    {
+      "n": 2,
+      "prompt": "How will new staff get their laptops?",
+      "choices": [
+        { "key": "A", "text": "They will collect them from the IT store." },
+        { "key": "B", "text": "They will pick them up at reception." },
+        { "key": "C", "text": "Their team leader will bring them." }
+      ],
+      "answer": "C",
+      "evidence": "your team leaders will bring your laptops to your desks after lunch",
+      "explain": "Ketiga tempat disebut. IT store adalah kebiasaan normal, tapi minggu ini sedang dipindah (\"Normally ..., but\"). Resepsionis hanya memberi ID badge (\"but not your laptops\"). Jadi laptop diantar oleh team leader."
+    },
+    {
+      "n": 3,
+      "prompt": "What does the manager say about passwords?",
+      "choices": [
+        { "key": "A", "text": "Staff must change them regularly." },
+        { "key": "B", "text": "Staff should choose long ones." },
+        { "key": "C", "text": "Staff must not store them on a computer." }
+      ],
+      "answer": "B",
+      "evidence": "What we ask for now is length. Your password must be at least sixteen characters",
+      "explain": "\"Length\" dan \"at least sixteen characters\" = long passwords. A adalah aturan lama yang sudah dihentikan (\"We stopped doing that last year\"). C bertentangan dengan anjuran menyimpannya di \"company password manager\"; yang dilarang hanya menulisnya di kertas."
+    },
+    {
+      "n": 4,
+      "prompt": "What does the manager say about working from home?",
+      "choices": [
+        { "key": "A", "text": "New staff are not allowed to do it yet." },
+        { "key": "B", "text": "It is only possible on Mondays and Fridays." },
+        { "key": "C", "text": "It is limited to one day a week." }
+      ],
+      "answer": "A",
+      "evidence": "for new staff it only starts once you've passed your three-month probation period",
+      "explain": "\"Only starts once you've passed your three-month probation period\" = staf baru belum boleh. B dibantah (\"it doesn't have to be Mondays and Fridays\"), dan C salah karena aturannya \"two days a week\"."
+    },
+    {
+      "n": 5,
+      "prompt": "What should staff do if their own laptop has a problem?",
+      "choices": [
+        { "key": "A", "text": "ask a colleague to repair it" },
+        { "key": "B", "text": "send an email to the manager" },
+        { "key": "C", "text": "report it through the ticket system" }
+      ],
+      "answer": "C",
+      "evidence": "Log a ticket in the system, exactly like any other member of staff would.",
+      "explain": "\"Log a ticket in the system\" = report it through the ticket system. A dilarang (\"don't ask the person at the next desk\"), dan B juga (\"please don't email me about it\")."
+    }
+  ]
+}

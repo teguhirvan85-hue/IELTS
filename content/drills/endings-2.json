@@ -1,0 +1,79 @@
+{
+  "id": "endings-2",
+  "lesson": "endings",
+  "skill": "reading",
+  "title": "Sleep on the ward",
+  "minutes": 7,
+  "passage": {
+    "title": "Sleep on the Ward",
+    "paragraphs": [
+      {
+        "text": "Sleep is not a luxury for people who are recovering from illness or surgery. During deep sleep, the body releases hormones that help to repair damaged tissue, and the immune system becomes more active. Yet hospitals are often poor places to rest. Patients regularly describe waking several times a night, and poor sleep is one of the most common complaints about a hospital stay."
+      },
+      {
+        "text": "Noise is the main reason. Measurements taken on general wards at night frequently exceed the levels recommended for bedrooms, with peaks caused by alarms, telephones, trolleys and conversations between staff. Alarms are a particular problem. Monitors and drip pumps are often set to sound at the slightest change, and studies suggest that the great majority of alarms require no action at all. As a result, staff who hear them constantly may begin to react more slowly, which means that a genuine emergency can be missed."
+      },
+      {
+        "text": "Routine care also interrupts sleep. Many hospitals check every patient's temperature, pulse and blood pressure every four hours, including during the night, and blood samples are often taken at five or six in the morning so that the results are ready for the doctors' morning rounds. For seriously ill patients, such checks are essential. For patients whose condition has been stable for several days, however, there is little evidence that waking them in the night improves their care."
+      },
+      {
+        "text": "Some hospitals have begun to change their routines. On one surgical ward in the Netherlands, staff introduced a 'quiet period' between eleven at night and six in the morning. Lights were dimmed, phones were switched to vibrate, and checks were grouped together so that a patient was woken once rather than three or four times. After six months, patients on the ward reported sleeping better, and they asked for noticeably fewer sleeping tablets than before."
+      },
+      {
+        "text": "Simple equipment can also help. Earplugs and eye masks cost very little, and trials in intensive care units have found that patients who use them spend more time in deep sleep. Not all patients accept them, though. Some find them uncomfortable, while others worry that they will not hear a nurse who speaks to them or will miss something important happening on the ward."
+      },
+      {
+        "text": "None of this means that care at night can be abandoned. The aim, as one nurse researcher put it, is not to leave patients alone but to stop waking them for no good reason."
+      }
+    ]
+  },
+  "instruction": "Complete each sentence with the correct ending, A–G, below.",
+  "input": "choice",
+  "optionsTitle": "Sentence endings",
+  "options": [
+    { "key": "A", "text": "requested less medication to help them sleep." },
+    { "key": "B", "text": "are essential for every patient in hospital." },
+    { "key": "C", "text": "may be slower to respond when a patient is in real danger." },
+    { "key": "D", "text": "doctors have the results when they visit patients later that morning." },
+    { "key": "E", "text": "spend more time in deep sleep." },
+    { "key": "F", "text": "fear that they may not hear a nurse talking to them." },
+    { "key": "G", "text": "have not been shown to benefit patients whose condition is stable." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Staff who constantly hear alarms that require no action…",
+      "answer": "C",
+      "evidence": "staff who hear them constantly may begin to react more slowly, which means that a genuine emergency can be missed",
+      "explain": "\"React more slowly\" = slower to respond, dan \"a genuine emergency can be missed\" = a patient is in real danger. B juga cocok secara tata bahasa (\"Staff ... are essential\"), tapi teks tidak pernah mengatakannya tentang staf yang mendengar alarm."
+    },
+    {
+      "n": 2,
+      "prompt": "Regular night-time checks of temperature, pulse and blood pressure…",
+      "answer": "G",
+      "evidence": "For patients whose condition has been stable for several days, however, there is little evidence that waking them in the night improves their care.",
+      "explain": "\"There is little evidence that ... improves their care\" = have not been shown to benefit. B adalah jebakan kata ekstrem: teks bilang pemeriksaan itu penting \"for seriously ill patients\", bukan \"for every patient\"."
+    },
+    {
+      "n": 3,
+      "prompt": "Blood samples are often taken early in the morning so that…",
+      "answer": "D",
+      "evidence": "blood samples are often taken at five or six in the morning so that the results are ready for the doctors' morning rounds",
+      "explain": "Setelah \"so that\" dibutuhkan klausa lengkap dengan subjek, dan hanya D yang punya subjek sendiri (\"doctors\"). \"Morning rounds\" = waktu dokter mengunjungi pasien di pagi hari, jadi \"the results are ready\" = doctors have the results when they visit patients."
+    },
+    {
+      "n": 4,
+      "prompt": "After the quiet period was introduced, patients on the Dutch ward…",
+      "answer": "A",
+      "evidence": "they asked for noticeably fewer sleeping tablets than before",
+      "explain": "\"Asked for fewer sleeping tablets\" = requested less medication to help them sleep. E adalah fakta benar dari paragraf lain: \"more time in deep sleep\" adalah hasil uji coba earplug di ICU, bukan di bangsal Belanda. Bentuk present \"spend\" juga tidak cocok dengan kalimat yang berlatar waktu lampau."
+    },
+    {
+      "n": 5,
+      "prompt": "Some patients refuse to wear earplugs because they…",
+      "answer": "F",
+      "evidence": "others worry that they will not hear a nurse who speaks to them",
+      "explain": "\"Worry\" = fear, \"a nurse who speaks to them\" = a nurse talking to them. E juga ada di paragraf yang sama dan cocok secara tata bahasa, tapi lebih banyak tidur nyenyak adalah manfaat earplug, bukan alasan pasien menolaknya."
+    }
+  ]
+}

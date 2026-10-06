@@ -1,0 +1,74 @@
+{
+  "id": "l-map-2",
+  "lesson": "l-map",
+  "skill": "listening",
+  "title": "The ground floor of Pellbrook Community Hospital",
+  "minutes": 5,
+  "variant": "Gaya Part 2 · Denah",
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear a senior nurse showing a group of new volunteers around the ground floor of a small community hospital. First, you have some time to look at questions 1 to 5." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 5." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Hello again, everyone. Before your first shift, I'd like to show you where everything is on the ground floor of Pellbrook Community Hospital, because patients will be asking you for directions all day. Please have a look at the plan I've given you." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "We're standing just inside the main entrance, facing into the building, so we're looking north. Reception is here on your left, and the waiting area is directly behind it." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "This main corridor leads straight up to the lifts, with the stairs just to the right of them. Just before you reach them, another corridor runs across the whole building, from the west side to the east side." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Now, patients are always asking for the pharmacy. It used to be at the far end of the building, near the side entrance, but it moved in the spring. It's now the first room on your right as you come in, directly opposite reception." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "If someone needs an X-ray, walk up this corridor to the crossing and turn left. Keep going all the way to the far end. The X-ray department is the last room on your right." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Blood tests used to be taken in the small room next to reception, but there wasn't enough space there." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Now they're done directly opposite X-ray, on the other side of that corridor. So it's the last room on your left, next door to the waiting area." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Then there's the staff room. A lot of new people go looking for it upstairs, but it's down here on the ground floor, between X-ray and the lifts. Do use it for your breaks, and help yourselves to tea." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Finally, physiotherapy. Go back to the crossing, and this time turn right, towards the side entrance. Don't go into the room next to the stairs, because that's just a store cupboard." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Physiotherapy is the last room on your left, just beside the side entrance, so patients who come by car don't have far to walk." },
+    { "speaker": "Nurse", "voice": "Tara", "text": "Right, does anyone have any questions before we go upstairs?" }
+  ],
+  "image": "l-map-2.svg",
+  "imageAlt": "Plan of the ground floor of Pellbrook Community Hospital, with north at the top. The main entrance is in the middle of the south wall, and a main corridor runs north from it to the lifts, with the stairs just east of the lifts. Just south of the lifts, a second corridor crosses the building from west to east and ends at a side entrance in the east wall. Inside the main entrance, reception is west of the main corridor, with the waiting area north of reception. The café fills the south-east corner. Letters: A in the north-west corner, on the north side of the cross corridor at its west end; B on the north side of the cross corridor, between A and the lifts; C on the north side, just east of the stairs; D in the north-east corner, beside the side entrance; E on the south side of the cross corridor at its west end, next to the waiting area; F in the south-west corner, west of reception; G east of the main corridor, opposite reception and nearest the main entrance; H east of the main corridor, north of G, at the corner where the two corridors meet.",
+  "instruction": "Label the plan below. Write the correct letter, A–H, next to questions 1–5.",
+  "input": "choice",
+  "options": [
+    { "key": "A", "text": "A" },
+    { "key": "B", "text": "B" },
+    { "key": "C", "text": "C" },
+    { "key": "D", "text": "D" },
+    { "key": "E", "text": "E" },
+    { "key": "F", "text": "F" },
+    { "key": "G", "text": "G" },
+    { "key": "H", "text": "H" }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Pharmacy",
+      "answer": "G",
+      "evidence": "It's now the first room on your right as you come in, directly opposite reception.",
+      "explain": "Jebakan: apotek dulu ada di dekat pintu samping (\"It used to be ... near the side entrance\"), tapi sudah pindah. Dari pintu utama kamu menghadap utara, jadi \"on your right\" = timur. Ruangan pertama di kanan, di seberang Reception, adalah G. H juga di kanan, tapi itu ruangan kedua."
+    },
+    {
+      "n": 2,
+      "prompt": "X-ray department",
+      "answer": "A",
+      "evidence": "The X-ray department is the last room on your right.",
+      "explain": "Jalan lurus sampai koridor melintang, lalu \"turn left\" (ke barat). Saat menghadap barat, kanan = utara. Di kanan kamu melewati Lifts, lalu B, dan ruangan terakhir di ujung adalah A. B memang di kanan, tapi bukan yang terakhir."
+    },
+    {
+      "n": 3,
+      "prompt": "Blood test room",
+      "answer": "E",
+      "evidence": "Now they're done directly opposite X-ray, on the other side of that corridor.",
+      "explain": "F adalah jebakan: dulu tes darah dilakukan di ruangan kecil di sebelah Reception (\"used to be\"). Sekarang di seberang X-ray (A), yaitu ruangan terakhir di kiri yang bersebelahan dengan Waiting area: E."
+    },
+    {
+      "n": 4,
+      "prompt": "Staff room",
+      "answer": "B",
+      "evidence": "it's down here on the ground floor, between X-ray and the lifts",
+      "explain": "Banyak orang mencarinya di lantai atas, tapi \"it's down here on the ground floor\". \"Between X-ray and the lifts\": satu-satunya ruangan di antara A (X-ray) dan Lifts adalah B."
+    },
+    {
+      "n": 5,
+      "prompt": "Physiotherapy",
+      "answer": "D",
+      "evidence": "Physiotherapy is the last room on your left, just beside the side entrance",
+      "explain": "Dari persimpangan, \"turn right\" = ke timur, jadi kiri = utara. C, ruangan di sebelah Stairs, hanya gudang (\"just a store cupboard\"). Ruangan terakhir di kiri, tepat di samping pintu samping (\"just beside the side entrance\"), adalah D."
+    }
+  ]
+}

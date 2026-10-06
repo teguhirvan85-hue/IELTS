@@ -1,0 +1,80 @@
+{
+  "id": "l-matching-2",
+  "lesson": "l-matching",
+  "skill": "listening",
+  "title": "Training staff for a new records system",
+  "minutes": 5,
+  "variant": "Gaya Part 3 · Diskusi",
+  "script": [
+    { "speaker": "Narrator", "voice": "Moira", "text": "You will hear two colleagues from a hospital training team, Tom and Leila, discussing how to train staff to use a new electronic patient records system. First, you have some time to look at questions 1 to 5." },
+    { "speaker": "Narrator", "voice": "Moira", "text": "Now listen carefully and answer questions 1 to 5." },
+    { "speaker": "Leila", "voice": "Karen", "text": "Right, Tom, we need to give the director our training plan by Friday. I've listed five options. Shall we go through them one by one?" },
+    { "speaker": "Tom", "voice": "Daniel", "text": "Good idea. The first one's online video tutorials. Honestly, I'm not keen. In my experience, hardly anyone watches training videos. They just sit on the intranet." },
+    { "speaker": "Leila", "voice": "Karen", "text": "That was true of the old ones, because they were an hour long. These would be five minutes each. And think about the night staff. They often have a quiet hour in the middle of the night, but there's never a trainer around then." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "Hmm, that's a fair point. Nurses on nights could watch them whenever the ward is calm. All right, I've changed my mind. For them, videos make a lot of sense." },
+    { "speaker": "Leila", "voice": "Karen", "text": "Next, classroom workshops. They're what the director expects, and we've got training rooms free, so they wouldn't cost much." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "Cost isn't the issue, though. Each workshop would last a full day, and the ward managers would have to find cover for every nurse who attends. That's a whole day when those nurses aren't caring for patients." },
+    { "speaker": "Leila", "voice": "Karen", "text": "True. The managers complained about exactly that during the last system change." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "What about support on the wards? We'd have trained helpers walking round each ward when the system goes live, so staff could ask questions while they're actually working." },
+    { "speaker": "Leila", "voice": "Karen", "text": "Everyone says that's the most effective method. I'd even thought it might be the answer for the night shifts." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "But we'd need helpers on every ward, day and night, for at least two weeks. I did the sums yesterday, and it's way beyond our budget." },
+    { "speaker": "Leila", "voice": "Karen", "text": "Oh. Then we'd better leave it out, unless the director finds some extra money." },
+    { "speaker": "Leila", "voice": "Karen", "text": "Number four is a printed quick guide, a little card that staff keep in their pocket. I'm not sure about this one. People tend to throw paper away." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "Not on my old ward. Everyone kept a card like that, and they used it all the time." },
+    { "speaker": "Leila", "voice": "Karen", "text": "OK, maybe I'm wrong about that. But the software company sends out an update almost every month, and the screens change each time." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "So anything we print would be wrong within a few weeks. Yes, that's the real problem." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "And finally, the practice version of the system, where staff can try things out without touching real patient records." },
+    { "speaker": "Leila", "voice": "Karen", "text": "I love the idea in theory. But when the pharmacy department set one up last year, hardly anybody logged in. People are just too busy." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "We could make it compulsory." },
+    { "speaker": "Leila", "voice": "Karen", "text": "The managers would never agree to that, and honestly, I don't think it would change much." },
+    { "speaker": "Tom", "voice": "Daniel", "text": "So we'd be building something that most staff simply wouldn't use. Fine, it goes to the bottom of the list." }
+  ],
+  "instruction": "What opinion do the speakers give about each of the following training options? Choose FIVE answers from the box and write the correct letter, A–F, next to questions 1–5.",
+  "input": "choice",
+  "optionsTitle": "Opinions",
+  "options": [
+    { "key": "A", "text": "It would cost too much." },
+    { "key": "B", "text": "It would suit staff who work at night." },
+    { "key": "C", "text": "It would quickly become out of date." },
+    { "key": "D", "text": "Staff are unlikely to use it." },
+    { "key": "E", "text": "It should be compulsory for everyone." },
+    { "key": "F", "text": "It would keep staff away from patients for too long." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Online video tutorials",
+      "answer": "B",
+      "evidence": "Nurses on nights could watch them whenever the ward is calm.",
+      "explain": "Jebakan D: Tom awalnya menolak (\"hardly anyone watches training videos\"). Setelah Leila menyebut staf malam, ia berubah pikiran (\"I've changed my mind\"). \"Nurses on nights\" = staff who work at night."
+    },
+    {
+      "n": 2,
+      "prompt": "Classroom workshops",
+      "answer": "F",
+      "evidence": "That's a whole day when those nurses aren't caring for patients.",
+      "explain": "Leila bilang workshop murah, dan Tom menjawab \"Cost isn't the issue\", jadi bukan A. Masalahnya: perawat meninggalkan bangsal seharian, \"a whole day when those nurses aren't caring for patients\" = away from patients for too long."
+    },
+    {
+      "n": 3,
+      "prompt": "Support on the wards",
+      "answer": "A",
+      "evidence": "I did the sums yesterday, and it's way beyond our budget.",
+      "explain": "Jebakan B: Leila sempat mengira cara ini cocok untuk shift malam. Tapi Tom menghitung biayanya: \"way beyond our budget\" = it would cost too much, dan mereka memutuskan \"leave it out\"."
+    },
+    {
+      "n": 4,
+      "prompt": "Printed quick guide",
+      "answer": "C",
+      "evidence": "So anything we print would be wrong within a few weeks.",
+      "explain": "Leila awalnya mengira staf akan membuang kartunya (mirip D), tapi Tom membantah dan Leila mengaku \"maybe I'm wrong about that\". Masalah sebenarnya: software diperbarui hampir tiap bulan, jadi \"wrong within a few weeks\" = quickly out of date."
+    },
+    {
+      "n": 5,
+      "prompt": "Practice version of the system",
+      "answer": "D",
+      "evidence": "So we'd be building something that most staff simply wouldn't use.",
+      "explain": "Di bagian farmasi \"hardly anybody logged in\". Usul membuatnya wajib (E) disebut Tom, tapi langsung ditolak Leila (\"The managers would never agree to that\"). Kesimpulannya \"something that most staff simply wouldn't use\" = unlikely to use it."
+    }
+  ]
+}

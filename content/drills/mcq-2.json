@@ -1,0 +1,97 @@
+{
+  "id": "mcq-2",
+  "lesson": "mcq",
+  "skill": "reading",
+  "title": "The uses of forgetting",
+  "minutes": 8,
+  "passage": {
+    "title": "The Uses of Forgetting",
+    "paragraphs": [
+      {
+        "text": "Most of us regard forgetting as a weakness, something that happens when the brain fails to do its job properly. A growing number of psychologists, however, see it as a necessary part of how memory works. A memory that stored every detail with equal strength would quickly become cluttered, making it harder to find the information that actually matters. Forgetting where you parked your car last week, for instance, makes it easier to remember where you parked it this morning."
+      },
+      {
+        "text": "Systematic research on forgetting began in the 1880s, when a German psychologist spent several years memorising lists of meaningless syllables, such as 'kef' and 'woz', and testing how many he could recall after different periods of time. He deliberately avoided real words, because he wanted to measure memory without the help of meanings and associations he already knew. His results showed that forgetting is fastest at the beginning: within a day he had lost most of what he had learnt, but after that the rate of loss slowed considerably."
+      },
+      {
+        "text": "Later research has shown that the timing of study matters as much as the amount. When students spread their revision over several sessions separated by days, they remember far more a month later than students who spend the same total time studying in a single session. Cramming the night before an exam can produce reasonable results the next morning, but the material tends to fade rapidly afterwards."
+      },
+      {
+        "text": "Equally important is the way in which people review. Many students reread their notes several times, and the text gradually starts to feel familiar. Unfortunately, this familiarity is easily mistaken for understanding. Experiments consistently show that trying to recall information without looking, for example by answering practice questions, strengthens memory far more than rereading, even though it feels harder and less productive at the time."
+      },
+      {
+        "text": "Sleep also plays a part. While we sleep, the brain appears to replay recent experiences and to transfer important information into longer-term storage. In a typical experiment, two groups of volunteers learn the same list of word pairs, one group in the evening and the other in the morning, and both are tested twelve hours later. Those who have slept in the meantime usually recall more pairs, even though both groups spent exactly the same time studying. Some researchers also believe that sleep helps the brain to clear away unimportant details, which would link it to the useful kind of forgetting described above."
+      }
+    ]
+  },
+  "instruction": "Questions 1–4: Choose the correct letter, A, B, C or D. Questions 5–6: Choose TWO letters, A–E.",
+  "input": "choice",
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Why does the writer mention forgetting where a car was parked?",
+      "choices": [
+        { "key": "A", "text": "to show that everyday forgetting is more common than people realise" },
+        { "key": "B", "text": "to show that losing old information can make current information easier to find" },
+        { "key": "C", "text": "to show that people remember places better than other kinds of information" },
+        { "key": "D", "text": "to show that memory becomes less reliable as people get older" }
+      ],
+      "answer": "B",
+      "evidence": "Forgetting where you parked your car last week, for instance, makes it easier to remember where you parked it this morning.",
+      "explain": "Contoh mobil ini mendukung kalimat sebelumnya: ingatan yang menyimpan semuanya \"would quickly become cluttered\". \"Last week\" = old information, \"this morning\" = current information, dan \"makes it easier to remember\" = easier to find. A, C dan D tidak dibahas sama sekali."
+    },
+    {
+      "n": 2,
+      "prompt": "What did the German psychologist's experiments show?",
+      "choices": [
+        { "key": "A", "text": "Information is forgotten at a steady rate over time." },
+        { "key": "B", "text": "Real words are remembered better than meaningless syllables." },
+        { "key": "C", "text": "The greatest loss of memory occurs shortly after learning." },
+        { "key": "D", "text": "Memory improves after several years of regular practice." }
+      ],
+      "answer": "C",
+      "evidence": "His results showed that forgetting is fastest at the beginning: within a day he had lost most of what he had learnt",
+      "explain": "\"Fastest at the beginning\" dan \"within a day he had lost most\" = the greatest loss occurs shortly after learning. A bertentangan dengan \"the rate of loss slowed\". B adalah jebakan: ia sengaja tidak memakai kata asli, jadi tidak membandingkan keduanya. D memakai \"several years\" dari teks, tapi itu lamanya penelitian, bukan hasilnya."
+    },
+    {
+      "n": 3,
+      "prompt": "According to the writer, what is the main drawback of cramming the night before an exam?",
+      "choices": [
+        { "key": "A", "text": "It rarely produces good results in the next day's test." },
+        { "key": "B", "text": "It takes more time in total than spreading study over several days." },
+        { "key": "C", "text": "It is a method that most students try to avoid." },
+        { "key": "D", "text": "What has been learnt does not stay in the memory for long." }
+      ],
+      "answer": "D",
+      "evidence": "Cramming the night before an exam can produce reasonable results the next morning, but the material tends to fade rapidly afterwards.",
+      "explain": "\"The material tends to fade rapidly afterwards\" = does not stay in the memory for long. A bertentangan dengan \"can produce reasonable results the next morning\". B salah karena teks membandingkan \"the same total time\"."
+    },
+    {
+      "n": 4,
+      "prompt": "What does the writer say about rereading notes?",
+      "choices": [
+        { "key": "A", "text": "It can make students believe they have learnt more than they have." },
+        { "key": "B", "text": "It takes longer than answering practice questions." },
+        { "key": "C", "text": "It feels more difficult than other ways of reviewing." },
+        { "key": "D", "text": "It is useful only for material that is already familiar." }
+      ],
+      "answer": "A",
+      "evidence": "Unfortunately, this familiarity is easily mistaken for understanding.",
+      "explain": "Teks terasa \"familiar\", lalu rasa akrab itu \"easily mistaken for understanding\": siswa mengira sudah paham padahal belum. C membalik informasi: yang terasa \"harder\" justru latihan mengingat, bukan membaca ulang. B tidak disebut."
+    },
+    {
+      "n": [5, 6],
+      "prompt": "Which TWO statements about sleep are made in the passage?",
+      "choices": [
+        { "key": "A", "text": "Sleep may help to move information into longer-lasting memory." },
+        { "key": "B", "text": "Studying in the evening is always more effective than studying in the morning." },
+        { "key": "C", "text": "People who sleep between learning and being tested tend to remember more." },
+        { "key": "D", "text": "In the experiment, the group that slept had spent longer studying." },
+        { "key": "E", "text": "Sleep has been proved to remove unimportant details from memory." }
+      ],
+      "answer": ["A", "C"],
+      "evidence": "the brain appears to replay recent experiences and to transfer important information into longer-term storage. In a typical experiment, two groups of volunteers learn the same list of word pairs, one group in the evening and the other in the morning, and both are tested twelve hours later. Those who have slept in the meantime usually recall more pairs",
+      "explain": "A = \"appears to ... transfer important information into longer-term storage\" (\"appears\" cocok dengan \"may\"). C = \"Those who have slept in the meantime usually recall more\". B memakai kata ekstrem \"always\", padahal perbedaannya karena tidur, bukan jam belajar. D bertentangan dengan \"exactly the same time\". E salah karena teks hanya bilang \"Some researchers also believe\", bukan \"proved\"."
+    }
+  ]
+}

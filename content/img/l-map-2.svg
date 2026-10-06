@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Helvetica, Arial, sans-serif" fill="#1C1B19">
+  <title>Pellbrook Community Hospital: ground floor</title>
+  <rect x="0" y="0" width="640" height="440" fill="#FFFFFF"/>
+
+  <!-- building outline; the beige floor left between the rooms is the corridors:
+       a main corridor north from the main entrance (x 275–325) and a cross corridor
+       from west to east (y 150–200) ending at the side entrance -->
+  <rect x="30" y="30" width="530" height="360" fill="#EFE9DC" stroke="#1C1B19" stroke-width="2"/>
+
+  <g stroke="#1C1B19" stroke-width="1.5">
+    <!-- north row, west to east: A, B, lifts, stairs, C, D -->
+    <rect x="30" y="30" width="110" height="120" fill="#E8EEF5"/>
+    <rect x="140" y="30" width="110" height="120" fill="#E8EEF5"/>
+    <rect x="250" y="30" width="75" height="120" fill="#E4E4E2"/>
+    <rect x="325" y="30" width="65" height="120" fill="#E4E4E2"/>
+    <rect x="390" y="30" width="85" height="120" fill="#E8EEF5"/>
+    <rect x="475" y="30" width="85" height="120" fill="#E8EEF5"/>
+    <!-- south part, west of the main corridor: E, F, waiting area, reception -->
+    <rect x="30" y="200" width="120" height="110" fill="#E8EEF5"/>
+    <rect x="30" y="310" width="120" height="80" fill="#E8EEF5"/>
+    <rect x="150" y="200" width="125" height="110" fill="#F6F0D8"/>
+    <rect x="150" y="310" width="125" height="80" fill="#F3E6CF"/>
+    <!-- south part, east of the main corridor: H, G, café -->
+    <rect x="325" y="200" width="115" height="90" fill="#E8EEF5"/>
+    <rect x="325" y="290" width="115" height="100" fill="#E8EEF5"/>
+    <rect x="440" y="200" width="120" height="190" fill="#F4E4E1"/>
+  </g>
+
+  <!-- lift doors and stair treads -->
+  <g fill="#FFFFFF" stroke="#1C1B19" stroke-width="1">
+    <rect x="262" y="48" width="22" height="34"/>
+    <rect x="291" y="48" width="22" height="34"/>
+  </g>
+  <g stroke="#1C1B19" stroke-width="1">
+    <line x1="333" y1="44" x2="382" y2="44"/>
+    <line x1="333" y1="52" x2="382" y2="52"/>
+    <line x1="333" y1="60" x2="382" y2="60"/>
+    <line x1="333" y1="68" x2="382" y2="68"/>
+    <line x1="333" y1="76" x2="382" y2="76"/>
+    <line x1="333" y1="84" x2="382" y2="84"/>
+  </g>
+
+  <!-- known places -->
+  <g font-size="14" text-anchor="middle">
+    <text x="287" y="118">Lifts</text>
+    <text x="357" y="118">Stairs</text>
+    <text x="212" y="250">Waiting</text>
+    <text x="212" y="268">area</text>
+    <text x="212" y="355">Reception</text>
+    <text x="500" y="300">Café</text>
+  </g>
+
+  <!-- main entrance: opening in the south wall, gate posts, arrow and label -->
+  <rect x="280" y="387" width="40" height="4" fill="#EFE9DC"/>
+  <rect x="274" y="383" width="6" height="14" fill="#1C1B19"/>
+  <rect x="320" y="383" width="6" height="14" fill="#1C1B19"/>
+  <polygon points="293,419 300,409 307,419" fill="#1C1B19"/>
+  <text x="300" y="434" font-size="14" font-weight="bold" text-anchor="middle">Main entrance</text>
+
+  <!-- side entrance: opening in the east wall at the end of the cross corridor -->
+  <rect x="557" y="158" width="4" height="34" fill="#EFE9DC"/>
+  <rect x="553" y="152" width="14" height="6" fill="#1C1B19"/>
+  <rect x="553" y="192" width="14" height="6" fill="#1C1B19"/>
+  <polygon points="584,168 572,175 584,182" fill="#1C1B19"/>
+  <text x="602" y="132" font-size="13" font-weight="bold" text-anchor="middle">Side</text>
+  <text x="602" y="148" font-size="13" font-weight="bold" text-anchor="middle">entrance</text>
+
+  <!-- compass -->
+  <text x="602" y="32" font-size="16" font-weight="bold" text-anchor="middle">N</text>
+  <line x1="602" y1="82" x2="602" y2="48" stroke="#1C1B19" stroke-width="2"/>
+  <polygon points="595,54 602,40 609,54" fill="#1C1B19"/>
+
+  <!-- unknown rooms A–H -->
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <circle cx="85" cy="90" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="85" y="95">A</text>
+    <circle cx="195" cy="90" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="195" y="95">B</text>
+    <circle cx="432" cy="90" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="432" y="95">C</text>
+    <circle cx="517" cy="90" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="517" y="95">D</text>
+    <circle cx="90" cy="255" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="90" y="260">E</text>
+    <circle cx="90" cy="350" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="90" y="355">F</text>
+    <circle cx="382" cy="340" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="382" y="345">G</text>
+    <circle cx="382" cy="245" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="382" y="250">H</text>
+  </g>
+</svg>

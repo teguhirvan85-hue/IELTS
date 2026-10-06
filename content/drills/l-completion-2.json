@@ -1,0 +1,93 @@
+{
+  "id": "l-completion-2",
+  "lesson": "l-completion",
+  "skill": "listening",
+  "title": "How honeybees find their way",
+  "minutes": 6,
+  "variant": "Gaya Part 4 · Kuliah",
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear part of a biology lecture about how honeybees find their way. First, you have some time to look at questions 1 to 7." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 7." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "Good morning, everyone. Today's question has puzzled scientists for over a century. How does a honeybee, with a brain the size of a sesame seed, find flowers several kilometres from its hive, and then find its way home?" },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "I'll look at three parts of the problem: direction, distance, and sharing information with other bees." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "Let's start with direction. You might expect bees to rely mainly on smell, and smell certainly helps once they're close to the flowers. But over longer distances, the most important tool is the sun, which bees use as a compass." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "There's an obvious difficulty, though. The sun moves across the sky, so a bee that set off in the morning would be lost by the afternoon if it didn't take this into account." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "Bees solve the problem with an internal clock, which tells them how far the sun has moved since they last saw it, so they can correct their course." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "And what about cloudy days? Even when the sun itself is hidden, small patches of blue sky contain patterns of polarised light. We can't see these patterns, but bees can, using special cells at the top of their eyes. So the bee can still work out where the sun is." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "Now, distance. For many years, researchers assumed that bees worked out how far they had flown from the amount of energy they used. It was a sensible idea, but it turned out to be wrong." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "The key evidence came from experiments in which bees were trained to fly through a narrow tunnel to reach a dish of sugar water. The walls of the tunnel were covered with a busy black and white pattern." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "When these bees got back to the hive, they behaved as if they had flown a far greater distance than they really had. The conclusion was that bees judge distance by how quickly the landscape seems to move past their eyes, not by how tired they feel." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "Finally, communication. A bee that has found good flowers doesn't keep the news to itself. Back in the hive, it performs what's called the waggle dance. The angle of the dance tells the other bees which direction to fly in, compared with the position of the sun." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "And distance? Students often assume it's shown by how fast the bee dances, but that's not the case. What matters is the duration of the waggle. The longer it lasts, the further away the food is." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "So why does any of this matter outside biology? Well, engineers are fascinated by how an insect can navigate so accurately with so little brain power." },
+    { "speaker": "Lecturer", "voice": "Samantha", "text": "Bee-inspired methods of judging distance have already been tested on small flying robots, which often have to find their way in places where satellite signals are weak." }
+  ],
+  "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+  "input": "text",
+  "wordLimit": 1,
+  "context": {
+    "kind": "notes",
+    "title": "How honeybees find their way",
+    "lines": [
+      "# Direction",
+      "- smell is mainly useful close to the flowers",
+      "- over long distances, the sun is used as a [[1]]",
+      "- an internal [[2]] allows for the sun's movement",
+      "- on cloudy days, bees detect patterns of [[3]] light",
+      "# Distance",
+      "- old theory: bees measured the energy they used (now rejected)",
+      "- experiment: bees flew through a narrow [[4]] with patterned walls",
+      "- bees judge distance by how fast the [[5]] seems to pass their eyes",
+      "# Communication: the waggle dance",
+      "- the angle of the dance shows direction (relative to the sun)",
+      "- the [[6]] of the waggle shows distance",
+      "# Wider importance",
+      "- bee-inspired methods tested on small flying [[7]]"
+    ]
+  },
+  "questions": [
+    {
+      "n": 1,
+      "answer": "compass",
+      "evidence": "the most important tool is the sun, which bees use as a compass",
+      "explain": "Jebakan: \"smell\" disebut lebih dulu, tapi bau hanya membantu saat lebah sudah dekat bunga (\"once they're close to the flowers\"). Untuk jarak jauh, \"over longer distances\", matahari dipakai \"as a compass\"."
+    },
+    {
+      "n": 2,
+      "answer": "clock",
+      "evidence": "Bees solve the problem with an internal clock",
+      "explain": "\"Allows for the sun's movement\" di catatan memparafrasekan masalah \"The sun moves across the sky\" dan solusinya \"correct their course\". Kata \"internal\" sudah tercetak, jadi cukup tulis \"clock\"."
+    },
+    {
+      "n": 3,
+      "answer": "polarised",
+      "accept": ["polarized"],
+      "evidence": "small patches of blue sky contain patterns of polarised light",
+      "explain": "Jebakan: \"blue\" juga muncul tepat sebelumnya (\"patches of blue sky\"), tapi yang dideteksi lebah adalah \"patterns of polarised light\". Ejaan Amerika \"polarized\" juga diterima. Di Part 4, kata akademis seperti ini harus dieja dengan benar."
+    },
+    {
+      "n": 4,
+      "answer": "tunnel",
+      "evidence": "bees were trained to fly through a narrow tunnel to reach a dish of sugar water",
+      "explain": "\"Patterned walls\" di catatan = \"walls ... covered with a busy black and white pattern\". Lebah terbang melewati \"a narrow tunnel\". Kata \"narrow\" sudah tercetak, jadi tulis \"tunnel\" saja."
+    },
+    {
+      "n": 5,
+      "answer": "landscape",
+      "evidence": "bees judge distance by how quickly the landscape seems to move past their eyes",
+      "explain": "Dua penjelasan ditolak: \"energy\" (teori lama yang \"turned out to be wrong\", dan sudah tercetak di catatan) serta rasa lelah (\"not by how tired they feel\"). \"How fast ... seems to pass\" = \"how quickly ... seems to move past\", jadi jawabannya \"landscape\"."
+    },
+    {
+      "n": 6,
+      "answer": "duration",
+      "evidence": "What matters is the duration of the waggle.",
+      "explain": "Jebakan klasik: kecepatan menari (\"how fast the bee dances\") disebut lalu langsung dibantah (\"that's not the case\"). Yang menunjukkan jarak adalah \"the duration of the waggle\". Jangan tulis \"speed\"."
+    },
+    {
+      "n": 7,
+      "answer": "robots",
+      "evidence": "Bee-inspired methods of judging distance have already been tested on small flying robots",
+      "explain": "\"Wider importance\" = \"why does any of this matter outside biology?\". Metode dari lebah \"tested on small flying robots\". Catatan tidak memakai \"a\", jadi bentuk jamak \"robots\" yang benar, bukan \"robot\"."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "completion-4",
+  "lesson": "completion",
+  "skill": "reading",
+  "variant": "Gaya General Training · Section 2",
+  "title": "Your first month at work",
+  "minutes": 6,
+  "passage": {
+    "title": "Staff Handbook: Your First Month With Us",
+    "paragraphs": [
+      {
+        "text": "Before you start: About a week before your first day, you will receive an email confirming your start time and the name of your line manager. Please bring your passport or driving licence with you, together with a recent document showing your home address, such as a utility bill or bank statement. We need to see these before we can add you to the payroll, so if you forget them, your first salary payment may be delayed."
+      },
+      {
+        "text": "Your first day: Please report to the main reception at 8.45 a.m., not at the usual starting time of 9.00 a.m. You will be given a security pass, which must be visible at all times, and a member of the HR team will show you around the building. You will also be introduced to your buddy, an experienced colleague from your own team who can answer everyday questions during your first month."
+      },
+      {
+        "text": "Training: During your first week, you must complete three online courses: fire safety, data protection and safe lifting. Each course takes about forty minutes and ends with a short test. If you do not pass a test, you may take it again as many times as you need. Staff who will be driving forklift trucks also attend a two-day practical course, which is arranged by their line manager."
+      },
+      {
+        "text": "Probation: All new employees have a probationary period of six months. You will meet your line manager for a review after one month and again after three months, when you can discuss any difficulties and agree targets for the rest of the period. At the end of your probation, your contract will normally be confirmed in writing."
+      },
+      {
+        "text": "Health and safety: The fire alarm is tested every Wednesday at 11 a.m. If it sounds at any other time, leave the building immediately by the nearest exit and go to the assembly point in the staff car park. Do not stop to collect personal belongings. High-visibility vests must be worn in the warehouse at all times, and safety boots will be provided free of charge on your first day. All accidents, however minor, must be recorded in the accident book at reception within 24 hours."
+      }
+    ]
+  },
+  "instruction": "Complete the notes below. Choose ONE WORD AND/OR A NUMBER from the text for each answer.",
+  "input": "text",
+  "wordLimit": 1,
+  "context": {
+    "kind": "notes",
+    "title": "Starting work: key points for new staff",
+    "lines": [
+      "# Before day one",
+      "- bring passport or driving licence, plus proof of your [[1]]",
+      "- without these, first pay may be late",
+      "# First day",
+      "- arrive at main reception at 8.45 a.m.",
+      "- meet your [[2]]: a more experienced team member who helps during the first month",
+      "# Training",
+      "- [[3]] online courses to finish in week one, each with a short test",
+      "- tests can be retaken",
+      "# Probation",
+      "- lasts [[4]] months",
+      "- reviews with line manager after one month and three months",
+      "# Health and safety",
+      "- fire alarm test every [[5]] at 11 a.m.",
+      "- free safety [[6]] given out on the first day",
+      "- accidents recorded within 24 hours"
+    ]
+  },
+  "questions": [
+    {
+      "n": 1,
+      "answer": "address",
+      "evidence": "together with a recent document showing your home address",
+      "explain": "\"A recent document showing your home address\" = proof of your address. \"Home address\" adalah dua kata dan melebihi batas ONE WORD, dan \"proof of your home\" tidak masuk akal, jadi tulis \"address\" saja."
+    },
+    {
+      "n": 2,
+      "answer": "buddy",
+      "evidence": "You will also be introduced to your buddy, an experienced colleague from your own team",
+      "explain": "\"Introduced to\" = meet, dan \"an experienced colleague from your own team\" = a more experienced team member. Jangan tertukar dengan \"line manager\" (dua kata) atau anggota tim HR yang hanya mengajak keliling gedung."
+    },
+    {
+      "n": 3,
+      "answer": "three",
+      "accept": ["3"],
+      "evidence": "During your first week, you must complete three online courses",
+      "explain": "\"During your first week\" = in week one. Celahnya ada di depan \"online courses\", jadi yang dibutuhkan jumlah kursus: \"three\" atau \"3\". \"Forty minutes\" adalah lama tiap kursus, dan \"two-day\" adalah kursus praktik khusus untuk pengemudi forklift."
+    },
+    {
+      "n": 4,
+      "answer": "six",
+      "accept": ["6"],
+      "evidence": "All new employees have a probationary period of six months.",
+      "explain": "\"Probationary period of six months\" = probation lasts six months. \"Three months\" adalah pengecoh: itu waktu review kedua dengan line manager, bukan lamanya masa percobaan. \"Six\" dan \"6\" sama-sama benar."
+    },
+    {
+      "n": 5,
+      "answer": "Wednesday",
+      "evidence": "The fire alarm is tested every Wednesday at 11 a.m.",
+      "explain": "Jam 11 a.m. sudah tertulis di catatan, jadi yang hilang adalah harinya. Nama hari selalu diawali huruf kapital dalam bahasa Inggris, dan ejaannya sering salah: Wed-nes-day."
+    },
+    {
+      "n": 6,
+      "answer": "boots",
+      "evidence": "safety boots will be provided free of charge on your first day",
+      "explain": "\"Provided free of charge\" = free ... given out. Kata \"safety\" sudah ada di catatan, jadi tulis \"boots\" saja. \"Vests\" ada di kalimat yang sama, tapi teks hanya bilang rompi itu wajib dipakai, bukan diberikan gratis."
+    }
+  ]
+}

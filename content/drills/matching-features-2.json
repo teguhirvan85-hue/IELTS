@@ -1,0 +1,81 @@
+{
+  "id": "matching-features-2",
+  "lesson": "matching-features",
+  "skill": "reading",
+  "title": "A short history of street lighting",
+  "minutes": 8,
+  "passage": {
+    "title": "A Short History of Street Lighting",
+    "paragraphs": [
+      {
+        "text": "For most of history, cities were almost completely dark at night. In the 1700s, anyone who needed to go out after sunset either carried a lantern or paid a boy to walk ahead with a burning torch. Some city authorities ordered householders to hang a candle or oil lamp outside their front door on winter evenings, but the rule was widely ignored, and the lamps that were hung usually went out long before midnight."
+      },
+      {
+        "text": "The first real change came in the early 1800s, when gas made from coal began to be piped beneath the streets of large cities. A single gas lamp gave several times as much light as an oil lamp, and it burned steadily through the night. Each lamp, however, had to be lit by hand: at dusk, lamplighters walked their routes with long poles, lighting each flame, and returned at dawn to put it out. Not everyone welcomed the new system. Some residents were convinced that the pipes beneath their streets would explode, and a few refused to have gas in their homes for years."
+      },
+      {
+        "text": "Electric street lighting arrived in the 1880s in the form of the arc lamp, which produced light by passing a current between two carbon rods. Arc lamps were dazzlingly bright, and some towns mounted them on towers up to fifty metres high so that a few lamps could light a whole district. Yet the glare was uncomfortable, buildings cast deep black shadows, and the carbon rods burned away so quickly that they had to be replaced every day. In narrow streets, gas remained the more practical choice for decades."
+      },
+      {
+        "text": "In the 1950s and 1960s, as car ownership rose rapidly, the purpose of street lighting changed. Engineers now designed it chiefly to help drivers see the road ahead, and success was measured by the number of traffic accidents rather than by the comfort of people on foot. The low-pressure sodium lamp, with its distinctive orange glow, became the standard choice because it used far less electricity than ordinary bulbs. Its weakness was colour: under its light, almost everything appears in shades of orange and grey, so that a red car and a blue one can look almost identical."
+      },
+      {
+        "text": "Since around 2010, many towns have replaced their orange lamps with LEDs. These give a white light in which colours look natural, and because they can be controlled from a central computer, they can be dimmed after midnight. In some streets, sensors raise the brightness only when a pedestrian or vehicle approaches. Not everyone is pleased, however. The bluish light of some early LEDs has been linked to poor sleep among nearby residents and to confusion among night-flying insects."
+      }
+    ]
+  },
+  "instruction": "Look at the following statements (Questions 1–6) and the list of periods below. Match each statement with the correct period, A–E. NB You may use any letter more than once.",
+  "input": "choice",
+  "optionsTitle": "List of Periods",
+  "options": [
+    { "key": "A", "text": "the eighteenth century" },
+    { "key": "B", "text": "the early nineteenth century" },
+    { "key": "C", "text": "the late nineteenth century" },
+    { "key": "D", "text": "the mid-twentieth century" },
+    { "key": "E", "text": "the early twenty-first century" }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Street lighting was planned mainly with motorists in mind.",
+      "answer": "D",
+      "evidence": "Engineers now designed it chiefly to help drivers see the road ahead",
+      "explain": "\"Chiefly to help drivers\" = mainly with motorists in mind, dan paragraf ini dibuka dengan \"In the 1950s and 1960s\" = pertengahan abad ke-20. Paragraf terakhir juga menyebut \"vehicle\", tapi hanya sebagai sesuatu yang memicu sensor, bukan tujuan utama penerangan."
+    },
+    {
+      "n": 2,
+      "prompt": "Workers had to light each lamp individually every evening.",
+      "answer": "B",
+      "evidence": "Each lamp, however, had to be lit by hand: at dusk, lamplighters walked their routes with long poles",
+      "explain": "\"At dusk\" = every evening, \"lit by hand\" = light each lamp individually, dan \"lamplighters\" = workers. Jebakannya C: batang karbon lampu busur juga diganti \"every day\", tapi itu mengganti suku cadang, bukan menyalakan lampu."
+    },
+    {
+      "n": 3,
+      "prompt": "Lights may become brighter automatically when they detect someone nearby.",
+      "answer": "E",
+      "evidence": "In some streets, sensors raise the brightness only when a pedestrian or vehicle approaches",
+      "explain": "\"Sensors raise the brightness\" = become brighter automatically, \"a pedestrian or vehicle approaches\" = someone nearby. \"Since around 2010\" berarti awal abad ke-21 (early twenty-first century), bukan abad ke-20."
+    },
+    {
+      "n": 4,
+      "prompt": "People were required to provide lighting outside their own homes.",
+      "answer": "A",
+      "evidence": "Some city authorities ordered householders to hang a candle or oil lamp outside their front door on winter evenings",
+      "explain": "\"Ordered householders\" = people were required, \"outside their front door\" = outside their own homes. Teks menulis \"the 1700s\", dan tahun 1700-an adalah abad ke-18 (eighteenth century). Paragraf B juga menyebut \"homes\", tapi tentang orang yang menolak gas masuk ke rumahnya."
+    },
+    {
+      "n": 5,
+      "prompt": "Some people feared that part of the new system might blow up.",
+      "answer": "B",
+      "evidence": "Some residents were convinced that the pipes beneath their streets would explode",
+      "explain": "\"Blow up\" = explode, dan \"part of the new system\" = the pipes beneath their streets. Paragraf LED juga menyebut warga yang tidak senang (\"Not everyone is pleased\"), tapi kekhawatirannya soal tidur dan serangga, bukan ledakan."
+    },
+    {
+      "n": 6,
+      "prompt": "An energy-saving type of lamp made it hard to tell colours apart.",
+      "answer": "D",
+      "evidence": "it used far less electricity than ordinary bulbs. Its weakness was colour: under its light, almost everything appears in shades of orange and grey",
+      "explain": "\"Used far less electricity\" = energy-saving, dan warna merah dan biru tampak \"almost identical\" = hard to tell colours apart. Jebakannya E: lampu LED justru membuat warna tampak \"natural\". Periode C (late nineteenth century) tidak dipakai di set ini: itu pengecohnya."
+    }
+  ]
+}

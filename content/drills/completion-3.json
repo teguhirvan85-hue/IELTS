@@ -1,0 +1,79 @@
+{
+  "id": "completion-3",
+  "lesson": "completion",
+  "skill": "reading",
+  "title": "Treating water at home",
+  "minutes": 7,
+  "passage": {
+    "title": "Treating Water at Home",
+    "paragraphs": [
+      {
+        "text": "For hundreds of millions of people, the water used for drinking and cooking comes from wells, rivers or rainwater tanks that may be contaminated with bacteria, viruses or parasites. Where treated water is not supplied through pipes, the safest option is often to treat it at home. Three methods are widely used, and each offers a different balance of cost, convenience and effectiveness."
+      },
+      {
+        "text": "Boiling is the oldest and most familiar method. Bringing water to a rolling boil for one minute is enough to kill almost all disease-causing organisms, which makes boiling the most reliable of the three. Its great disadvantage is the fuel it requires. In many rural households, water is boiled over fires of wood or charcoal, which can take up a large share of a family's income and fill homes with smoke that damages the lungs. Boiled water must also be left to cool, and if it is then stored in an open container, it can easily become contaminated again."
+      },
+      {
+        "text": "Chlorination involves adding a small, measured dose of chlorine, usually as a liquid or in tablet form, and waiting thirty minutes before the water is drunk. The method is very cheap, and it has one advantage that the others lack: a small amount of chlorine stays in the water, protecting it against recontamination while it is stored. Many users, however, dislike the taste and smell, and some stop treating their water for this reason alone. Chlorine is also less effective in cloudy water, so water drawn from muddy rivers must first be filtered through a cloth or left to settle."
+      },
+      {
+        "text": "Solar disinfection is the simplest method of all. Clear plastic bottles holding no more than two litres are filled with water and laid in direct sunlight for at least six hours; if the sky is overcast, they must be left for two full days. Ultraviolet radiation from the sun, together with the heat it produces, destroys most harmful organisms. Apart from the bottles, the method costs nothing. Its limitations are practical: only small volumes of water can be treated at once, so a family needs a large number of bottles, and the method is unreliable in regions with little sunshine."
+      },
+      {
+        "text": "None of these methods is perfect, and none of them removes chemical pollutants such as arsenic or pesticides. Health workers therefore often recommend combining methods, for example by filtering cloudy water through cloth before adding chlorine."
+      }
+    ]
+  },
+  "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+  "input": "text",
+  "wordLimit": 2,
+  "context": {
+    "kind": "table",
+    "title": "Three ways of treating water at home",
+    "rows": [
+      ["Method", "What is done", "Main advantage", "Main disadvantage"],
+      ["Boiling", "water kept at a rolling boil for one minute", "kills nearly all germs, so it is the most [[1]] method", "needs [[2]] (e.g. wood), which is costly and produces harmful smoke"],
+      ["Chlorination", "liquid or tablets added; water left for 30 minutes", "some chlorine remains, preventing [[3]] during storage", "many people dislike the taste and smell; works less well in [[4]] water"],
+      ["Solar disinfection", "clear plastic bottles left in direct sunlight for at least [[5]]", "costs nothing apart from the bottles", "treats only small [[6]] of water at a time"]
+    ]
+  },
+  "questions": [
+    {
+      "n": 1,
+      "answer": "reliable",
+      "evidence": "which makes boiling the most reliable of the three",
+      "explain": "\"The most ___ method\" butuh kata sifat. \"Kill almost all disease-causing organisms\" = kills nearly all germs, dan teks langsung menyimpulkan \"the most reliable of the three\". \"Familiar\" juga cocok secara tata bahasa (\"the oldest and most familiar method\"), tapi kata \"so\" di tabel menuntut akibat dari membunuh kuman, dan itu \"reliable\"."
+    },
+    {
+      "n": 2,
+      "answer": "fuel",
+      "evidence": "Its great disadvantage is the fuel it requires.",
+      "explain": "\"Needs ___ (e.g. wood)\" butuh kata benda, dan contoh \"wood or charcoal\" adalah jenis bahan bakar. \"Its great disadvantage\" = main disadvantage. Jangan tulis \"wood\": kata itu sudah ada sebagai contoh di dalam kurung."
+    },
+    {
+      "n": 3,
+      "answer": "recontamination",
+      "evidence": "a small amount of chlorine stays in the water, protecting it against recontamination while it is stored",
+      "explain": "\"Stays in the water\" = remains, \"while it is stored\" = during storage. \"Preventing ___\" butuh kata benda, dan teks memakai \"recontamination\". Periksa ejaannya: kata panjang seperti ini mudah salah satu huruf."
+    },
+    {
+      "n": 4,
+      "answer": "cloudy",
+      "evidence": "Chlorine is also less effective in cloudy water",
+      "explain": "\"Less effective\" = works less well, dan \"___ water\" butuh kata sifat. \"Muddy\" juga ada di kalimat yang sama, tapi menjelaskan sungai (\"muddy rivers\"), bukan air yang membuat klorin kurang efektif."
+    },
+    {
+      "n": 5,
+      "answer": "six hours",
+      "accept": ["6 hours"],
+      "evidence": "laid in direct sunlight for at least six hours",
+      "explain": "\"For at least ___\" butuh lama waktu, jadi tulis angka dan satuannya. Angka lain di paragraf ini adalah pengecoh: \"two litres\" adalah ukuran botol, dan \"two full days\" hanya berlaku saat langit mendung (\"overcast\")."
+    },
+    {
+      "n": 6,
+      "answer": "volumes",
+      "evidence": "only small volumes of water can be treated at once",
+      "explain": "\"Only small ___ of water\" butuh kata benda jamak. \"At once\" = at a time. Salin kata dari teks, \"volumes\": sinonim buatan sendiri seperti \"amounts\" atau \"quantities\" tidak diterima."
+    }
+  ]
+}
