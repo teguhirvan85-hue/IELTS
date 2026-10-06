@@ -1,0 +1,110 @@
+{
+  "id": "headings-1",
+  "lesson": "headings",
+  "skill": "reading",
+  "title": "Farming on the roof",
+  "minutes": 8,
+  "passage": {
+    "title": "Farming on the Roof",
+    "paragraphs": [
+      {
+        "label": "A",
+        "text": "In many large cities, the flat roofs of warehouses, car parks and office blocks have long stood empty. Over the past two decades, however, a growing number of these spaces have been turned into farms. Some grow salad leaves in shallow trays; others keep bees or raise vegetables in raised beds, often in neighbourhoods where there is no spare land at ground level."
+      },
+      {
+        "label": "B",
+        "text": "Supporters point first to the short journey from field to plate. Lettuce harvested on a roof in the morning can be on sale in a shop below the same afternoon, whereas produce grown in the countryside may spend days in lorries and warehouses. Because the crops travel such a short distance, they can be picked when fully ripe, and growers say customers notice the difference in flavour. Fewer journeys also mean less fuel and less packaging."
+      },
+      {
+        "label": "C",
+        "text": "The greatest obstacle, however, is structural. Wet soil is extremely heavy, and most roofs were never designed to carry the weight of a garden, let alone the people who work in it. Before any planting can begin, an engineer must assess the building, and in many cases the roof has to be strengthened at considerable expense. To reduce the load, some rooftop farms avoid soil altogether and grow plants in water or in light materials such as coconut fibre."
+      },
+      {
+        "label": "D",
+        "text": "Even when a roof is suitable, making money is difficult. Rent, insurance and the cost of carrying materials up to the roof are all higher than on an ordinary farm, while the growing area is small. Several operators admit that selling vegetables alone would not cover their costs. To survive, they charge restaurants premium prices for rare herbs, hire out the space for events, or rely on grants from local councils."
+      },
+      {
+        "label": "E",
+        "text": "For many of the people involved, though, profit was never the main aim. Rooftop farms often run gardening classes for local schools, and some offer work to people who have struggled to find jobs elsewhere. Residents of crowded apartment blocks describe the farms as rare places of calm. Such benefits are difficult to put a price on, yet for many supporters they matter more than the size of the harvest."
+      },
+      {
+        "label": "F",
+        "text": "It would be unrealistic to expect rooftops to feed a city. Even if every suitable roof were planted, the harvest would supply only a small fraction of what residents eat, and staple crops such as wheat and rice would still have to come from the countryside. Yet as architects begin to design new buildings with farming in mind, with stronger roofs and built-in water supplies, rooftop growing seems likely to become a small but permanent part of urban life."
+      }
+    ]
+  },
+  "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for paragraphs B–F from the list of headings below. Example: Paragraph A — vii.",
+  "input": "choice",
+  "optionsTitle": "List of Headings",
+  "options": [
+    {
+      "key": "i",
+      "text": "Rewards that cannot easily be measured in money"
+    },
+    {
+      "key": "ii",
+      "text": "Growing plants without soil"
+    },
+    {
+      "key": "iii",
+      "text": "A limited role, but a lasting one"
+    },
+    {
+      "key": "iv",
+      "text": "The benefits of a shorter supply chain"
+    },
+    {
+      "key": "v",
+      "text": "Supplying restaurants with unusual crops"
+    },
+    {
+      "key": "vi",
+      "text": "Making sure the structure can cope"
+    },
+    {
+      "key": "vii",
+      "text": "Making use of overlooked space in the city"
+    },
+    {
+      "key": "viii",
+      "text": "Struggling to cover the costs"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Paragraph B",
+      "answer": "iv",
+      "evidence": "Supporters point first to the short journey from field to plate.",
+      "explain": "Seluruh paragraf B membahas keuntungan jarak pendek dari kebun ke pembeli: lebih segar, dipetik saat matang, lebih sedikit bahan bakar dan kemasan. \"The short journey from field to plate\" = a shorter supply chain."
+    },
+    {
+      "n": 2,
+      "prompt": "Paragraph C",
+      "answer": "vi",
+      "evidence": "The greatest obstacle, however, is structural.",
+      "explain": "Kalimat topik \"is structural\" memberi ide utamanya: apakah atap kuat menahan beban (\"can cope\"). Judul ii (tanpa tanah) hanya cocok dengan kalimat terakhir, yaitu salah satu cara mengurangi beban. Itu detail, bukan ide utama."
+    },
+    {
+      "n": 3,
+      "prompt": "Paragraph D",
+      "answer": "viii",
+      "evidence": "Even when a roof is suitable, making money is difficult.",
+      "explain": "\"Making money is difficult\" = struggling to cover the costs, dan sisa paragraf menjelaskan biaya tinggi serta cara bertahan. Judul v (restoran) hanya satu dari tiga cara bertahan, jadi itu detail pengecoh."
+    },
+    {
+      "n": 4,
+      "prompt": "Paragraph E",
+      "answer": "i",
+      "evidence": "Such benefits are difficult to put a price on",
+      "explain": "Paragraf E dibuka dengan \"profit was never the main aim\", lalu memberi tiga contoh manfaat sosial (kelas sekolah, pekerjaan, ketenangan). \"Difficult to put a price on\" = cannot easily be measured in money."
+    },
+    {
+      "n": 5,
+      "prompt": "Paragraph F",
+      "answer": "iii",
+      "evidence": "rooftop growing seems likely to become a small but permanent part of urban life",
+      "explain": "\"Only a small fraction\" = limited role, dan \"a small but permanent part\" = lasting. Kata \"Yet\" menghubungkan dua bagian itu, dan judul iii merangkum keduanya. Contoh gandum dan beras hanya detail pendukung."
+    }
+  ]
+}

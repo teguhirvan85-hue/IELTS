@@ -1,0 +1,247 @@
+{
+  "id": "paraphrase",
+  "title": "Pasangan parafrase IELTS",
+  "description": "Kata yang sering muncul di teks dan diganti sinonimnya di soal. Bagian depan: kata di teks; belakang: kata yang mungkin dipakai soal, plus artinya.",
+  "cards": [
+    {
+      "front": "approximately",
+      "back": "around · roughly · about — kira-kira"
+    },
+    {
+      "front": "decline (v/n)",
+      "back": "decrease · fall · drop — menurun"
+    },
+    {
+      "front": "significant",
+      "back": "considerable · substantial · major — besar, berarti"
+    },
+    {
+      "front": "prohibit",
+      "back": "ban · forbid · not allow — melarang"
+    },
+    {
+      "front": "obtain",
+      "back": "get · acquire · gain — memperoleh"
+    },
+    {
+      "front": "inexpensive",
+      "back": "cheap · low-cost · affordable — murah"
+    },
+    {
+      "front": "the elderly",
+      "back": "older people · senior citizens — lansia"
+    },
+    {
+      "front": "residents",
+      "back": "inhabitants · locals · people who live there — penduduk"
+    },
+    {
+      "front": "benefit",
+      "back": "advantage · gain · plus — manfaat"
+    },
+    {
+      "front": "drawback",
+      "back": "disadvantage · downside · problem — kekurangan"
+    },
+    {
+      "front": "rapid",
+      "back": "fast · quick · swift — cepat"
+    },
+    {
+      "front": "gradually",
+      "back": "slowly · little by little · over time — bertahap"
+    },
+    {
+      "front": "reluctant",
+      "back": "unwilling · hesitant — enggan"
+    },
+    {
+      "front": "crucial",
+      "back": "essential · vital · key — sangat penting"
+    },
+    {
+      "front": "abandon",
+      "back": "give up · leave · stop using — meninggalkan, menghentikan"
+    },
+    {
+      "front": "accurate",
+      "back": "precise · exact · correct — akurat"
+    },
+    {
+      "front": "adequate",
+      "back": "sufficient · enough — memadai"
+    },
+    {
+      "front": "anticipate",
+      "back": "expect · predict · foresee — memperkirakan"
+    },
+    {
+      "front": "attempt",
+      "back": "try · effort — mencoba, usaha"
+    },
+    {
+      "front": "cease",
+      "back": "stop · end · come to an end — berhenti"
+    },
+    {
+      "front": "consume",
+      "back": "use · eat · use up — mengonsumsi, memakai"
+    },
+    {
+      "front": "demonstrate",
+      "back": "show · prove · illustrate — menunjukkan"
+    },
+    {
+      "front": "diminish",
+      "back": "reduce · lessen · shrink — berkurang"
+    },
+    {
+      "front": "emerge",
+      "back": "appear · come out · develop — muncul"
+    },
+    {
+      "front": "enhance",
+      "back": "improve · boost · increase — meningkatkan"
+    },
+    {
+      "front": "evidence",
+      "back": "proof · data · signs — bukti"
+    },
+    {
+      "front": "expand",
+      "back": "grow · increase · extend — berkembang, meluas"
+    },
+    {
+      "front": "feasible",
+      "back": "possible · practical · workable — dapat dilakukan"
+    },
+    {
+      "front": "frequently",
+      "back": "often · regularly · many times — sering"
+    },
+    {
+      "front": "hazard",
+      "back": "danger · risk · threat — bahaya"
+    },
+    {
+      "front": "impact",
+      "back": "effect · influence · consequence — dampak"
+    },
+    {
+      "front": "initially",
+      "back": "at first · originally · in the beginning — awalnya"
+    },
+    {
+      "front": "insufficient",
+      "back": "not enough · inadequate · lacking — tidak cukup"
+    },
+    {
+      "front": "maintain",
+      "back": "keep · preserve · continue — mempertahankan, merawat"
+    },
+    {
+      "front": "negligible",
+      "back": "very small · minor · tiny — sangat kecil, bisa diabaikan"
+    },
+    {
+      "front": "numerous",
+      "back": "many · a large number of · countless — banyak"
+    },
+    {
+      "front": "obsolete",
+      "back": "out of date · no longer used — usang"
+    },
+    {
+      "front": "occupation",
+      "back": "job · profession · work — pekerjaan"
+    },
+    {
+      "front": "originate",
+      "back": "come from · begin · start — berasal"
+    },
+    {
+      "front": "predominantly",
+      "back": "mainly · mostly · largely — sebagian besar"
+    },
+    {
+      "front": "rarely",
+      "back": "seldom · hardly ever · not often — jarang"
+    },
+    {
+      "front": "regulation",
+      "back": "rule · law · restriction — peraturan"
+    },
+    {
+      "front": "remote",
+      "back": "isolated · far away · distant — terpencil"
+    },
+    {
+      "front": "require",
+      "back": "need · call for · demand — memerlukan"
+    },
+    {
+      "front": "temporary",
+      "back": "short-term · not permanent — sementara"
+    },
+    {
+      "front": "uncommon",
+      "back": "rare · unusual · not widespread — jarang ditemui"
+    },
+    {
+      "front": "vary",
+      "back": "differ · change · range — bervariasi"
+    },
+    {
+      "front": "widespread",
+      "back": "common · extensive · found in many places — meluas"
+    },
+    {
+      "front": "youngsters",
+      "back": "young people · children · teenagers — anak muda"
+    },
+    {
+      "front": "contemporary",
+      "back": "modern · present-day · current — masa kini"
+    },
+    {
+      "front": "deteriorate",
+      "back": "get worse · decline · weaken — memburuk"
+    },
+    {
+      "front": "encourage",
+      "back": "promote · motivate · support — mendorong"
+    },
+    {
+      "front": "inevitable",
+      "back": "unavoidable · certain to happen — tak terhindarkan"
+    },
+    {
+      "front": "novel (adj.)",
+      "back": "new · original · innovative — baru, inovatif"
+    },
+    {
+      "front": "take into account",
+      "back": "consider · bear in mind · allow for — mempertimbangkan"
+    },
+    {
+      "front": "in the long run",
+      "back": "eventually · over time · in the future — dalam jangka panjang"
+    },
+    {
+      "front": "a fraction of",
+      "back": "a small part of · much less than — sebagian kecil dari"
+    },
+    {
+      "front": "double (v)",
+      "back": "increase twofold · go up by 100% — menjadi dua kali lipat"
+    },
+    {
+      "front": "a third",
+      "back": "one in three · about 33% — sepertiga"
+    },
+    {
+      "front": "not until",
+      "back": "only when · only after — baru ketika"
+    }
+  ]
+}

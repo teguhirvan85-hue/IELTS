@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Helvetica, Arial, sans-serif" fill="#1C1B19">
+  <title>Fernmoor Country Park</title>
+  <rect x="0" y="0" width="640" height="440" fill="#FFFFFF"/>
+
+  <!-- park boundary -->
+  <rect x="15" y="15" width="570" height="385" rx="10" fill="#EEF2E4" stroke="#1C1B19" stroke-width="2"/>
+
+  <!-- paths: main path north from the entrance to the lake, cross path west to east -->
+  <rect x="305" y="128" width="30" height="274" fill="#D9CFBB"/>
+  <rect x="40" y="235" width="505" height="25" fill="#D9CFBB"/>
+
+  <!-- lake -->
+  <ellipse cx="320" cy="82" rx="130" ry="50" fill="#CFE3EE" stroke="#1C1B19" stroke-width="1.5"/>
+  <text x="320" y="88" font-size="16" text-anchor="middle">Lake</text>
+
+  <!-- woodland -->
+  <rect x="495" y="30" width="80" height="185" rx="8" fill="#DCE8D0" stroke="#1C1B19" stroke-width="1.5"/>
+  <g fill="#C2D6B2" stroke="#1C1B19" stroke-width="1">
+    <circle cx="515" cy="52" r="10"/>
+    <circle cx="552" cy="60" r="11"/>
+    <circle cx="530" cy="88" r="10"/>
+    <circle cx="518" cy="160" r="10"/>
+    <circle cx="554" cy="170" r="11"/>
+    <circle cx="535" cy="196" r="9"/>
+  </g>
+  <text x="535" y="129" font-size="14" text-anchor="middle">Woodland</text>
+
+  <!-- playground -->
+  <rect x="60" y="140" width="120" height="75" rx="6" fill="#F4E4E1" stroke="#1C1B19" stroke-width="1.5"/>
+  <text x="120" y="182" font-size="14" text-anchor="middle">Playground</text>
+
+  <!-- picnic area -->
+  <rect x="395" y="150" width="85" height="65" rx="6" fill="#F6F0D8" stroke="#1C1B19" stroke-width="1.5"/>
+  <text x="437" y="178" font-size="14" text-anchor="middle">Picnic</text>
+  <text x="437" y="196" font-size="14" text-anchor="middle">area</text>
+
+  <!-- car park -->
+  <rect x="40" y="290" width="150" height="95" fill="#E8E8E6" stroke="#1C1B19" stroke-width="1.5"/>
+  <g stroke="#1C1B19" stroke-width="1">
+    <line x1="65" y1="290" x2="65" y2="312"/>
+    <line x1="90" y1="290" x2="90" y2="312"/>
+    <line x1="115" y1="290" x2="115" y2="312"/>
+    <line x1="140" y1="290" x2="140" y2="312"/>
+    <line x1="165" y1="290" x2="165" y2="312"/>
+  </g>
+  <text x="115" y="348" font-size="14" text-anchor="middle">Car park</text>
+
+  <!-- visitor centre -->
+  <rect x="360" y="295" width="120" height="75" fill="#F3E6CF" stroke="#1C1B19" stroke-width="2"/>
+  <text x="420" y="328" font-size="14" text-anchor="middle">Visitor</text>
+  <text x="420" y="346" font-size="14" text-anchor="middle">Centre</text>
+
+  <!-- main entrance: gate posts, arrow and label -->
+  <rect x="299" y="393" width="6" height="14" fill="#1C1B19"/>
+  <rect x="335" y="393" width="6" height="14" fill="#1C1B19"/>
+  <polygon points="313,421 320,412 327,421" fill="#1C1B19"/>
+  <text x="320" y="436" font-size="14" font-weight="bold" text-anchor="middle">Main entrance</text>
+
+  <!-- compass -->
+  <text x="612" y="32" font-size="16" font-weight="bold" text-anchor="middle">N</text>
+  <line x1="612" y1="82" x2="612" y2="48" stroke="#1C1B19" stroke-width="2"/>
+  <polygon points="605,54 612,40 619,54" fill="#1C1B19"/>
+
+  <!-- unknown places A–H -->
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <circle cx="55" cy="50" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="55" y="55">A</text>
+    <circle cx="168" cy="82" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="168" y="87">B</text>
+    <circle cx="472" cy="82" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="472" y="87">C</text>
+    <circle cx="518" cy="332" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="518" y="337">D</text>
+    <circle cx="365" cy="205" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="365" y="210">E</text>
+    <circle cx="560" cy="248" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="560" y="253">F</text>
+    <circle cx="250" cy="335" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="250" y="340">G</text>
+    <circle cx="275" cy="205" r="14" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+    <text x="275" y="210">H</text>
+  </g>
+</svg>

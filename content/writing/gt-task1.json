@@ -1,0 +1,110 @@
+[
+  {
+    "id": "gt1-01", "task": 1, "module": "general", "kind": "formal", "topic": "technology",
+    "title": "Delayed home internet installation",
+    "situation": "You recently moved to a new city for work and arranged for an internet company to install a connection in your home. The installation has now been delayed twice.",
+    "recipient": "the customer service manager",
+    "bullets": [
+      "explain why you need a reliable internet connection at home",
+      "describe what happened on the two days the installation was booked",
+      "say what you would like the company to do now"
+    ],
+    "opening": "Dear Sir or Madam,"
+  },
+  {
+    "id": "gt1-02", "task": 1, "module": "general", "kind": "semi-formal", "topic": "work",
+    "title": "Asking your manager to support a training course",
+    "situation": "You would like to attend a training course that would help you in your job, and you would like your company to pay for it.",
+    "recipient": "your manager",
+    "bullets": [
+      "describe the course you would like to attend",
+      "explain how it would help you and your team",
+      "suggest how your work could be covered while you are on the course"
+    ],
+    "opening": "Dear Ms Whitfield,"
+  },
+  {
+    "id": "gt1-03", "task": 1, "module": "general", "kind": "informal", "topic": "leisure",
+    "title": "Inviting a friend to your farewell gathering",
+    "situation": "You will soon move overseas to start a new job, and you are planning a small gathering for your friends before you leave.",
+    "recipient": "a friend",
+    "bullets": [
+      "give details of the gathering",
+      "explain why you would particularly like this friend to be there",
+      "ask your friend to help you with something for the gathering"
+    ],
+    "opening": "Dear Alex,"
+  },
+  {
+    "id": "gt1-04", "task": 1, "module": "general", "kind": "formal", "topic": "community",
+    "title": "Broken lights on a path to the station",
+    "situation": "Many people walk along a path near your home to get to the train station. For the past month, the lights along the path have not been working.",
+    "recipient": "the local council",
+    "bullets": [
+      "describe the path and the problem",
+      "explain why this is a concern for local residents",
+      "suggest what the council could do to make the path safer"
+    ],
+    "opening": "Dear Sir or Madam,"
+  },
+  {
+    "id": "gt1-05", "task": 1, "module": "general", "kind": "semi-formal", "topic": "housing",
+    "title": "Accidental damage in a rented apartment",
+    "situation": "You are renting an apartment. Last weekend you accidentally damaged something in it.",
+    "recipient": "your landlord",
+    "bullets": [
+      "describe what was damaged and how it happened",
+      "apologise for the damage",
+      "suggest how it could be repaired"
+    ],
+    "opening": "Dear Mr Pemberton,"
+  },
+  {
+    "id": "gt1-06", "task": 1, "module": "general", "kind": "informal", "topic": "travel",
+    "title": "Thanking a friend for a place to stay",
+    "situation": "Last month you stayed with a friend for a week while you attended job interviews in their city. You have just heard the results of the interviews.",
+    "recipient": "your friend",
+    "bullets": [
+      "tell your friend the results of your interviews",
+      "explain how their help made a difference to you",
+      "apologise for something you forgot to do during your stay"
+    ],
+    "opening": "Dear Dimas,"
+  },
+  {
+    "id": "gt1-07", "task": 1, "module": "general", "kind": "formal", "topic": "career",
+    "title": "Joining a professional association for IT workers",
+    "situation": "You are going to move to Australia to work in the IT industry, and you would like to join a professional association for IT workers there.",
+    "recipient": "the membership secretary of the association",
+    "bullets": [
+      "give details of your qualifications and work experience",
+      "explain why you want to join the association",
+      "ask for information about membership"
+    ],
+    "opening": "Dear Sir or Madam,"
+  },
+  {
+    "id": "gt1-08", "task": 1, "module": "general", "kind": "semi-formal", "topic": "work",
+    "title": "Replying to a new colleague before you start",
+    "situation": "You have accepted a job with a software company in another country and will start next month. A senior member of your new team has sent you an email to welcome you.",
+    "recipient": "your new colleague",
+    "bullets": [
+      "describe your experience in your current job",
+      "explain what you are looking forward to in the new job",
+      "ask some questions about your first week"
+    ],
+    "opening": "Dear Mr Gallagher,"
+  },
+  {
+    "id": "gt1-09", "task": 1, "module": "general", "kind": "informal", "topic": "lifestyle",
+    "title": "Advice for a friend moving to your city",
+    "situation": "A friend from your home country has been offered a job in the city where you now live and has asked for your advice about moving there.",
+    "recipient": "your friend",
+    "bullets": [
+      "describe what everyday life is like in the city",
+      "suggest how your friend could find somewhere to live",
+      "say how you could help when your friend arrives"
+    ],
+    "opening": "Dear Rina,"
+  }
+]

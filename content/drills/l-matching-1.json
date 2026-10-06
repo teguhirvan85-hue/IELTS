@@ -1,0 +1,70 @@
+{
+  "id": "l-matching-1",
+  "lesson": "l-matching",
+  "skill": "listening",
+  "title": "Activities at a summer camp",
+  "minutes": 5,
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear the manager of an outdoor activity centre talking to parents about a children's summer camp. First, you have some time to look at questions 1 to 5." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 5." },
+    { "speaker": "Manager", "voice": "Moira", "text": "Good evening, everyone, and thank you for coming. I'm Fiona, and I run the summer camp here at Wrenfold. I'd like to go through the main activities for next week, because a few things have changed since we sent out the programme." },
+    { "speaker": "Manager", "voice": "Moira", "text": "Let's start with kayaking, which is on Monday and Wednesday mornings. Several of you have asked whether the children need their own wetsuits. They don't, we have plenty in every size." },
+    { "speaker": "Manager", "voice": "Moira", "text": "What I can't promise is that every session will go ahead. If the wind picks up, the lake gets far too rough for beginners, and we simply won't be able to take the children out." },
+    { "speaker": "Manager", "voice": "Moira", "text": "Next, rock climbing. That's on our indoor wall, so rain won't stop it. Now, the programme says climbing is open to everyone, but our insurance rules have changed, and this year it's only for children aged twelve and over." },
+    { "speaker": "Manager", "voice": "Moira", "text": "The younger ones will do a treasure hunt in the grounds instead, and they usually love that." },
+    { "speaker": "Manager", "voice": "Moira", "text": "On Tuesday afternoon there's orienteering in the forest. The children work in small teams with a map and compass to find markers. To be honest, it isn't the children's favourite, because some of them find the maps tricky." },
+    { "speaker": "Manager", "voice": "Moira", "text": "But mums and dads are very welcome to join their child's team for this one, so do come along if you're free that afternoon." },
+    { "speaker": "Manager", "voice": "Moira", "text": "Then there's archery. People often assume it's included in the camp fee, but because we bring in a specialist coach, there's an extra charge of twelve pounds per child. The bows and arrows are all provided, of course." },
+    { "speaker": "Manager", "voice": "Moira", "text": "Finally, the night walk. The programme says Thursday, but we've moved it to Friday, because there'll be a full moon and the children will be able to see much better." },
+    { "speaker": "Manager", "voice": "Moira", "text": "We'll give everyone a torch, so they don't need to bring anything. If you have any questions, I'll be around afterwards with tea and biscuits." }
+  ],
+  "instruction": "What does the speaker say about each of the following activities? Choose FIVE answers from the box and write the correct letter, A–G, next to questions 1–5.",
+  "input": "choice",
+  "optionsTitle": "Comments",
+  "options": [
+    { "key": "A", "text": "It is now limited to older children." },
+    { "key": "B", "text": "It will take place on a different day from the one planned." },
+    { "key": "C", "text": "Children need to bring their own equipment." },
+    { "key": "D", "text": "It is the activity that children enjoy most." },
+    { "key": "E", "text": "It may not happen if the weather is bad." },
+    { "key": "F", "text": "There is an additional fee for it." },
+    { "key": "G", "text": "Parents are invited to take part." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Kayaking",
+      "answer": "E",
+      "evidence": "If the wind picks up, the lake gets far too rough for beginners, and we simply won't be able to take the children out.",
+      "explain": "\"Wind\" dan \"too rough\" = cuaca buruk, \"won't be able to take the children out\" = kegiatannya tidak jalan. C jebakan: wetsuit disebut, tapi anak-anak tidak perlu membawa sendiri (\"They don't, we have plenty\")."
+    },
+    {
+      "n": 2,
+      "prompt": "Rock climbing",
+      "answer": "A",
+      "evidence": "this year it's only for children aged twelve and over",
+      "explain": "Program lama bilang terbuka untuk semua, tapi aturannya berubah: \"only for children aged twelve and over\" = limited to older children. E jebakan: cuaca tidak berpengaruh karena dindingnya di dalam ruangan (\"rain won't stop it\"). \"They usually love that\" membicarakan treasure hunt untuk anak yang lebih kecil, bukan rock climbing, jadi bukan D."
+    },
+    {
+      "n": 3,
+      "prompt": "Orienteering",
+      "answer": "G",
+      "evidence": "mums and dads are very welcome to join their child's team for this one",
+      "explain": "\"Mums and dads … welcome to join\" = orang tua diundang ikut serta. D jebakan: kata \"favourite\" memang muncul, tapi dalam kalimat negatif (\"it isn't the children's favourite\")."
+    },
+    {
+      "n": 4,
+      "prompt": "Archery",
+      "answer": "F",
+      "evidence": "there's an extra charge of twelve pounds per child",
+      "explain": "\"Extra charge\" = additional fee. Kalimat \"People often assume it's included in the camp fee\" adalah anggapan yang langsung dibantah dengan \"but\". C juga salah: busur dan anak panah disediakan (\"all provided\")."
+    },
+    {
+      "n": 5,
+      "prompt": "Night walk",
+      "answer": "B",
+      "evidence": "The programme says Thursday, but we've moved it to Friday",
+      "explain": "Pembicara mengoreksi jadwal di program: Kamis dipindah ke Jumat = a different day from the one planned. C jebakan lagi: senter dibagikan, jadi anak-anak \"don't need to bring anything\"."
+    }
+  ]
+}

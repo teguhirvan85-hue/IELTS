@@ -1,0 +1,81 @@
+{
+  "id": "completion-2",
+  "lesson": "completion",
+  "skill": "reading",
+  "title": "Making room for rain",
+  "minutes": 7,
+  "passage": {
+    "title": "Making Room for Rain",
+    "paragraphs": [
+      {
+        "text": "In most modern cities, rain has nowhere to go. Roofs, roads and car parks cover so much of the ground that water cannot soak into the soil, and instead it rushes into drains. During a heavy storm these drains can quickly become overloaded, and the result is flooding in streets and basements. The traditional solution has been to build ever larger underground pipes, an approach that is extremely expensive and often simply moves the problem further downstream."
+      },
+      {
+        "text": "A growing number of urban planners now favour a different idea, sometimes described as the 'sponge city'. Instead of removing rainwater as fast as possible, the aim is to slow it down and let the ground absorb it close to where it falls. Planted areas known as rain gardens are built slightly lower than the surrounding pavement, so that water flows into them during a storm and soaks away over the following day. Roads and car parks can be surfaced with permeable paving, which has narrow gaps that let water pass through to a layer of gravel below."
+      },
+      {
+        "text": "Supporters of the approach point to several benefits beyond flood control. Water that passes through soil is naturally filtered, so less oil and rubbish from the streets reaches rivers. Rain gardens also provide a habitat for insects and birds, and most residents find them far more attractive than concrete. Because more water is stored in the ground, trees and other plants nearby are better able to survive long dry periods."
+      },
+      {
+        "text": "There are, however, practical difficulties. Permeable paving must be cleaned regularly, because fine dirt gradually blocks the gaps, and many local authorities have not budgeted for this work. In areas with heavy clay soils, water drains away very slowly, which limits how much rain the ground can hold. Engineers also warn that green features cannot cope with the most extreme storms on their own, so most cities will still need conventional drainage as a back-up."
+      },
+      {
+        "text": "Despite these limits, the financial case is strong. One mid-sized city that replaced a planned storm pipe with a network of rain gardens and permeable streets estimated that it had saved nearly half of the original budget, while also creating several new green spaces for residents."
+      }
+    ]
+  },
+  "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+  "input": "text",
+  "wordLimit": 2,
+  "context": {
+    "kind": "summary",
+    "title": "Sponge cities",
+    "lines": [
+      "In most cities, roofs and roads stop rain from soaking into the [[1]], so drains are easily overloaded during heavy storms. The usual answer, building bigger [[2]], is very expensive and often just moves the flooding downstream.",
+      "Supporters of the 'sponge city' prefer to let rain sink in close to where it falls. Sunken beds of plants called [[3]] fill with water during storms, and because the water is filtered by soil, less oil and [[4]] end up in rivers.",
+      "The method also has drawbacks. Permeable paving has to be cleaned often, since [[5]] slowly blocks its gaps, and in heavy clay soils water drains away [[6]]."
+    ]
+  },
+  "questions": [
+    {
+      "n": 1,
+      "answer": "soil",
+      "accept": ["ground"],
+      "evidence": "Roofs, roads and car parks cover so much of the ground that water cannot soak into the soil",
+      "explain": "\"Soaking into the ___\" butuh kata benda. Teks: \"cannot soak into the soil\". \"Ground\" juga diterima karena ada di teks dengan makna yang sama. Jangan tulis \"the soil\": kata \"the\" sudah ada di ringkasan."
+    },
+    {
+      "n": 2,
+      "answer": "underground pipes",
+      "accept": ["pipes"],
+      "evidence": "The traditional solution has been to build ever larger underground pipes, an approach that is extremely expensive",
+      "explain": "\"The traditional solution\" = the usual answer, \"ever larger\" = bigger. \"Pipes\" saja juga benar. Jebakannya \"drains\": kata itu ada di paragraf yang sama, tapi yang dibangun makin besar adalah pipanya."
+    },
+    {
+      "n": 3,
+      "answer": "rain gardens",
+      "evidence": "Planted areas known as rain gardens are built slightly lower than the surrounding pavement",
+      "explain": "\"Built slightly lower than the surrounding pavement\" = sunken. Tulis dua kata \"rain gardens\": \"gardens\" saja kehilangan maknanya, dan bentuk jamak harus cocok dengan kata kerja \"fill\"."
+    },
+    {
+      "n": 4,
+      "answer": "rubbish",
+      "evidence": "Water that passes through soil is naturally filtered, so less oil and rubbish from the streets reaches rivers",
+      "explain": "\"Less oil and ___\" butuh kata benda yang sejajar dengan \"oil\". \"Reaches rivers\" = end up in rivers. \"Rubbish from the streets\" terlalu panjang (empat kata), jadi tulis \"rubbish\" saja."
+    },
+    {
+      "n": 5,
+      "answer": "fine dirt",
+      "accept": ["dirt"],
+      "evidence": "Permeable paving must be cleaned regularly, because fine dirt gradually blocks the gaps",
+      "explain": "\"Since ___ slowly blocks\" butuh subjek tunggal. \"Gradually\" = slowly, \"cleaned regularly\" = cleaned often. \"Fine dirt\" dan \"dirt\" sama-sama benar."
+    },
+    {
+      "n": 6,
+      "answer": "very slowly",
+      "accept": ["slowly"],
+      "evidence": "In areas with heavy clay soils, water drains away very slowly",
+      "explain": "Setelah \"drains away\" dibutuhkan kata keterangan (adverb), bukan kata benda. \"Very slowly\" dan \"slowly\" sama-sama memenuhi batas dua kata."
+    }
+  ]
+}

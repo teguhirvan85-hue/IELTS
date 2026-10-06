@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Catat tes · IELTS Coach</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+</head>
+<body>
+<nav class="appnav" aria-label="Navigasi" data-page="log"></nav>
+<main class="wrap">
+
+  <header class="top">
+    <div>
+      <p class="eyebrow">Catat hasil</p>
+      <h1 id="page-title">Catat tes</h1>
+      <p class="sub">Tempel link tes engnovate yang baru kamu kerjakan. Grup soal dan tipenya terisi otomatis, jadi kamu tinggal klik nomor yang salah.</p>
+    </div>
+  </header>
+
+  <section class="card" id="source-card">
+    <div class="card-head">
+      <div>
+        <h2>1 · Tes yang dikerjakan</h2>
+        <p class="card-note">Link-nya ada di address bar saat tes engnovate terbuka. Link "Practice Section" juga bisa.</p>
+      </div>
+    </div>
+    <form class="fetch-row" id="fetch-form">
+      <input class="tf mono" name="url" type="url" inputmode="url" autocomplete="off" placeholder="https://engnovate.com/ielts-reading-tests/…" aria-label="Link tes engnovate" required>
+      <button class="btn primary" type="submit">Ambil</button>
+    </form>
+    <div class="fetch-foot">
+      <p class="hint" id="fetch-status" role="status"></p>
+      <div class="controls">
+        <button class="link-btn" type="button" id="refresh-btn" hidden>Muat ulang dari engnovate</button>
+        <button class="link-btn" type="button" id="manual-btn">Isi manual tanpa link</button>
+      </div>
+    </div>
+  </section>
+
+  <form id="attempt-form" hidden novalidate>
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h2 id="test-title"></h2>
+          <p class="card-note" id="test-meta"></p>
+        </div>
+      </div>
+      <div class="meta-grid">
+        <label class="fl wide" id="title-field" hidden>Judul tes
+          <input class="tf" name="title" maxlength="200" placeholder="contoh: Cambridge IELTS 18 Academic Reading Test 2">
+        </label>
+        <div class="fl wide" id="skill-field" hidden>Skill
+          <div class="seg" role="group" aria-label="Skill" id="skill-seg">
+            <button type="button" data-skill="listening">Listening</button>
+            <button type="button" data-skill="reading">Reading</button>
+            <button type="button" data-skill="writing">Writing</button>
+            <button type="button" data-skill="speaking">Speaking</button>
+          </div>
+        </div>
+        <label class="fl" id="module-field">Modul
+          <select class="tf" name="module">
+            <option value="academic">Academic</option>
+            <option value="general">General Training</option>
+          </select>
+        </label>
+        <label class="fl">Tanggal
+          <input class="tf" type="date" name="date" required>
+        </label>
+        <label class="fl">Durasi (menit)
+          <input class="tf" type="number" name="minutes" min="1" max="600" inputmode="numeric" placeholder="opsional">
+        </label>
+      </div>
+    </section>
+
+    <section class="card" id="objective-card">
+      <div class="card-head">
+        <div>
+          <h2>2 · Soal yang salah</h2>
+          <p class="card-note">Klik nomor yang salah atau tidak dijawab. Bisa juga diketik di kolom kanan. Part yang tidak dikerjakan, tandai "Dilewati".</p>
+        </div>
+        <label class="fl">Nomor salah
+          <input class="tf mono" id="wrong-text" autocomplete="off" placeholder="contoh: 3, 5, 12-14">
+        </label>
+      </div>
+      <div id="manual-groups" hidden>
+        <p class="hint mg-hint">Susun grup soal sesuai tes: nomor awal, nomor akhir, part, dan tipe soal.</p>
+        <div class="manual-groups" id="mg-rows"></div>
+      </div>
+      <div id="parts"></div>
+    </section>
+
+    <section class="card" id="subjective-card" hidden>
+      <div class="card-head">
+        <div>
+          <h2>2 · Skor</h2>
+          <p class="card-note">Isi band dari engnovate kalau ada. Nilai per kriteria boleh dikosongkan.</p>
+        </div>
+      </div>
+      <div class="ws-grid" id="ws-grid"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h2>3 · Catatan</h2>
+          <p class="card-note">Opsional: bagian yang terasa sulit, kehabisan waktu di mana, kata yang belum kamu kenal.</p>
+        </div>
+      </div>
+      <div class="notes-box">
+        <textarea class="tf" name="notes" rows="3" maxlength="4000" aria-label="Catatan"></textarea>
+      </div>
+    </section>
+
+    <div class="resultbar">
+      <div class="score" id="score" aria-live="polite"></div>
+      <div class="controls">
+        <p class="msg" id="save-msg" role="alert" hidden></p>
+        <a class="btn" href="/">Batal</a>
+        <button class="btn primary" type="submit">Simpan</button>
+      </div>
+    </div>
+  </form>
+</main>
+<script type="module" src="/log.js"></script>
+</body>
+</html>

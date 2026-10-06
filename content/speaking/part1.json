@@ -1,0 +1,134 @@
+[
+  {
+    "id": "p1-01",
+    "topic": "Work or studies",
+    "questions": [
+      "What do you do?",
+      "Why did you choose this kind of work?",
+      "What does a typical working day look like for you?",
+      "Which part of your job do you enjoy the most?",
+      "Is there anything about your job you would like to change in the future?"
+    ]
+  },
+  {
+    "id": "p1-02",
+    "topic": "Hometown",
+    "questions": [
+      "Where is your hometown?",
+      "What is your hometown best known for?",
+      "Is it a good place for young people to live?",
+      "How has your hometown changed since you were a child?",
+      "Would you like to go back and live there one day?"
+    ]
+  },
+  {
+    "id": "p1-03",
+    "topic": "Home",
+    "questions": [
+      "Do you live in a house or an apartment?",
+      "Who do you live with?",
+      "Which room in your home do you spend the most time in?",
+      "Is there anything about your home you would like to change?",
+      "What kind of home would you like to have in the future?"
+    ]
+  },
+  {
+    "id": "p1-04",
+    "topic": "Daily routine",
+    "questions": [
+      "What time do you usually get up?",
+      "What is the busiest part of your day?",
+      "Do you do the same things every day, or does your routine change a lot?",
+      "Is your routine different at the weekend?",
+      "Would you like to change anything about your daily routine?"
+    ]
+  },
+  {
+    "id": "p1-05",
+    "topic": "Food and cooking",
+    "questions": [
+      "What kind of food do you like to eat?",
+      "How often do you cook at home?",
+      "Did anyone in your family teach you how to cook?",
+      "Do you prefer eating at home or eating out? Why?",
+      "Has your diet changed much since you were younger?"
+    ]
+  },
+  {
+    "id": "p1-06",
+    "topic": "Weather",
+    "questions": [
+      "What is the weather usually like where you live?",
+      "What kind of weather do you like best?",
+      "What do you usually do when it rains?",
+      "Do you check the weather forecast before you go out?",
+      "Does the weather ever affect your mood?"
+    ]
+  },
+  {
+    "id": "p1-07",
+    "topic": "Phones and technology",
+    "questions": [
+      "How often do you use your phone during the day?",
+      "What do you mostly use your phone for?",
+      "Do you remember your first mobile phone?",
+      "Could you manage a whole day without your phone?",
+      "Do you think you spend too much time on your phone?"
+    ]
+  },
+  {
+    "id": "p1-08",
+    "topic": "Sport and exercise",
+    "questions": [
+      "Do you do any kind of exercise?",
+      "Did you play any sports when you were at school?",
+      "Do you prefer exercising alone or with other people?",
+      "Is it easy for you to find time for exercise during the week?",
+      "Is there a sport you would like to try in the future?"
+    ]
+  },
+  {
+    "id": "p1-09",
+    "topic": "Travel and holidays",
+    "questions": [
+      "Do you like travelling?",
+      "How do you usually spend your holidays?",
+      "Where did you go on your last trip?",
+      "Do you like to plan your trips carefully, or do you prefer to decide things as you go?",
+      "Is there a place you would really like to visit one day?"
+    ]
+  },
+  {
+    "id": "p1-10",
+    "topic": "Friends",
+    "questions": [
+      "Do you have a lot of friends, or just a few close ones?",
+      "How often do you see your friends?",
+      "What do you usually do when you get together?",
+      "Are you still in touch with any friends from school?",
+      "In your opinion, what makes someone a good friend?"
+    ]
+  },
+  {
+    "id": "p1-11",
+    "topic": "Weekends",
+    "questions": [
+      "How do you usually spend your weekends?",
+      "Do you prefer to stay at home or go out at the weekend?",
+      "What did you do last weekend?",
+      "Do you ever have to work at the weekend?",
+      "Are weekends more important to you now than they were when you were younger?"
+    ]
+  },
+  {
+    "id": "p1-12",
+    "topic": "Learning English",
+    "questions": [
+      "How long have you been learning English?",
+      "Do you use English in your daily life?",
+      "What do you find most difficult about learning English?",
+      "What is your favourite way to practise your English?",
+      "Are there any other languages you would like to learn?"
+    ]
+  }
+]

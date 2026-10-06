@@ -1,0 +1,79 @@
+{
+  "id": "endings-1",
+  "lesson": "endings",
+  "skill": "reading",
+  "title": "Cooling the city with trees",
+  "minutes": 7,
+  "passage": {
+    "title": "Cooling the City with Trees",
+    "paragraphs": [
+      {
+        "text": "On a hot summer afternoon, the centre of a large city can be several degrees warmer than the countryside around it. This effect, known as the urban heat island, occurs because roads, roofs and pavements absorb sunlight during the day and release it slowly after dark. As a result, city streets often stay uncomfortably warm long into the night, when the human body most needs to cool down and rest."
+      },
+      {
+        "text": "Trees reduce this heat in two ways. Their leaves block sunlight before it reaches the ground, so a shaded pavement can be far cooler than one in full sun. Trees also draw water from the soil and release it through their leaves as vapour, a process that takes heat from the surrounding air. This is why a park often feels noticeably fresher than the streets beside it, even when there is no wind."
+      },
+      {
+        "text": "Not every tree is equally useful, however. Species with wide, dense crowns provide the most shade, but they also need more space for their roots, which can damage pipes and lift paving stones. Researchers in one Australian city found that trees planted in narrow pits beneath the pavement often died within a few years, because their roots could not reach enough water. As a result, planners increasingly choose species to suit the conditions of each street rather than for their appearance alone."
+      },
+      {
+        "text": "Where trees are planted also matters. A study of several neighbourhoods in a mid-sized European city showed that a row of trees along a busy road lowered temperatures for pedestrians far more than the same number of trees grouped together in a distant park. The researchers concluded that the greatest benefit comes from shade over the places where people actually walk and wait, such as bus stops and school entrances."
+      },
+      {
+        "text": "Paying for urban trees has long been a problem for local councils. A young tree is cheap to buy, but it needs regular watering for its first three summers, and many newly planted trees die simply because nobody takes responsibility for this task. Some cities now invite residents to adopt a tree outside their home and water it during dry spells. Early results suggest that adopted trees are far more likely to survive than those left to council staff alone."
+      },
+      {
+        "text": "Critics argue that trees cannot solve the problem on their own. Even a city with generous tree cover will still overheat if its buildings are poorly designed, and in some dry regions there is simply not enough water to keep large trees alive. Most experts agree, however, that trees remain one of the cheapest ways of making cities more comfortable as summers become hotter."
+      }
+    ]
+  },
+  "instruction": "Complete each sentence with the correct ending, A–G, below.",
+  "input": "choice",
+  "optionsTitle": "Sentence endings",
+  "options": [
+    { "key": "A", "text": "has a better chance of surviving than one looked after only by council workers." },
+    { "key": "B", "text": "can break pipes and push up paving stones with their roots." },
+    { "key": "C", "text": "its trees release water vapour that cools the air." },
+    { "key": "D", "text": "hard surfaces give out at night the heat they took in during the day." },
+    { "key": "E", "text": "in some regions there is not enough water to keep large trees alive." },
+    { "key": "F", "text": "had a greater cooling effect on people on foot than an equal number of trees in a park." },
+    { "key": "G", "text": "tended to die young because they were short of water." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "City streets often stay warm long after sunset because…",
+      "answer": "D",
+      "evidence": "roads, roofs and pavements absorb sunlight during the day and release it slowly after dark",
+      "explain": "Setelah \"because\" dibutuhkan klausa lengkap, jadi hanya C, D dan E yang mungkin. \"Hard surfaces\" = roads, roofs and pavements, \"took in during the day\" = absorb during the day, \"give out at night\" = release after dark. E memang ada di teks, tapi tentang daerah kering, bukan alasan jalanan tetap panas."
+    },
+    {
+      "n": 2,
+      "prompt": "Even on a day with no wind, a park can feel fresh because…",
+      "answer": "C",
+      "evidence": "release it through their leaves as vapour, a process that takes heat from the surrounding air. This is why a park often feels noticeably fresher",
+      "explain": "Lagi-lagi butuh klausa, dan kata \"its\" di C merujuk ke \"a park\". Teks: pohon melepas uap air yang \"takes heat from the surrounding air\" (= cools the air), lalu \"This is why a park often feels noticeably fresher\". D benar tentang jalanan, bukan tentang taman."
+    },
+    {
+      "n": 3,
+      "prompt": "Trees planted in narrow pits beneath the pavement…",
+      "answer": "G",
+      "evidence": "trees planted in narrow pits beneath the pavement often died within a few years, because their roots could not reach enough water",
+      "explain": "\"Died within a few years\" = tended to die young, \"could not reach enough water\" = were short of water. B adalah jebakan fakta benar: akar yang merusak pipa memang disebut di paragraf yang sama, tapi tentang spesies bertajuk lebar, bukan pohon di lubang sempit."
+    },
+    {
+      "n": 4,
+      "prompt": "In the European study, trees along a busy road…",
+      "answer": "F",
+      "evidence": "a row of trees along a busy road lowered temperatures for pedestrians far more than the same number of trees grouped together in a distant park",
+      "explain": "\"Lowered temperatures for pedestrians far more\" = had a greater cooling effect on people on foot, \"the same number of trees\" = an equal number of trees. B dan G cocok secara tata bahasa, tapi teks tidak mengatakannya tentang pohon di pinggir jalan ini."
+    },
+    {
+      "n": 5,
+      "prompt": "A young tree that a local resident has adopted…",
+      "answer": "A",
+      "evidence": "adopted trees are far more likely to survive than those left to council staff alone",
+      "explain": "Subjeknya tunggal (\"A young tree\"), jadi butuh kata kerja tunggal seperti \"has\". \"Far more likely to survive\" = has a better chance of surviving, \"left to council staff alone\" = looked after only by council workers."
+    }
+  ]
+}

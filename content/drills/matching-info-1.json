@@ -1,0 +1,108 @@
+{
+  "id": "matching-info-1",
+  "lesson": "matching-info",
+  "skill": "reading",
+  "title": "Keeping food before the fridge",
+  "minutes": 9,
+  "passage": {
+    "title": "Keeping Food Before the Fridge",
+    "paragraphs": [
+      {
+        "label": "A",
+        "text": "Fresh food begins to spoil almost as soon as it is harvested. Bacteria and moulds feed on it until it is no longer safe to eat. For most of human history there was no machine to slow this process, so communities had to find other ways of making food last through long winters and failed harvests. The solutions varied with the local climate, but they shared a single aim: to make food as unwelcoming as possible to the organisms that destroy it."
+      },
+      {
+        "label": "B",
+        "text": "Drying is probably the oldest of these techniques. In cold, windy coastal regions, fish were split open and hung on wooden racks until they became hard enough to keep for years. Salting worked on a similar principle. Salt draws moisture out of meat and fish, and few harmful organisms can grow without water. Salted fish became so valuable that it was carried by ship to markets hundreds of kilometres away."
+      },
+      {
+        "label": "C",
+        "text": "Fermentation takes the opposite approach. Instead of keeping all organisms out, it encourages helpful bacteria to grow, and these produce acids that stop harmful ones from taking hold. Cabbage packed tightly into a jar with a little salt, for instance, slowly turns sour and can then be stored for months. Unlike drying, which tends to leave food tough and bland, fermentation often creates strong new flavours that many people enjoy."
+      },
+      {
+        "label": "D",
+        "text": "Keeping food cold was much harder. In some countries, wealthy families built ice houses: deep, partly underground chambers with thick walls. In winter, workers cut blocks of ice from frozen lakes and packed them inside between layers of straw, which slowed the melting. A well-built ice house could keep ice until the following autumn, allowing its owners to serve chilled drinks and desserts in the middle of summer, a luxury few others could afford."
+      },
+      {
+        "label": "E",
+        "text": "The most important breakthrough came in the early nineteenth century, when armies needed a way to feed soldiers on long campaigns far from home. The solution was to seal cooked food in glass jars, and later in metal cans, and then heat the containers. Remarkably, nobody at the time understood why the method worked. Only decades later did scientists show that heat destroys the organisms that cause decay and that the seal keeps new ones out."
+      },
+      {
+        "label": "F",
+        "text": "Today, refrigerators and freezers have made most of these methods unnecessary in wealthy countries. Yet interest in them is growing again. Some cooks value the distinctive flavours that traditional methods produce, while others are uneasy about the large amount of electricity that cold storage consumes. Some food scientists believe combining traditional techniques with modern hygiene standards could help reduce waste, particularly where electricity supplies are unreliable."
+      }
+    ]
+  },
+  "instruction": "The reading passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F. NB You may use any letter more than once.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "A",
+      "text": "A"
+    },
+    {
+      "key": "B",
+      "text": "B"
+    },
+    {
+      "key": "C",
+      "text": "C"
+    },
+    {
+      "key": "D",
+      "text": "D"
+    },
+    {
+      "key": "E",
+      "text": "E"
+    },
+    {
+      "key": "F",
+      "text": "F"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "a reference to a method that was developed to meet a military need",
+      "answer": "E",
+      "evidence": "armies needed a way to feed soldiers on long campaigns far from home",
+      "explain": "\"Armies needed a way to feed soldiers\" = a military need, dan metode yang lahir dari kebutuhan itu adalah pengalengan. Ini hanya satu frasa di awal paragraf E: contoh khas detail yang dicari tipe soal ini."
+    },
+    {
+      "n": 2,
+      "prompt": "an explanation of why removing moisture helps to keep food safe",
+      "answer": "B",
+      "evidence": "Salt draws moisture out of meat and fish, and few harmful organisms can grow without water",
+      "explain": "Soal meminta explanation (sebab). Paragraf B memberinya: garam menarik air (\"draws moisture out\"), dan organisme berbahaya sulit tumbuh tanpa air. Paragraf A juga membahas organisme perusak, tapi tidak menyebut air atau kelembapan."
+    },
+    {
+      "n": 3,
+      "prompt": "a description of how ice was prevented from melting quickly",
+      "answer": "D",
+      "evidence": "packed them inside between layers of straw, which slowed the melting",
+      "explain": "\"Between layers of straw, which slowed the melting\" = cara mencegah es cepat mencair. Kata \"slowed\" di teks sepadan dengan \"prevented from melting quickly\" di soal."
+    },
+    {
+      "n": 4,
+      "prompt": "a comparison of how two methods affect the taste of food",
+      "answer": "C",
+      "evidence": "Unlike drying, which tends to leave food tough and bland, fermentation often creates strong new flavours",
+      "explain": "\"Unlike\" menandai perbandingan dua metode (drying dan fermentation), dan \"bland\" serta \"flavours\" berkaitan dengan rasa. Paragraf F juga menyebut \"flavours\", tapi tidak membandingkan dua metode."
+    },
+    {
+      "n": 5,
+      "prompt": "an example of a technique that was used before anyone knew why it was effective",
+      "answer": "E",
+      "evidence": "Remarkably, nobody at the time understood why the method worked.",
+      "explain": "\"Nobody at the time understood why the method worked\" = digunakan sebelum ada yang tahu mengapa metode itu berhasil. Ini jawaban kedua untuk E: dengan NB, huruf yang sama memang boleh dipakai lagi."
+    },
+    {
+      "n": 6,
+      "prompt": "a mention of a concern about energy use",
+      "answer": "F",
+      "evidence": "others are uneasy about the large amount of electricity that cold storage consumes",
+      "explain": "\"Uneasy\" = concern, dan \"the large amount of electricity\" = energy use. Paragraf A tidak dipakai di set ini: pengantar yang umum sering tidak memuat detail yang ditanya."
+    }
+  ]
+}

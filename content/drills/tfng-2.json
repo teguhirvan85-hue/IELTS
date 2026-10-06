@@ -1,0 +1,94 @@
+{
+  "id": "tfng-2",
+  "lesson": "tfng",
+  "skill": "reading",
+  "title": "Wild neighbours in the city",
+  "minutes": 8,
+  "passage": {
+    "title": "Wild Neighbours: How Animals Adapt to City Life",
+    "paragraphs": [
+      {
+        "text": "For a long time, cities were thought of as places where wildlife could not survive, apart from a few pests such as rats and pigeons. Over the past few decades, however, ecologists have recorded a surprising variety of wild animals living alongside people in towns, from foxes and hedgehogs to falcons nesting on tall buildings. Some species have not merely survived in urban areas but appear to be changing their behaviour in response to them."
+      },
+      {
+        "text": "Noise offers one of the clearest examples. Researchers studying songbirds in several European cities found that birds living near busy roads tended to sing at a higher pitch than birds of the same species in quiet forests. The low rumble of traffic makes deep notes hard to hear, so a higher song is more likely to reach a potential mate. Some city birds have also started singing earlier in the morning, before the roads fill with cars."
+      },
+      {
+        "text": "Food is another reason why many animals move into towns. Rubbish bins, bird feeders and discarded takeaway meals provide a reliable supply of calories all year round. One long-term study of urban foxes found that they travelled much shorter distances each night than foxes in the countryside, because they could find enough to eat within a few streets. Easy meals come at a price, however. Processed human food may be less nutritious than natural prey, and animals that gather at the same feeding sites can pass diseases to one another more easily."
+      },
+      {
+        "text": "Tall buildings can also imitate natural habitats. Peregrine falcons, which traditionally nest on cliff ledges, now breed on church towers and office blocks in many large cities, where they hunt the plentiful pigeons. In some places, building managers have even installed nesting boxes on rooftops to encourage them to stay."
+      },
+      {
+        "text": "Not every resident welcomes these new neighbours. Gulls that snatch food from people's hands and foxes that dig up gardens lead to a steady stream of complaints to local councils. Ecologists argue that such conflict is often a sign that animals have become too dependent on people, and they recommend that residents stop feeding wildlife deliberately rather than trying to remove the animals. How to plan cities that support wildlife while keeping these problems to a minimum is likely to become an important question for urban designers."
+      }
+    ]
+  },
+  "instruction": "Do the following statements agree with the information given in the passage? Choose TRUE, FALSE or NOT GIVEN.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "TRUE",
+      "text": "TRUE"
+    },
+    {
+      "key": "FALSE",
+      "text": "FALSE"
+    },
+    {
+      "key": "NOT GIVEN",
+      "text": "NOT GIVEN"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "In the past, it was widely believed that very few kinds of wild animal could live in cities.",
+      "answer": "TRUE",
+      "evidence": "cities were thought of as places where wildlife could not survive, apart from a few pests such as rats and pigeons",
+      "explain": "\"Were thought of as places where wildlife could not survive\" = dulu orang percaya kota tidak cocok untuk satwa liar, dan \"apart from a few pests\" berarti hanya sedikit jenis yang bisa hidup. \"For a long time\" sepadan dengan \"in the past\": TRUE."
+    },
+    {
+      "n": 2,
+      "prompt": "Birds living near busy roads sing at a lower pitch than birds of the same species in forests.",
+      "answer": "FALSE",
+      "evidence": "birds living near busy roads tended to sing at a higher pitch than birds of the same species in quiet forests",
+      "explain": "Teks bilang burung di dekat jalan ramai bernyanyi dengan nada lebih tinggi (\"a higher pitch\"). Pernyataan memakai \"lower\", kebalikannya: FALSE. Hampir semua kata lain sama persis, jadi satu kata perbandingan inilah yang menentukan."
+    },
+    {
+      "n": 3,
+      "prompt": "Traffic noise has caused a fall in the number of songbirds in cities.",
+      "answer": "NOT GIVEN",
+      "evidence": null,
+      "explain": "Paragraf ini membahas bagaimana burung mengubah cara bernyanyi, bukan apakah jumlah burung kicau berkurang. Kebisingan memang disebut, tapi tidak ada informasi tentang populasi. Ini juga jebakan sebab-akibat: NOT GIVEN."
+    },
+    {
+      "n": 4,
+      "prompt": "One study found that foxes in cities cover less ground at night than those in the countryside.",
+      "answer": "TRUE",
+      "evidence": "they travelled much shorter distances each night than foxes in the countryside",
+      "explain": "\"Travelled much shorter distances each night\" = cover less ground at night, dan \"one long-term study\" di teks sepadan dengan \"one study\". Maknanya sama: TRUE."
+    },
+    {
+      "n": 5,
+      "prompt": "Animals that feed at the same site are less likely to spread disease to each other.",
+      "answer": "FALSE",
+      "evidence": "animals that gather at the same feeding sites can pass diseases to one another more easily",
+      "explain": "Teks bilang hewan yang berkumpul di tempat makan yang sama justru lebih mudah menularkan penyakit (\"more easily\"). Pernyataan bilang \"less likely\", bertentangan dengan teks: FALSE."
+    },
+    {
+      "n": 6,
+      "prompt": "Peregrine falcons that nest on buildings raise more young than those that nest on cliffs.",
+      "answer": "NOT GIVEN",
+      "evidence": "now breed on church towers and office blocks in many large cities",
+      "explain": "Teks hanya bilang falcon kini berkembang biak (\"breed\") di menara dan gedung kantor. Jumlah anak dan perbandingan dengan yang bersarang di tebing tidak disebut. Topiknya punya \"lokasi\", tapi detail yang ditanya tidak ada: NOT GIVEN."
+    },
+    {
+      "n": 7,
+      "prompt": "Ecologists recommend removing animals that cause problems for residents.",
+      "answer": "FALSE",
+      "evidence": "they recommend that residents stop feeding wildlife deliberately rather than trying to remove the animals",
+      "explain": "Ahli ekologi menyarankan berhenti memberi makan satwa \"rather than trying to remove the animals\", artinya justru bukan memindahkan hewannya. Kata \"remove\" memang ada di teks, tapi maknanya dibalik oleh \"rather than\": FALSE."
+    }
+  ]
+}

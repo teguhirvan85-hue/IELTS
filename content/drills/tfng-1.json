@@ -1,0 +1,84 @@
+{
+  "id": "tfng-1",
+  "lesson": "tfng",
+  "skill": "reading",
+  "title": "The return of the night train",
+  "minutes": 7,
+  "passage": {
+    "title": "The Return of the Night Train",
+    "paragraphs": [
+      {
+        "text": "For much of the twentieth century, overnight trains were a common way to travel between Europe's major cities. By the early 2000s, however, many routes had been cancelled. Low-cost airlines offered fares that rail operators could not match, and the ageing sleeping cars were expensive to maintain. In 2016, one of Europe's largest national railways withdrew from the night-train business altogether."
+      },
+      {
+        "text": "A smaller state operator in central Europe took a different view. It bought a number of the unwanted carriages and relaunched several routes under its own brand. Within three years, passenger numbers on these services had risen by more than a third, and the company announced plans to order new trains rather than continue refurbishing old ones."
+      },
+      {
+        "text": "Part of the renewed interest comes from travellers who want to reduce their carbon footprint. A seat on an overnight train produces only a fraction of the emissions of a short-haul flight, although exact figures depend on how the electricity powering the train is generated. Convenience matters too: a passenger who boards in the evening arrives in the city centre the next morning, avoiding the journey to an airport on the edge of town."
+      },
+      {
+        "text": "Not everyone is convinced that the revival will last. Operators point out that sleeping cars carry far fewer passengers than ordinary carriages, so tickets remain relatively expensive. Track access charges, which railways must pay to use lines in other countries, vary widely across Europe and can make some international routes difficult to run at a profit."
+      }
+    ]
+  },
+  "instruction": "Do the following statements agree with the information given in the passage? Choose TRUE, FALSE or NOT GIVEN.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "TRUE",
+      "text": "TRUE"
+    },
+    {
+      "key": "FALSE",
+      "text": "FALSE"
+    },
+    {
+      "key": "NOT GIVEN",
+      "text": "NOT GIVEN"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Cheaper air travel was one reason why many night-train routes were cancelled.",
+      "answer": "TRUE",
+      "evidence": "Low-cost airlines offered fares that rail operators could not match",
+      "explain": "\"Low-cost airlines\" = cheaper air travel, dan kalimat itu menjelaskan alasan rute dibatalkan. Maknanya sama, jadi TRUE."
+    },
+    {
+      "n": 2,
+      "prompt": "In 2016, one large national railway reduced its night-train services but kept a few routes running.",
+      "answer": "FALSE",
+      "evidence": "withdrew from the night-train business altogether",
+      "explain": "\"Withdrew … altogether\" berarti berhenti total. Pernyataan bilang masih ada beberapa rute, jadi bertentangan dengan teks: FALSE."
+    },
+    {
+      "n": 3,
+      "prompt": "The central European operator paid less for the carriages than they were worth.",
+      "answer": "NOT GIVEN",
+      "evidence": "It bought a number of the unwanted carriages",
+      "explain": "Teks hanya bilang operator itu membeli gerbong bekas. Harga atau nilainya tidak disebut sama sekali, jadi NOT GIVEN. Ini contoh soal NOT GIVEN yang tetap punya \"lokasi\" topik."
+    },
+    {
+      "n": 4,
+      "prompt": "Passenger numbers on the relaunched services grew by over 30 percent in less than four years.",
+      "answer": "TRUE",
+      "evidence": "Within three years, passenger numbers on these services had risen by more than a third",
+      "explain": "\"More than a third\" berarti lebih dari 33%, jadi pasti lebih dari 30%. \"Within three years\" berarti kurang dari empat tahun. Parafrase angka seperti ini sering muncul: TRUE."
+    },
+    {
+      "n": 5,
+      "prompt": "A night-train passenger always produces the same amount of emissions, wherever they travel.",
+      "answer": "FALSE",
+      "evidence": "exact figures depend on how the electricity powering the train is generated",
+      "explain": "Teks bilang angkanya tergantung cara listrik dihasilkan, jadi tidak selalu sama. Kata \"always\" di pernyataan bertentangan dengan teks: FALSE."
+    },
+    {
+      "n": 6,
+      "prompt": "Most passengers on night trains are travelling for business.",
+      "answer": "NOT GIVEN",
+      "evidence": null,
+      "explain": "Teks menyebut alasan orang naik kereta malam (emisi, kenyamanan), tapi tidak pernah menyebut siapa penumpangnya atau tujuan perjalanan mereka. Jangan menebak dari logika: NOT GIVEN."
+    }
+  ]
+}

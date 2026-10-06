@@ -1,0 +1,18 @@
+{
+  "name": "ielts-coach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal IELTS study companion for tests taken on engnovate.com (local)",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "check": "node scripts/check-content.js",
+    "audio": "node scripts/make-audio.js",
+    "service:start": "launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/local.ielts-coach.plist",
+    "service:stop": "launchctl bootout gui/$(id -u)/local.ielts-coach",
+    "service:restart": "launchctl kickstart -k gui/$(id -u)/local.ielts-coach",
+    "service:logs": "tail -n 80 -f ~/Library/Logs/ielts-coach/server.log",
+    "service:status": "launchctl print gui/$(id -u)/local.ielts-coach | grep -E \"^\\s*(state|pid|last exit code)\"; lsof -nP -iTCP:3232 -sTCP:LISTEN"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "matching-features-1",
+  "lesson": "matching-features",
+  "skill": "reading",
+  "title": "Is younger really better?",
+  "minutes": 8,
+  "passage": {
+    "title": "Is Younger Really Better?",
+    "paragraphs": [
+      {
+        "text": "It is widely assumed that children pick up new languages effortlessly while adults struggle. Parents pay for lessons for toddlers, and many adults never try, convinced that they have left it too late. Among researchers, however, the picture is far less simple, and there is considerable disagreement about how much age really matters."
+      },
+      {
+        "text": "Ingrid Lowell, a linguist who has tested hundreds of learners, believes that the advantage of an early start is real but narrower than most people think. In her studies, those who began learning after their mid-teens rarely sounded like native speakers. In grammar and vocabulary, however, older beginners often moved ahead of younger ones during the first year, probably because they could draw on their first language and use more deliberate strategies."
+      },
+      {
+        "text": "Samuel Okoro goes further, arguing that age itself explains very little. Many of the studies that appear to show a child advantage, he points out, compare children who have spent years surrounded by a language with adults who attend a class for two or three hours a week. 'We are not comparing like with like,' he says. In his view, the amount and quality of contact with a language matter far more than the age at which someone starts."
+      },
+      {
+        "text": "Mei Tanaka, who trains language teachers, is more interested in what happens inside the classroom. She has found that adults are often held back less by their brains than by their nerves: many are so afraid of making mistakes in front of others that they avoid speaking altogether. Tanaka therefore encourages teachers to treat errors as a normal part of learning rather than something to be corrected at once."
+      },
+      {
+        "text": "Carlos Medina has taken a different approach, following two thousand people who moved abroad at various ages. On average, those who arrived before the age of ten eventually reached a higher level than those who arrived as adults. But Medina stresses that the average hides enormous variation: a number of people who arrived in their thirties ended up more fluent than some who had arrived as children. Motivation, he suspects, explains much of this difference, although his data cannot prove it."
+      },
+      {
+        "text": "Despite their differences, the researchers agree on some practical points. Lowell warns that schools which introduce a foreign language at the age of six but offer only one short lesson a week are unlikely to see lasting results. Okoro would rather see the same money spent on fewer, more intensive courses for older pupils. And while Lowell accepts that late learners will probably keep an accent, she insists that this rarely stops them from being understood, which is, after all, the point of learning a language."
+      }
+    ]
+  },
+  "instruction": "Look at the following statements (Questions 1–6) and the list of researchers below. Match each statement with the correct researcher, A–D. NB You may use any letter more than once.",
+  "input": "choice",
+  "optionsTitle": "List of Researchers",
+  "options": [
+    {
+      "key": "A",
+      "text": "Ingrid Lowell"
+    },
+    {
+      "key": "B",
+      "text": "Samuel Okoro"
+    },
+    {
+      "key": "C",
+      "text": "Mei Tanaka"
+    },
+    {
+      "key": "D",
+      "text": "Carlos Medina"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Having a non-native accent seldom causes problems with being understood.",
+      "answer": "A",
+      "evidence": "she insists that this rarely stops them from being understood",
+      "explain": "Lowell muncul dua kali. Pendapat tentang aksen ada di paragraf terakhir: \"this rarely stops them from being understood\" = seldom causes problems with being understood. Kalau berhenti di kemunculan pertamanya, kamu hanya menemukan bahwa pembelajar yang mulai terlambat jarang terdengar seperti penutur asli."
+    },
+    {
+      "n": 2,
+      "prompt": "Anxiety, rather than biology, is often what holds adult learners back.",
+      "answer": "C",
+      "evidence": "adults are often held back less by their brains than by their nerves",
+      "explain": "\"Nerves\" = anxiety dan \"brains\" = biology. Okoro juga bilang usia tidak terlalu penting, tapi alasannya jumlah kontak dengan bahasa, bukan rasa takut. Jadi hanya Tanaka yang cocok."
+    },
+    {
+      "n": 3,
+      "prompt": "Some research gives a misleading picture because the learners being compared have had very different amounts of exposure to the language.",
+      "answer": "B",
+      "evidence": "compare children who have spent years surrounded by a language with adults who attend a class for two or three hours a week",
+      "explain": "Okoro mengkritik studi yang membandingkan anak yang bertahun-tahun dikelilingi bahasa dengan orang dewasa yang hanya belajar beberapa jam seminggu. \"Not comparing like with like\" = perbandingannya menyesatkan (\"misleading\")."
+    },
+    {
+      "n": 4,
+      "prompt": "In some areas of language, older beginners may progress faster than younger learners at first.",
+      "answer": "A",
+      "evidence": "older beginners often moved ahead of younger ones during the first year",
+      "explain": "\"During the first year\" = at first, dan \"in grammar and vocabulary\" = in some areas of language. Medina (D) juga menyebut sebagian pendatang dewasa akhirnya lebih fasih, tapi itu tentang hasil akhir (\"ended up\"), bukan tahap awal."
+    },
+    {
+      "n": 5,
+      "prompt": "Resources would be better used on a smaller number of intensive courses for older students.",
+      "answer": "B",
+      "evidence": "Okoro would rather see the same money spent on fewer, more intensive courses for older pupils",
+      "explain": "Paragraf terakhir membahas Lowell dan Okoro sekaligus. Lowell hanya mengkritik pelajaran seminggu sekali untuk anak enam tahun; usulan memakai dana (\"money\" = resources) untuk kursus yang lebih sedikit tapi intensif adalah milik Okoro."
+    },
+    {
+      "n": 6,
+      "prompt": "Teachers should regard errors as an ordinary part of learning a language.",
+      "answer": "C",
+      "evidence": "treat errors as a normal part of learning rather than something to be corrected at once",
+      "explain": "\"Treat errors as a normal part of learning\" = regard errors as an ordinary part of learning. Carlos Medina (D) tidak dipakai di set ini: dengan NB, ada nama di daftar yang memang hanya menjadi pengecoh."
+    }
+  ]
+}

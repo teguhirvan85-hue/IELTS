@@ -1,0 +1,97 @@
+{
+  "id": "mcq-1",
+  "lesson": "mcq",
+  "skill": "reading",
+  "title": "Meadows beneath the sea",
+  "minutes": 8,
+  "passage": {
+    "title": "Meadows Beneath the Sea",
+    "paragraphs": [
+      {
+        "text": "Seagrasses are often mistaken for seaweed, but they are flowering plants, more closely related to the grasses of a field than to algae. They grow in shallow coastal waters around the world, forming underwater meadows that can stretch for many kilometres. For a long time these meadows attracted little attention from scientists or the public, partly because they are hard to see from the shore and partly because they look, to the untrained eye, rather dull."
+      },
+      {
+        "text": "That view has changed considerably over the past two decades. Researchers now recognise that seagrass meadows are among the most productive habitats on Earth. They provide shelter for young fish, many of which later move out to deeper water and are caught by commercial fishing fleets. Their roots hold the sandy sea floor in place, reducing the erosion of nearby beaches during storms. Perhaps most surprisingly, the meadows store large amounts of carbon in the mud beneath them, where it can remain for centuries if the plants are left undisturbed."
+      },
+      {
+        "text": "Unfortunately, seagrass has been disappearing rapidly. The main threat is not fishing but pollution from the land: fertilisers from farms are washed into rivers and encourage the growth of tiny algae, which cloud the water and block the light that seagrass needs. Dredging for ports and the anchors of leisure boats have also torn up large areas. Once a meadow is lost, the bare sediment is easily moved by currents, which makes it difficult for new plants to settle."
+      },
+      {
+        "text": "Early attempts to restore meadows involved digging up healthy plants and replanting them elsewhere. This method was slow and expensive, and it damaged the meadows that supplied the plants. More recently, a team working along one stretch of coast in northern Europe has tried a different approach. Volunteer divers collect seeds in early summer, which are stored in tanks until autumn and then planted in small bags of sand that hold them in place on the sea floor. Thousands of seeds can be planted in a single day, and the cost per square metre is a fraction of that of transplanting adult plants."
+      },
+      {
+        "text": "The results have been encouraging but uneven. At some sites, the young plants spread quickly and formed new meadows within three years; at others, almost none survived. The team believes that water quality explains most of the difference, and it now tests the clarity of the water carefully before choosing where to plant. As one of the project's scientists put it, there is little point in planting seagrass where the conditions that destroyed the original meadow have not changed."
+      }
+    ]
+  },
+  "instruction": "Questions 1–4: Choose the correct letter, A, B, C or D. Questions 5–6: Choose TWO letters, A–E.",
+  "input": "choice",
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "According to the writer, why did seagrass meadows receive little attention in the past?",
+      "choices": [
+        { "key": "A", "text": "People believed they were a kind of seaweed." },
+        { "key": "B", "text": "They are difficult to observe from the coast." },
+        { "key": "C", "text": "They are found in only a few parts of the world." },
+        { "key": "D", "text": "They covered areas too large for scientists to study." }
+      ],
+      "answer": "B",
+      "evidence": "partly because they are hard to see from the shore",
+      "explain": "\"Hard to see from the shore\" = difficult to observe from the coast. A memang benar menurut teks (\"often mistaken for seaweed\"), tapi teks tidak menyebutnya sebagai alasan: benar, tapi tidak menjawab pertanyaan. C bertentangan dengan \"around the world\"."
+    },
+    {
+      "n": 2,
+      "prompt": "Which feature of seagrass meadows does the writer present as the most unexpected?",
+      "choices": [
+        { "key": "A", "text": "They give young fish a place to hide." },
+        { "key": "B", "text": "They help to protect beaches during storms." },
+        { "key": "C", "text": "They can keep carbon under the sea floor for a very long time." },
+        { "key": "D", "text": "They are more productive than any other habitat on Earth." }
+      ],
+      "answer": "C",
+      "evidence": "Perhaps most surprisingly, the meadows store large amounts of carbon in the mud beneath them, where it can remain for centuries",
+      "explain": "\"Most surprisingly\" = most unexpected, dan yang disebut sesudahnya adalah karbon yang tersimpan \"for centuries\". A dan B juga ada di teks, tapi bukan yang paling mengejutkan. D adalah jebakan kata ekstrem: teks hanya bilang \"among the most productive\"."
+    },
+    {
+      "n": 3,
+      "prompt": "What does the writer identify as the main cause of seagrass loss?",
+      "choices": [
+        { "key": "A", "text": "commercial fishing in coastal waters" },
+        { "key": "B", "text": "anchors dropped by leisure boats" },
+        { "key": "C", "text": "digging work to create ports" },
+        { "key": "D", "text": "farm fertilisers that make the water less clear" }
+      ],
+      "answer": "D",
+      "evidence": "The main threat is not fishing but pollution from the land: fertilisers from farms are washed into rivers and encourage the growth of tiny algae, which cloud the water and block the light that seagrass needs",
+      "explain": "\"Cloud the water\" = make the water less clear. A memakai kata \"fishing\" dari teks, padahal teks bilang \"not fishing\". B dan C memang disebut, tapi dengan kata \"also\", jadi bukan penyebab utama."
+    },
+    {
+      "n": 4,
+      "prompt": "How does the seed method differ from the earlier way of restoring meadows?",
+      "choices": [
+        { "key": "A", "text": "It costs much less for each area planted." },
+        { "key": "B", "text": "It produces plants that spread more quickly." },
+        { "key": "C", "text": "It needs fewer volunteers to carry it out." },
+        { "key": "D", "text": "It can be done at any time of the year." }
+      ],
+      "answer": "A",
+      "evidence": "the cost per square metre is a fraction of that of transplanting adult plants",
+      "explain": "\"A fraction of\" the cost \"per square metre\" = costs much less for each area planted. B memakai \"spread quickly\" dari paragraf berikutnya, tapi teks tidak membandingkannya dengan metode lama. D bertentangan: benih dikumpulkan \"in early summer\" dan baru ditanam setelah disimpan \"until autumn\"."
+    },
+    {
+      "n": [5, 6],
+      "prompt": "Which TWO statements about the northern European project are correct?",
+      "choices": [
+        { "key": "A", "text": "Most of the young plants died during their first winter." },
+        { "key": "B", "text": "The plants did better at some sites than at others." },
+        { "key": "C", "text": "New meadows formed at every site within three years." },
+        { "key": "D", "text": "The scientists have proved that poor water caused every failure." },
+        { "key": "E", "text": "The team now checks how clear the water is before planting." }
+      ],
+      "answer": ["B", "E"],
+      "evidence": "At some sites, the young plants spread quickly and formed new meadows within three years; at others, almost none survived. The team believes that water quality explains most of the difference, and it now tests the clarity of the water carefully before choosing where to plant",
+      "explain": "B = \"uneven\": berhasil di beberapa lokasi, gagal di lokasi lain. E = \"tests the clarity of the water ... before choosing where to plant\". C dan D salah karena kata ekstrem (\"every\", \"proved\"), sedangkan teks bilang \"at some sites\" dan \"believes ... most of the difference\". A tidak disebut sama sekali."
+    }
+  ]
+}

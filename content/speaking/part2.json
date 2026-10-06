@@ -1,0 +1,174 @@
+[
+  {
+    "id": "p2-01",
+    "topic": "helping others",
+    "cue": "Describe a person who helped you at an important time in your life.",
+    "bullets": ["who this person is", "when this happened", "what they did to help you"],
+    "last": "and explain why their help was so important to you.",
+    "part3": [
+      "In what ways do people in your community usually help each other?",
+      "Why do some people find it difficult to ask for help?",
+      "Do you think people are less willing to help strangers than they were in the past?",
+      "Should children learn to help others at school, or is that mainly the family's job?",
+      "What responsibility do governments have to support people who are going through hard times?"
+    ]
+  },
+  {
+    "id": "p2-02",
+    "topic": "teamwork",
+    "cue": "Describe a colleague or classmate you enjoy working with.",
+    "bullets": ["who this person is", "how long you have known them", "what kind of work you do together"],
+    "last": "and explain why you enjoy working with this person.",
+    "part3": [
+      "What makes someone a good team member?",
+      "Do you think people generally work better alone or in a team?",
+      "How important is it to be friends with the people you work with?",
+      "Why do conflicts sometimes happen between colleagues, and how should they be handled?",
+      "Have relationships at work changed now that many people work from home?",
+      "What can employers do to create a positive atmosphere in the workplace?"
+    ]
+  },
+  {
+    "id": "p2-03",
+    "topic": "cities",
+    "cue": "Describe a city you would like to live and work in one day.",
+    "bullets": ["where the city is", "how you know about it", "what kind of work you would like to do there"],
+    "last": "and explain why you would like to live and work in this city.",
+    "part3": [
+      "Why do so many young people move from small towns to big cities?",
+      "What are the advantages and disadvantages of living in a capital city?",
+      "Is it better to build a career in your own country or abroad?",
+      "What problems can arise when too many people move to the same city?",
+      "How do you think cities will change over the next twenty years?",
+      "Should governments encourage companies to open offices outside the main cities?"
+    ]
+  },
+  {
+    "id": "p2-04",
+    "topic": "quiet places",
+    "cue": "Describe a quiet place where you like to spend time.",
+    "bullets": ["where it is", "how often you go there", "what you do there"],
+    "last": "and explain why you like spending time in this place.",
+    "part3": [
+      "Why do people sometimes need to be somewhere quiet?",
+      "Is it harder to find peace and quiet in cities today than it was in the past?",
+      "How serious a problem is noise pollution in your country?",
+      "What can city planners do to create more peaceful public spaces?",
+      "Some people say we have lost the ability to be alone with our own thoughts. Do you agree?"
+    ]
+  },
+  {
+    "id": "p2-05",
+    "topic": "technology",
+    "cue": "Describe a piece of technology you use every day.",
+    "bullets": ["what it is", "when you started using it", "what you use it for"],
+    "last": "and explain how your life would be different without it.",
+    "part3": [
+      "What kinds of technology do older people in your country find difficult to use?",
+      "How has technology changed the way people work?",
+      "Do you think children today depend too much on technology?",
+      "Is it a good thing that employers can now contact their staff at any time of day?",
+      "Will new technology create more jobs than it takes away in the future?"
+    ]
+  },
+  {
+    "id": "p2-06",
+    "topic": "problem solving",
+    "cue": "Describe a time you solved a difficult problem at work or in your studies.",
+    "bullets": ["what the problem was", "when and where it happened", "how you solved it"],
+    "last": "and explain how you felt after solving it.",
+    "part3": [
+      "What kinds of problems do people most often face at work?",
+      "Is it better to solve a problem on your own or to ask others for advice?",
+      "Why do some people stay calm under pressure while others panic?",
+      "Do schools do enough to teach young people how to solve problems?",
+      "In which jobs is the ability to solve problems most important, and why?",
+      "How might artificial intelligence change the way people solve problems at work?"
+    ]
+  },
+  {
+    "id": "p2-07",
+    "topic": "celebrations",
+    "cue": "Describe a celebration that you particularly enjoyed.",
+    "bullets": ["what was being celebrated", "where and when it took place", "who was there"],
+    "last": "and explain why you enjoyed it so much.",
+    "part3": [
+      "What are the most important celebrations in your country?",
+      "Why do some families spend so much money on weddings and other celebrations?",
+      "How have the ways people celebrate changed since your grandparents' time?",
+      "What are the benefits of celebrating success at work?",
+      "Do you think traditional festivals will still matter to people in the future?"
+    ]
+  },
+  {
+    "id": "p2-08",
+    "topic": "skills",
+    "cue": "Describe a useful skill you learned after you left school.",
+    "bullets": ["what the skill is", "how and where you learned it", "whether it was difficult to learn"],
+    "last": "and explain how this skill has helped you.",
+    "part3": [
+      "What skills should young people learn before they start working?",
+      "Is it easier for children or for adults to learn new skills?",
+      "How has the internet changed the way people learn practical skills?",
+      "Should employers pay for their staff to learn new skills?",
+      "Which skills do you think will be most valuable in twenty years' time?"
+    ]
+  },
+  {
+    "id": "p2-09",
+    "topic": "health",
+    "cue": "Describe a healthy habit you have.",
+    "bullets": ["what the habit is", "when you started it", "how you manage to keep it up"],
+    "last": "and explain how this habit has affected your health.",
+    "part3": [
+      "What are some common unhealthy habits in your country?",
+      "Why do many people find it so hard to change their habits?",
+      "Are people today healthier than people were fifty years ago?",
+      "How can workplaces encourage their employees to live more healthily?",
+      "Who should be responsible for people's health: individuals or the government?",
+      "Should advertising for unhealthy food and drinks be restricted?"
+    ]
+  },
+  {
+    "id": "p2-10",
+    "topic": "the future",
+    "cue": "Describe a plan you have for the next few years.",
+    "bullets": ["what the plan is", "when you made this plan", "what you need to do to achieve it"],
+    "last": "and explain why this plan is important to you.",
+    "part3": [
+      "Do you think it is important for young people to plan their future?",
+      "Why do some people prefer not to make long-term plans?",
+      "How do people's goals tend to change as they get older?",
+      "How much should parents influence their children's choice of career?",
+      "Is the idea of having one job for life disappearing, and is that a good thing?"
+    ]
+  },
+  {
+    "id": "p2-11",
+    "topic": "decisions",
+    "cue": "Describe a time you changed your mind about something important.",
+    "bullets": ["what the decision was about", "what you had planned to do at first", "what made you change your mind"],
+    "last": "and say whether you think you made the right choice.",
+    "part3": [
+      "What kinds of decisions do young people find most difficult?",
+      "Who do people in your country usually turn to for advice before a big decision?",
+      "Is changing your mind a sign of weakness or a sign of strength?",
+      "How much does social media influence the decisions people make?",
+      "Should political leaders change their policies when public opinion changes?"
+    ]
+  },
+  {
+    "id": "p2-12",
+    "topic": "the internet",
+    "cue": "Describe a website or app that you find useful.",
+    "bullets": ["what it is and how you found out about it", "how often you use it", "what you use it for"],
+    "last": "and explain why you find it so useful.",
+    "part3": [
+      "What kinds of apps are most popular with people in your country?",
+      "Do older and younger people use the internet in different ways?",
+      "Is it a good idea for people to look for health advice online?",
+      "How can people tell whether the information they find online is reliable?",
+      "Should companies be allowed to collect data about how people use their apps?"
+    ]
+  }
+]

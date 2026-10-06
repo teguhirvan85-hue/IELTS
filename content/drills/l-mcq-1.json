@@ -1,0 +1,98 @@
+{
+  "id": "l-mcq-1",
+  "lesson": "l-mcq",
+  "skill": "listening",
+  "title": "A student project on food waste",
+  "minutes": 6,
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear two students, Nadia and Arjun, talking to their tutor about a research project on food waste. First, you have some time to look at questions 1 to 6." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 6." },
+    { "speaker": "Tutor", "voice": "Moira", "text": "Come in, both of you. So, how's the food waste project going? Remind me what got you interested in the topic." },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "Well, you did mention food waste in one of your lectures, but that wasn't really the reason. In our hall of residence we were throwing out bags of food every single week, and we wondered whether other halls were the same." },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "And we only found out later how much research there already is on food waste, so it wasn't that we'd spotted a gap." },
+    { "speaker": "Tutor", "voice": "Moira", "text": "Good. And the questionnaire? Last time you were worried that nobody would fill it in." },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "That turned out fine, actually. We got over two hundred replies, and it only took about five minutes, so people didn't give up halfway." },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "The trouble was question four. We asked how much waste people produced, and a lot of them wrote about plastic packaging instead of food. So we couldn't use those answers." },
+    { "speaker": "Tutor", "voice": "Moira", "text": "Right, so the wording wasn't clear enough. That's worth mentioning in your report. And how did you measure the waste itself?" },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "We started by asking students to keep a food diary, but most of them forgot after a couple of days." },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "Then we thought about photographing the bins, but we'd have needed special permission for that. So in the end we weighed the bins in two shared kitchens every evening for a fortnight." },
+    { "speaker": "Tutor", "voice": "Moira", "text": "Sensible. And what did you find?" },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "It came to about three kilos a day per kitchen. We were planning to compare that with the national figures." },
+    { "speaker": "Tutor", "voice": "Moira", "text": "I'd be careful there. National surveys measure family homes, not shared flats, so it isn't a fair comparison. And two kitchens is a very small sample, so present these as early findings rather than firm conclusions." },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "Should we weigh them again next term, then?" },
+    { "speaker": "Tutor", "voice": "Moira", "text": "If you have time, but it isn't necessary for this assignment. Now, what about your recommendations?" },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "I'd like to suggest cooking lessons for first-year students." },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "I'm not sure about that. The university tried them a few years ago and hardly anyone turned up." },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "Fair enough, let's leave that out. But we agree on the fridges, don't we? Labelled shelves, so everyone knows whose food is whose and uses it before it goes off." },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "Definitely, and it costs almost nothing. I'd also like some way for people to give away food they won't eat, maybe an online group, especially before the holidays." },
+    { "speaker": "Arjun", "voice": "Rishi", "text": "Yes, I'm happy with that. What about asking the campus shop to lower its prices?" },
+    { "speaker": "Nadia", "voice": "Samantha", "text": "That's not really about waste, though. And smaller portions in the canteen would be outside our project, because we only studied the halls." },
+    { "speaker": "Tutor", "voice": "Moira", "text": "I agree. Two clear recommendations are better than five weak ones." }
+  ],
+  "instruction": "Questions 1–4: Choose the correct letter, A, B or C. Questions 5 and 6: Choose TWO letters, A–E.",
+  "input": "choice",
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "What first made the students interested in food waste?",
+      "choices": [
+        { "key": "A", "text": "They saw a lot of food being wasted in their own accommodation." },
+        { "key": "B", "text": "Their tutor recommended the topic." },
+        { "key": "C", "text": "They noticed that there was little research on the subject." }
+      ],
+      "answer": "A",
+      "evidence": "In our hall of residence we were throwing out bags of food every single week",
+      "explain": "\"Hall of residence\" = accommodation, \"throwing out bags of food\" = food being wasted. B jebakan: dosen memang pernah menyebut topik ini di kuliah, tapi Nadia bilang \"that wasn't really the reason\". C dibantah Arjun: penelitiannya justru sudah banyak."
+    },
+    {
+      "n": 2,
+      "prompt": "What problem did the students have with their questionnaire?",
+      "choices": [
+        { "key": "A", "text": "Too few students returned it." },
+        { "key": "B", "text": "It took too long to complete." },
+        { "key": "C", "text": "One of the questions was misunderstood." }
+      ],
+      "answer": "C",
+      "evidence": "a lot of them wrote about plastic packaging instead of food",
+      "explain": "Banyak responden mengira \"waste\" berarti sampah plastik, padahal maksudnya makanan, jadi pertanyaan nomor empat disalahpahami. A dan B disebut tapi dibantah: lebih dari dua ratus jawaban dan hanya sekitar lima menit."
+    },
+    {
+      "n": 3,
+      "prompt": "How did the students finally measure the amount of food wasted?",
+      "choices": [
+        { "key": "A", "text": "by asking students to keep a diary" },
+        { "key": "B", "text": "by weighing bins in shared kitchens" },
+        { "key": "C", "text": "by taking photographs of the bins" }
+      ],
+      "answer": "B",
+      "evidence": "So in the end we weighed the bins in two shared kitchens every evening for a fortnight.",
+      "explain": "Kata kunci soal: \"finally\". Diary dicoba lebih dulu tapi gagal karena mahasiswa lupa, dan foto butuh izin khusus. \"In the end\" = finally: mereka menimbang tempat sampah di dua dapur bersama."
+    },
+    {
+      "n": 4,
+      "prompt": "What does the tutor say about the students' results?",
+      "choices": [
+        { "key": "A", "text": "They can be compared with national figures." },
+        { "key": "B", "text": "They should be checked again next term." },
+        { "key": "C", "text": "They are based on too small a sample to be conclusive." }
+      ],
+      "answer": "C",
+      "evidence": "two kitchens is a very small sample, so present these as early findings rather than firm conclusions",
+      "explain": "\"Early findings rather than firm conclusions\" = belum bisa disimpulkan (not conclusive). A justru ditolak dosen: \"it isn't a fair comparison\". B adalah usul Nadia, dan dosen menjawab \"it isn't necessary\"."
+    },
+    {
+      "n": [5, 6],
+      "prompt": "Which TWO recommendations will the students include in their report?",
+      "choices": [
+        { "key": "A", "text": "cooking lessons for new students" },
+        { "key": "B", "text": "clearly marked storage space in shared fridges" },
+        { "key": "C", "text": "lower prices in the campus shop" },
+        { "key": "D", "text": "a way for students to give away unwanted food" },
+        { "key": "E", "text": "smaller portions in the canteen" }
+      ],
+      "answer": ["B", "D"],
+      "evidence": "But we agree on the fridges, don't we? Labelled shelves",
+      "explain": "Kelima usul disebut, tapi hanya dua yang disetujui keduanya: rak berlabel di kulkas (\"we agree on the fridges\", \"Definitely\") dan cara memberikan makanan yang tidak akan dimakan (\"Yes, I'm happy with that\"). Kelas memasak dibatalkan (\"Fair enough, let's leave that out\"), harga toko \"not really about waste\", dan porsi kantin di luar topik proyek."
+    }
+  ]
+}

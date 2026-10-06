@@ -1,0 +1,95 @@
+{
+  "id": "tfng-3",
+  "lesson": "tfng",
+  "skill": "reading",
+  "title": "Flexible working: a guide for staff",
+  "variant": "Gaya General Training · Section 2",
+  "minutes": 7,
+  "passage": {
+    "title": "Flexible Working: A Guide for Staff",
+    "paragraphs": [
+      {
+        "text": "Who can apply. All employees on permanent contracts may request flexible working once they have completed their six-month probation period. Staff employed through recruitment agencies are not covered by this guide and should contact their agency for advice."
+      },
+      {
+        "text": "Core hours. Whatever working pattern you agree, you must be available for meetings between 10.00 and 15.00 from Monday to Thursday. There are no core hours on Fridays, but your contracted hours must still be completed over the course of the week. Team leaders may occasionally ask you to attend an event outside these times and will try to give at least one week's notice."
+      },
+      {
+        "text": "Working from home. Most office-based staff may work from home for up to two days a week. The days must be agreed with your team leader, who will check that each team has enough people in the office. The company will supply a laptop and headset and will pay a monthly contribution towards your home internet costs. Desks and chairs are not provided, but the facilities team can advise you on setting up a safe workspace."
+      },
+      {
+        "text": "Compressed hours. Some staff prefer to work their full weekly hours over four longer days instead of five. This option is available only in teams where customer support will not be affected, and every new arrangement starts with a three-month trial. At the end of the trial, you and your team leader will decide together whether it should continue."
+      },
+      {
+        "text": "How to apply. Requests should be made through the HR portal, and your team leader will normally reply within 28 days. If your request is refused, you will be given the reasons in writing and may ask a senior manager to review the decision. Please note that you can make only one new request in any twelve-month period."
+      }
+    ]
+  },
+  "instruction": "Do the following statements agree with the information given in the text? Choose TRUE, FALSE or NOT GIVEN.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "TRUE",
+      "text": "TRUE"
+    },
+    {
+      "key": "FALSE",
+      "text": "FALSE"
+    },
+    {
+      "key": "NOT GIVEN",
+      "text": "NOT GIVEN"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "New permanent employees have to wait six months before they can request flexible working.",
+      "answer": "TRUE",
+      "evidence": "once they have completed their six-month probation period",
+      "explain": "Karyawan tetap boleh mengajukan \"once they have completed their six-month probation period\", artinya harus menunggu masa percobaan enam bulan selesai. Maknanya sama: TRUE."
+    },
+    {
+      "n": 2,
+      "prompt": "The same core hours apply on all five working days.",
+      "answer": "FALSE",
+      "evidence": "There are no core hours on Fridays",
+      "explain": "Core hours hanya berlaku \"from Monday to Thursday\", dan teks tegas menyebut \"There are no core hours on Fridays\". Jadi tidak berlaku di kelima hari kerja: FALSE."
+    },
+    {
+      "n": 3,
+      "prompt": "Staff who attend events outside core hours are paid extra.",
+      "answer": "NOT GIVEN",
+      "evidence": "Team leaders may occasionally ask you to attend an event outside these times",
+      "explain": "Teks bilang team leader kadang meminta staf hadir di acara di luar core hours dan akan memberi tahu seminggu sebelumnya. Bayaran tambahan tidak disebut sama sekali. Jangan menebak dari kebiasaan kantormu sendiri: NOT GIVEN."
+    },
+    {
+      "n": 4,
+      "prompt": "Staff need their team leader's agreement on which days they work from home.",
+      "answer": "TRUE",
+      "evidence": "The days must be agreed with your team leader",
+      "explain": "\"The days must be agreed with your team leader\" = hari kerja dari rumah harus disetujui team leader. Maknanya sama: TRUE."
+    },
+    {
+      "n": 5,
+      "prompt": "The company provides office furniture for staff who work from home.",
+      "answer": "FALSE",
+      "evidence": "Desks and chairs are not provided",
+      "explain": "Perusahaan memberi laptop dan headset, tapi \"Desks and chairs are not provided\". Meja dan kursi adalah office furniture, jadi pernyataan bertentangan dengan teks: FALSE. Jangan terkecoh oleh daftar barang yang memang disediakan."
+    },
+    {
+      "n": 6,
+      "prompt": "Most staff who try compressed hours decide to continue after the trial.",
+      "answer": "NOT GIVEN",
+      "evidence": null,
+      "explain": "Teks menjelaskan masa percobaan tiga bulan dan bahwa keputusan diambil bersama di akhir masa itu, tapi tidak menyebut berapa banyak staf yang melanjutkan. Kata \"most\" tidak punya dasar di teks: NOT GIVEN."
+    },
+    {
+      "n": 7,
+      "prompt": "An employee whose request is turned down can ask for the decision to be looked at again.",
+      "answer": "TRUE",
+      "evidence": "may ask a senior manager to review the decision",
+      "explain": "\"Refused\" = turned down, dan \"ask a senior manager to review the decision\" = minta keputusan itu ditinjau ulang (\"looked at again\"). Maknanya sama: TRUE."
+    }
+  ]
+}

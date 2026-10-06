@@ -1,0 +1,7 @@
+# Learner data: tests, essays, recordings and profiles stay on this Mac.
+data/
+# Trimmed engnovate test pages used by the parser tests (published test material).
+test/fixtures/
+node_modules/
+.DS_Store
+*.tmp

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Kartu · IELTS Coach</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+</head>
+<body>
+<nav class="appnav" aria-label="Navigasi" data-page="cards"></nav>
+<main class="wrap">
+
+  <header class="top">
+    <div>
+      <p class="eyebrow">Kosakata & parafrase</p>
+      <h1>Kartu</h1>
+      <p class="sub">Ulangi sedikit setiap hari. Kartu yang kamu ingat muncul makin jarang, yang kamu lupa muncul lagi hari ini.</p>
+    </div>
+  </header>
+
+  <section class="card review" id="review" aria-label="Review hari ini"></section>
+
+  <section class="card" aria-labelledby="decks-title">
+    <div class="card-head">
+      <div>
+        <h2 id="decks-title">Paket siap pakai</h2>
+        <p class="card-note">Kartu baru masuk review paling banyak 15 per hari, jadi menambah satu paket tidak langsung membanjiri jadwalmu.</p>
+      </div>
+    </div>
+    <div class="deck-list" id="decks"></div>
+  </section>
+
+  <section class="card" aria-labelledby="add-title">
+    <div class="card-head">
+      <div>
+        <h2 id="add-title">Tambah kartu</h2>
+        <p class="card-note">Contoh: depan <em>decline</em>, belakang <em>fall · decrease — menurun</em>.</p>
+      </div>
+    </div>
+    <form class="card-form" id="card-form">
+      <label class="fl">Depan<input class="tf" name="front" maxlength="120" required autocomplete="off"></label>
+      <label class="fl">Belakang<input class="tf" name="back" maxlength="300" required autocomplete="off"></label>
+      <label class="fl wide">Contoh kalimat (opsional)<input class="tf" name="example" maxlength="300" autocomplete="off"></label>
+      <div class="controls wide">
+        <button class="btn primary" type="submit" id="card-submit">Simpan kartu</button>
+        <button class="btn" type="button" id="card-cancel" hidden>Batal</button>
+        <p class="hint" id="card-msg" role="status"></p>
+      </div>
+    </form>
+  </section>
+
+  <section class="card" aria-labelledby="list-title">
+    <div class="card-head">
+      <div>
+        <h2 id="list-title">Semua kartu</h2>
+        <p class="card-note" id="list-note"></p>
+      </div>
+      <label class="fl search">Cari<input class="tf" type="search" id="search" autocomplete="off"></label>
+    </div>
+    <div id="card-list"></div>
+  </section>
+</main>
+<script type="module" src="/cards.js"></script>
+</body>
+</html>

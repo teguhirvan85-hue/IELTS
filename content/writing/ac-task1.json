@@ -1,0 +1,119 @@
+[
+  {
+    "id": "ac1-01", "task": 1, "module": "academic", "kind": "line", "topic": "health",
+    "title": "Emergency department visits by age group",
+    "prompt": "The graph below shows the number of visits made to the emergency department of a regional hospital by patients in three age groups between 2004 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Emergency department visits by age group, 2004–2024",
+      "unit": "thousands of visits",
+      "categories": ["2004", "2008", "2012", "2016", "2020", "2024"],
+      "series": [
+        { "name": "Under 18", "values": [14, 13, 13, 11, 10, 9] },
+        { "name": "18–64", "values": [22, 23, 22, 21, 20, 20] },
+        { "name": "65 and over", "values": [8, 11, 16, 22, 26, 30] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-02", "task": 1, "module": "academic", "kind": "line", "topic": "energy",
+    "title": "Sources of electricity, with projections",
+    "prompt": "The graph below shows the percentage of electricity generated from four sources in Country A between 2010 and 2025, with projections to 2040. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Electricity generation by source in Country A, 2010–2040 (2030–2040 projected)",
+      "unit": "%",
+      "categories": ["2010", "2015", "2020", "2025", "2030", "2035", "2040"],
+      "series": [
+        { "name": "Coal", "values": [55, 48, 38, 28, 18, 10, 5] },
+        { "name": "Natural gas", "values": [20, 24, 28, 30, 28, 25, 20] },
+        { "name": "Hydropower", "values": [20, 20, 19, 19, 19, 20, 20] },
+        { "name": "Solar and wind", "values": [5, 8, 15, 23, 35, 45, 55] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-03", "task": 1, "module": "academic", "kind": "bar", "topic": "health",
+    "title": "Hospital staff by role",
+    "prompt": "The bar chart below shows the number of staff employed in five roles at a regional hospital in 2014 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Staff at a regional hospital by role, 2014 and 2024",
+      "unit": "staff",
+      "categories": ["Nurses", "Doctors", "Healthcare assistants", "Therapists", "Administrative staff"],
+      "series": [
+        { "name": "2014", "values": [420, 150, 160, 70, 210] },
+        { "name": "2024", "values": [510, 190, 250, 90, 160] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-04", "task": 1, "module": "academic", "kind": "bar", "topic": "education",
+    "title": "Adult learning by age group",
+    "prompt": "The bar chart below shows the percentage of adults in five age groups who took part in an education or training course in Country A and Country B in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Adults taking part in education or training by age group, 2024",
+      "unit": "%",
+      "categories": ["25–34", "35–44", "45–54", "55–64", "65 and over"],
+      "series": [
+        { "name": "Country A", "values": [48, 42, 35, 24, 10] },
+        { "name": "Country B", "values": [36, 33, 29, 22, 16] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-05", "task": 1, "module": "academic", "kind": "pie", "topic": "health",
+    "title": "Causes of staff sickness absence",
+    "prompt": "The pie charts below show the causes of working days lost to sickness among staff at a regional hospital in 2015 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Causes of staff sickness absence at a regional hospital",
+      "unit": "%",
+      "categories": ["Colds and flu", "Back and joint problems", "Stress and anxiety", "Stomach illness", "Other"],
+      "series": [
+        { "name": "2015", "values": [32, 30, 18, 10, 10] },
+        { "name": "2025", "values": [26, 22, 34, 8, 10] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-06", "task": 1, "module": "academic", "kind": "pie", "topic": "spending",
+    "title": "Household spending in two years",
+    "prompt": "The pie charts below show how average household spending in Country C was divided between six categories in 1985 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Average household spending in Country C, 1985 and 2025",
+      "unit": "%",
+      "categories": ["Food", "Housing", "Transport", "Clothing", "Leisure", "Other"],
+      "series": [
+        { "name": "1985", "values": [32, 22, 12, 14, 8, 12] },
+        { "name": "2025", "values": [16, 34, 15, 6, 14, 15] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-07", "task": 1, "module": "academic", "kind": "table", "topic": "tourism",
+    "title": "International tourist arrivals",
+    "prompt": "The table below shows the number of international tourist arrivals, in millions, in five countries in 2005, 2015 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "International tourist arrivals in five countries (millions)",
+      "unit": "millions",
+      "categories": ["Country A", "Country B", "Country C", "Country D", "Country E"],
+      "series": [
+        { "name": "2005", "values": [8.5, 20, 3, 14, 5] },
+        { "name": "2015", "values": [12, 24.5, 6.5, 13.5, 5.5] },
+        { "name": "2025", "values": [15.5, 22, 11, 9, 6] }
+      ]
+    }
+  },
+  {
+    "id": "ac1-08", "task": 1, "module": "academic", "kind": "table", "topic": "transport",
+    "title": "How people travel in three cities",
+    "prompt": "The table below shows the percentage of journeys made by five means of transport in three cities in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Share of journeys by means of transport in three cities, 2024",
+      "unit": "%",
+      "categories": ["Car", "Bus", "Train", "Bicycle", "Walking"],
+      "series": [
+        { "name": "City A", "values": [58, 14, 6, 4, 18] },
+        { "name": "City B", "values": [30, 20, 28, 6, 16] },
+        { "name": "City C", "values": [22, 12, 18, 26, 22] }
+      ]
+    }
+  }
+]

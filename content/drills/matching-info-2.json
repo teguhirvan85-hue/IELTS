@@ -1,0 +1,116 @@
+{
+  "id": "matching-info-2",
+  "lesson": "matching-info",
+  "skill": "reading",
+  "title": "Short courses this autumn",
+  "variant": "Gaya General Training · Section 1",
+  "minutes": 7,
+  "passage": {
+    "title": "Short Courses This Autumn",
+    "paragraphs": [
+      {
+        "label": "A",
+        "text": "Harbourside Pottery Studio. Learn to make bowls, cups and plates on the potter's wheel in this six-week course for complete beginners. Classes run on Tuesday evenings and are limited to eight students. All clay and tools are included. Your finished pieces will be fired in our kiln and can be collected two weeks after the final class."
+      },
+      {
+        "label": "B",
+        "text": "Greenway First Aid. This one-day course covers what to do in an emergency, how to help someone who is choking and basic life support. It is ideal for parents, sports coaches and anyone who works with the public. Everyone who passes the short final test receives a certificate valid for three years. Please bring your own lunch."
+      },
+      {
+        "label": "C",
+        "text": "Code Club for Grown-ups. Never written a line of code? This friendly eight-week course teaches you the basics of building a simple website. Sessions take place online on Wednesday evenings, so you can join from your own sofa, and recordings are available if you miss a week. You will need a laptop. Job seekers receive a 20% discount."
+      },
+      {
+        "label": "D",
+        "text": "Mill Lane Cookery School. Discover the flavours of Southeast Asia over two Saturday mornings. Our chef will show you how to prepare fresh curry pastes, noodle dishes and simple desserts. You will eat everything you cook and take home a booklet of recipes to try again. A vegetarian version of every dish is available, but please tell us about any allergies when you book."
+      },
+      {
+        "label": "E",
+        "text": "Riverside Photography Walks. Improve your photography skills on these relaxed four-week courses. Every Sunday morning we meet at a different spot in the city to practise a new technique. Any camera is fine, even a mobile phone. Walks take place whatever the weather, so dress accordingly. Teenagers under 16 are welcome if they come with an adult."
+      },
+      {
+        "label": "F",
+        "text": "Fairfield Spanish Conversation. Know some Spanish but feel nervous when speaking? Our small groups, led by native speakers, practise everyday situations such as ordering a meal and asking for directions. This course is not suitable for complete beginners. Classes are on Monday or Thursday evenings. Your first session is free, so you can decide whether the course is right for you."
+      }
+    ]
+  },
+  "instruction": "Look at the six advertisements, A–F. For which course are the following statements true? Choose the correct letter, A–F. NB You may use any letter more than once.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "A",
+      "text": "A"
+    },
+    {
+      "key": "B",
+      "text": "B"
+    },
+    {
+      "key": "C",
+      "text": "C"
+    },
+    {
+      "key": "D",
+      "text": "D"
+    },
+    {
+      "key": "E",
+      "text": "E"
+    },
+    {
+      "key": "F",
+      "text": "F"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "You can follow this course without leaving your home.",
+      "answer": "C",
+      "evidence": "Sessions take place online on Wednesday evenings, so you can join from your own sofa",
+      "explain": "\"Online\" dan \"join from your own sofa\" = tidak perlu keluar rumah. Teks D juga memuat kata \"home\" (\"take home a booklet\"), tapi itu tentang membawa pulang resep, bukan belajar dari rumah."
+    },
+    {
+      "n": 2,
+      "prompt": "This course is intended for people who already know something about the subject.",
+      "answer": "F",
+      "evidence": "This course is not suitable for complete beginners.",
+      "explain": "\"Not suitable for complete beginners\" berarti peserta harus sudah sedikit bisa berbahasa Spanyol (\"Know some Spanish\"). Jebakan: teks A juga memuat \"complete beginners\", tapi justru kursus untuk pemula."
+    },
+    {
+      "n": 3,
+      "prompt": "This course ends with an assessment that can lead to a qualification.",
+      "answer": "B",
+      "evidence": "Everyone who passes the short final test receives a certificate valid for three years.",
+      "explain": "\"The short final test\" = an assessment at the end, dan \"certificate\" = qualification. Tidak ada kursus lain yang menyebut tes atau sertifikat."
+    },
+    {
+      "n": 4,
+      "prompt": "Students have to wait before they can collect the things they have made.",
+      "answer": "A",
+      "evidence": "can be collected two weeks after the final class",
+      "explain": "Hasil karya dibakar dulu di kiln dan baru bisa diambil \"two weeks after the final class\" = harus menunggu. Teks D pengecoh: peserta langsung makan masakannya, dan yang dibawa pulang hanya buku resep."
+    },
+    {
+      "n": 5,
+      "prompt": "You can attend one class without paying.",
+      "answer": "F",
+      "evidence": "Your first session is free",
+      "explain": "\"Your first session is free\" = attend one class without paying. Ini jawaban F yang kedua: dengan NB, huruf yang sama memang boleh dipakai lagi."
+    },
+    {
+      "n": 6,
+      "prompt": "Young people may join this course under certain conditions.",
+      "answer": "E",
+      "evidence": "Teenagers under 16 are welcome if they come with an adult.",
+      "explain": "\"Teenagers under 16\" = young people, dan \"if they come with an adult\" = under certain conditions. Teks C pengecoh: \"for Grown-ups\" berarti khusus orang dewasa."
+    },
+    {
+      "n": 7,
+      "prompt": "There is a reduced fee for people who are unemployed.",
+      "answer": "C",
+      "evidence": "Job seekers receive a 20% discount.",
+      "explain": "\"Job seekers\" = orang yang sedang mencari kerja (unemployed), dan \"20% discount\" = a reduced fee. C dipakai dua kali, sedangkan D tidak dipakai sama sekali, hal yang biasa di soal asli."
+    }
+  ]
+}

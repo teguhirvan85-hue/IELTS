@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>IELTS Coach</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+</head>
+<body>
+<nav class="appnav" aria-label="Navigasi" data-page="dashboard"></nav>
+<main class="wrap">
+
+  <header class="top">
+    <div>
+      <p class="eyebrow" id="who">Persiapan IELTS</p>
+      <h1>Dashboard</h1>
+      <p class="sub">Kerjakan tes di engnovate, catat hasilnya di sini, lalu fokus ke tipe soal yang paling banyak membuang poin.</p>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="Ringkasan"></section>
+
+  <section class="card plan" id="plan" aria-labelledby="plan-title" hidden></section>
+
+  <section class="card" id="diagnostic" hidden>
+    <div class="card-head">
+      <div>
+        <h2>Mulai dari sini: tes diagnostik</h2>
+        <p class="card-note">Skormu belum diketahui, jadi dua tes ini jadi titik awal. Kerjakan dengan waktu penuh seperti ujian asli, lalu langsung catat hasilnya di sini, karena engnovate tidak menyimpan hasil untuk akun gratis.</p>
+      </div>
+    </div>
+    <ol class="steps" id="diag-steps"></ol>
+  </section>
+
+  <section aria-labelledby="skills-title">
+    <div class="section-head">
+      <h2 id="skills-title" class="eyebrow">Band per skill</h2>
+      <div class="legend" aria-hidden="true">
+        <span class="lg"><svg width="10" height="10"><circle class="dot" cx="5" cy="5" r="4"/></svg>Full test</span>
+        <span class="lg"><svg width="10" height="10"><circle class="ring" cx="5" cy="5" r="3.5"/></svg>Latihan per bagian (perkiraan)</span>
+        <span class="lg"><svg width="16" height="2"><line class="tline" x1="0" y1="1" x2="16" y2="1"/></svg>Target</span>
+      </div>
+    </div>
+    <div class="skills" id="skills"></div>
+  </section>
+
+  <section class="card" id="types">
+    <div class="card-head">
+      <div>
+        <h2>Di mana poinmu hilang</h2>
+        <p class="card-note">Akurasi per tipe soal dari semua tes yang dicatat, diurutkan dari yang paling banyak membuang poin.</p>
+      </div>
+      <div class="seg" role="group" aria-label="Skill" id="type-skill">
+        <button type="button" data-skill="reading" aria-pressed="true">Reading</button>
+        <button type="button" data-skill="listening" aria-pressed="false">Listening</button>
+      </div>
+    </div>
+    <div id="type-body"></div>
+  </section>
+
+  <section class="card" id="history">
+    <div class="card-head">
+      <div>
+        <h2>Riwayat tes</h2>
+        <p class="card-note">Semua hasil yang sudah dicatat, yang terbaru di atas.</p>
+      </div>
+    </div>
+    <div id="history-body"></div>
+  </section>
+</main>
+
+<dialog id="settings" aria-labelledby="settings-title">
+  <form id="settings-form">
+    <div class="dlg-head">
+      <h2 id="settings-title">Pengaturan</h2>
+      <p>Dipakai untuk hitung mundur dan garis target di grafik.</p>
+    </div>
+    <div class="dlg-body">
+      <label class="fl">Nama profil
+        <input class="tf" name="name" maxlength="40" autocomplete="off" required>
+      </label>
+      <label class="fl">Tanggal ujian
+        <input class="tf" type="date" name="examDate">
+      </label>
+      <label class="fl">Target band tiap skill
+        <select class="tf" name="targetBand"></select>
+      </label>
+      <label class="fl">Waktu belajar per hari
+        <select class="tf" name="minutesPerDay">
+          <option value="20">20 menit</option>
+          <option value="30">30 menit</option>
+          <option value="45">45 menit</option>
+          <option value="60">60 menit</option>
+          <option value="90">90 menit</option>
+        </select>
+      </label>
+      <label class="fl">Modul
+        <select class="tf" name="module">
+          <option value="">Belum tahu</option>
+          <option value="academic">Academic</option>
+          <option value="general">General Training</option>
+        </select>
+      </label>
+      <p class="hint">Kerja atau migrasi biasanya General Training. Profesi yang perlu registrasi, misalnya perawat (AHPRA/NMBA), biasanya mewajibkan Academic. Listening dan Speaking sama untuk keduanya.</p>
+      <p class="msg" id="settings-msg" hidden></p>
+    </div>
+    <div class="dlg-foot">
+      <button class="btn" type="button" id="settings-cancel">Batal</button>
+      <button class="btn primary" type="submit">Simpan</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="tip" id="tip" role="status" hidden></div>
+<script type="module" src="/dashboard.js"></script>
+</body>
+</html>

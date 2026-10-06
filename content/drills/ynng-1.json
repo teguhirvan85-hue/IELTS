@@ -1,0 +1,87 @@
+{
+  "id": "ynng-1",
+  "lesson": "ynng",
+  "skill": "reading",
+  "title": "Slower streets, better cities",
+  "minutes": 7,
+  "passage": {
+    "title": "Slower Streets, Better Cities",
+    "paragraphs": [
+      {
+        "text": "In a growing number of cities, local governments are debating whether to lower the default speed limit on urban streets from 50 to 30 kilometres per hour. The proposal tends to provoke an angry response from motorists' groups, who warn of traffic jams and wasted time. In my view, these fears are largely misplaced, and the case for slower streets is far stronger than its opponents allow."
+      },
+      {
+        "text": "The most common objection is that journeys will take much longer. This sounds reasonable until one looks at how city traffic actually moves. Drivers in a busy centre spend much of their time waiting at junctions, queuing behind buses or searching for somewhere to park, so the maximum speed they are allowed to reach has surprisingly little effect on how long their journey takes. Admittedly, someone driving across town late at night, when the roads are empty, may lose a few minutes. But it is hard to see why the convenience of a small number of night-time drivers should outweigh the safety of everyone else."
+      },
+      {
+        "text": "That safety argument is, to my mind, the decisive one. A vehicle travelling at 30 kilometres per hour needs a much shorter distance to stop, and if it does hit someone, the impact is far less violent. Pedestrians struck at lower speeds are much more likely to survive. There are quieter benefits too. Slower traffic is less noisy, and parents may feel more comfortable letting older children walk or cycle to school on their own."
+      },
+      {
+        "text": "Supporters of the change sometimes claim that lower limits will also clean up the air. Here I am less convinced. Cars do not necessarily burn less fuel at 30 than at 50, and the effect on pollution seems to depend on how smoothly traffic flows. Campaigners would be wiser to present slower streets as a safety measure and leave the environmental case to cleaner engines and better public transport."
+      },
+      {
+        "text": "None of this means that new signs alone will do the job. Drivers tend to choose a speed based on how a road looks and feels rather than on the number painted on a post. If a street is wide and straight, many people will ignore a 30 limit however clearly it is marked. Cities that are serious about the change will need to narrow roads, plant trees and widen pavements, so that the street itself tells drivers to slow down. Nor should every road be treated in the same way: the main routes that carry traffic into and out of the city can reasonably keep a higher limit."
+      }
+    ]
+  },
+  "instruction": "Do the following statements agree with the views of the writer in the passage? Choose YES, NO or NOT GIVEN.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "YES",
+      "text": "YES"
+    },
+    {
+      "key": "NO",
+      "text": "NO"
+    },
+    {
+      "key": "NOT GIVEN",
+      "text": "NOT GIVEN"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "The objections raised by motorists' groups are mostly unjustified.",
+      "answer": "YES",
+      "evidence": "In my view, these fears are largely misplaced",
+      "explain": "\"These fears\" merujuk pada keberatan kelompok pengendara (\"motorists' groups\"), dan \"largely misplaced\" = mostly unjustified. Penanda \"In my view\" menunjukkan ini suara penulis sendiri: YES."
+    },
+    {
+      "n": 2,
+      "prompt": "In busy city centres, the speed limit is the main factor that determines how long a journey takes.",
+      "answer": "NO",
+      "evidence": "the maximum speed they are allowed to reach has surprisingly little effect on how long their journey takes",
+      "explain": "Menurut penulis, batas kecepatan (\"the maximum speed they are allowed to reach\") justru \"has surprisingly little effect\" pada lama perjalanan, karena waktu habis di persimpangan, antrean, dan mencari parkir. Pernyataan mengatakan sebaliknya: NO."
+    },
+    {
+      "n": 3,
+      "prompt": "Some drivers may find their journeys slightly longer under a lower speed limit.",
+      "answer": "YES",
+      "evidence": "Admittedly, someone driving across town late at night, when the roads are empty, may lose a few minutes.",
+      "explain": "\"Admittedly\" menandai penulis mengakui satu poin: pengendara malam hari \"may lose a few minutes\" = perjalanan sedikit lebih lama. Kalimat berikutnya memang dimulai dengan \"But\", tapi pengakuan ini tetap pendapat penulis: YES."
+    },
+    {
+      "n": 4,
+      "prompt": "Children who walk or cycle to school are healthier than those who are driven.",
+      "answer": "NOT GIVEN",
+      "evidence": "parents may feel more comfortable letting older children walk or cycle to school on their own",
+      "explain": "Penulis hanya bilang orang tua mungkin lebih tenang membiarkan anak berjalan atau bersepeda ke sekolah. Kesehatan anak tidak dibahas sama sekali. Masuk akal secara logika, tapi tidak ada di teks: NOT GIVEN."
+    },
+    {
+      "n": 5,
+      "prompt": "Campaigners should promote lower speed limits mainly as a way of reducing air pollution.",
+      "answer": "NO",
+      "evidence": "Campaigners would be wiser to present slower streets as a safety measure",
+      "explain": "Klaim soal udara bersih milik \"supporters\", dan penulis meragukannya (\"Here I am less convinced\"). Ia menyarankan kampanye fokus pada keselamatan (\"a safety measure\"), bukan polusi. Bertentangan dengan pernyataan: NO."
+    },
+    {
+      "n": 6,
+      "prompt": "The cost of redesigning streets should be shared between city and national governments.",
+      "answer": "NOT GIVEN",
+      "evidence": null,
+      "explain": "Penulis bilang kota perlu mempersempit jalan, menanam pohon, dan melebarkan trotoar, tapi tidak pernah membahas biaya atau siapa yang harus membayar. Penulis tidak bersikap tentang hal ini: NOT GIVEN."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "t2-01",
+    "task": 2,
+    "module": "both",
+    "kind": "opinion",
+    "topic": "work",
+    "title": "Large offices after remote work",
+    "prompt": "As more employees work from home for at least part of the week, some people argue that companies no longer need large, expensive offices in city centres. To what extent do you agree or disagree?"
+  },
+  {
+    "id": "t2-02",
+    "task": 2,
+    "module": "both",
+    "kind": "discussion",
+    "topic": "ageing",
+    "title": "Raising the retirement age",
+    "prompt": "Some people believe that, as populations age, governments should raise the age at which people can retire and receive a pension. Others argue that older workers have earned the right to stop working and that the retirement age should not change. Discuss both these views and give your own opinion."
+  },
+  {
+    "id": "t2-03",
+    "task": 2,
+    "module": "both",
+    "kind": "problem",
+    "topic": "housing",
+    "title": "Housing costs for young city workers",
+    "prompt": "In many large cities, the cost of renting or buying a home has risen much faster than salaries, and many young workers can no longer afford to live near their jobs. What problems does this cause? What measures could be taken to solve them?"
+  },
+  {
+    "id": "t2-04",
+    "task": 2,
+    "module": "both",
+    "kind": "advantages",
+    "topic": "migration",
+    "title": "Skilled workers moving abroad",
+    "prompt": "Every year, large numbers of trained professionals, such as nurses and software engineers, leave their home countries to work abroad for higher salaries. For the countries they leave behind, do the advantages of this trend outweigh the disadvantages?"
+  },
+  {
+    "id": "t2-05",
+    "task": 2,
+    "module": "both",
+    "kind": "two-part",
+    "topic": "media",
+    "title": "Getting the news from social media",
+    "prompt": "Many people now get most of their news from social media rather than from newspapers, radio or television. Why has this happened? What effects could this have on society?"
+  },
+  {
+    "id": "t2-06",
+    "task": 2,
+    "module": "both",
+    "kind": "opinion",
+    "topic": "technology",
+    "title": "AI tools and writing skills at school",
+    "prompt": "Artificial intelligence tools can now write reports, translate texts and produce computer code within seconds. Some people believe that schools should therefore spend less time teaching students to write well and more time teaching them how to use these tools. To what extent do you agree or disagree?"
+  },
+  {
+    "id": "t2-07",
+    "task": 2,
+    "module": "both",
+    "kind": "discussion",
+    "topic": "health",
+    "title": "Robots and computers in patient care",
+    "prompt": "Some people believe that hospitals should make greater use of robots and computer systems to care for patients, since this could reduce costs and medical errors. Others argue that good care depends on human contact and must remain the job of trained staff. Discuss both these views and give your own opinion."
+  },
+  {
+    "id": "t2-08",
+    "task": 2,
+    "module": "both",
+    "kind": "problem",
+    "topic": "environment",
+    "title": "Replacing phones and laptops too often",
+    "prompt": "Many people replace their mobile phones and laptops every year or two, even when their old devices still work well. Why do people do this? What can be done to reduce the environmental damage it causes?"
+  },
+  {
+    "id": "t2-09",
+    "task": 2,
+    "module": "both",
+    "kind": "advantages",
+    "topic": "education",
+    "title": "Fully online university degrees",
+    "prompt": "A growing number of universities now offer complete degree courses online, so students can earn a qualification without ever visiting a campus. Do the advantages of this development outweigh the disadvantages?"
+  },
+  {
+    "id": "t2-10",
+    "task": 2,
+    "module": "both",
+    "kind": "two-part",
+    "topic": "family",
+    "title": "Grandparents as daily childcarers",
+    "prompt": "In many families today, grandparents look after young children every day while both parents work full-time. Why is this becoming more common? Is it a positive or negative development?"
+  },
+  {
+    "id": "t2-11",
+    "task": 2,
+    "module": "both",
+    "kind": "opinion",
+    "topic": "health",
+    "title": "Medical appointments by video call",
+    "prompt": "In many countries, patients can now speak to a doctor through a video call instead of travelling to a clinic. Some people believe that most medical appointments should take place online in the future. To what extent do you agree or disagree?"
+  },
+  {
+    "id": "t2-12",
+    "task": 2,
+    "module": "both",
+    "kind": "discussion",
+    "topic": "work",
+    "title": "Who is responsible for job training",
+    "prompt": "Some people think that employers should pay for regular training so that their staff can keep up with new technology and methods. Others believe that workers are responsible for updating their own skills in their free time. Discuss both these views and give your own opinion."
+  }
+]

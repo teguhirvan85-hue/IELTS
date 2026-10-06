@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Jurnal · IELTS Coach</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+</head>
+<body>
+<nav class="appnav" aria-label="Navigasi" data-page="journal"></nav>
+<main class="wrap">
+
+  <header class="top">
+    <div>
+      <p class="eyebrow">Belajar dari kesalahan</p>
+      <h1>Jurnal</h1>
+      <p class="sub">Untuk setiap jawaban salah di tes engnovate, pilih kenapa salah. Setelah beberapa tes, polamu kelihatan, dan setiap pola punya cara memperbaikinya.</p>
+    </div>
+  </header>
+
+  <p class="notice" id="fresh" hidden>Tes tersimpan. Selagi masih ingat, pilih alasan untuk setiap jawaban yang salah di bawah. <a href="/">Lewati, ke dashboard</a></p>
+
+  <section class="card" aria-labelledby="patterns-title">
+    <div class="card-head">
+      <div>
+        <h2 id="patterns-title">Pola kesalahanmu</h2>
+        <p class="card-note" id="patterns-note"></p>
+      </div>
+    </div>
+    <div id="patterns"></div>
+  </section>
+
+  <section class="card" aria-labelledby="open-title">
+    <div class="card-head">
+      <div>
+        <h2 id="open-title">Belum dianalisis</h2>
+        <p class="card-note">Pilih satu alasan yang paling tepat. Catatan dan kartu bersifat opsional.</p>
+      </div>
+    </div>
+    <div id="open-list"></div>
+  </section>
+
+  <section class="card" aria-labelledby="done-title">
+    <div class="card-head">
+      <div>
+        <h2 id="done-title">Sudah dianalisis</h2>
+        <p class="card-note">Alasannya bisa diubah kapan saja.</p>
+      </div>
+    </div>
+    <div id="done-list"></div>
+  </section>
+</main>
+<script type="module" src="/journal.js"></script>
+</body>
+</html>

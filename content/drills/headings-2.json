@@ -1,0 +1,114 @@
+{
+  "id": "headings-2",
+  "lesson": "headings",
+  "skill": "reading",
+  "title": "Working while the world sleeps",
+  "minutes": 8,
+  "passage": {
+    "title": "Working While the World Sleeps",
+    "paragraphs": [
+      {
+        "label": "A",
+        "text": "Hospitals, airports, power stations and factories all depend on people who work through the night. Their efforts keep essential services running while the rest of the population sleeps, yet night work asks the human body to do something it was never designed for: to stay alert in darkness and to rest in daylight."
+      },
+      {
+        "label": "B",
+        "text": "The difficulty lies in the body's internal clock. Deep inside the brain, a small group of cells keeps a rhythm of roughly 24 hours, telling the body when to feel sleepy and when to be awake. This clock is set mainly by light. When morning sunlight reaches the eyes, the brain treats it as the start of a new day, which is why a nurse driving home after a night shift may suddenly feel wide awake just when she most needs to sleep."
+      },
+      {
+        "label": "C",
+        "text": "The consequences of fighting this clock go well beyond feeling tired. Sleep taken during the day tends to be shorter and lighter than sleep at night, so many shift workers build up a 'sleep debt' over a run of nights. This has been linked to slower reactions and more mistakes in routine tasks. Digestion suffers too, since the stomach also follows the body clock and is not prepared for a large meal at three in the morning."
+      },
+      {
+        "label": "D",
+        "text": "The way shifts are arranged can make a considerable difference. Sleep researchers generally advise that rotating rosters should move forwards, from mornings to afternoons to nights, because the body adjusts more easily to going to bed later than to going to bed earlier. Many employers, however, still rotate shifts backwards or change them every day or two, which gives the body almost no chance to adapt."
+      },
+      {
+        "label": "E",
+        "text": "Light, the source of the problem, can also be part of the solution. Some hospitals have installed bright lamps in staff rest areas to help night workers stay alert during the early hours. Workers, for their part, are often advised to wear dark glasses on the journey home and to sleep in a room with heavy curtains, so that the morning sun does not reset their internal clock."
+      },
+      {
+        "label": "F",
+        "text": "A more controversial idea is the planned nap. In a number of workplaces, staff are now allowed to sleep for twenty to thirty minutes during a long night shift. Supporters say that even a short rest can improve alertness for several hours. Some managers, however, worry about how sleeping staff will look to the public, and others point out that a worker woken suddenly may feel confused for several minutes. For now, the practice is far from universal."
+      }
+    ]
+  },
+  "instruction": "The reading passage has six paragraphs, A–F. Choose the correct heading for paragraphs B–F from the list of headings below. Example: Paragraph A — vi.",
+  "input": "choice",
+  "optionsTitle": "List of Headings",
+  "options": [
+    {
+      "key": "i",
+      "text": "Planning shift patterns around the body clock"
+    },
+    {
+      "key": "ii",
+      "text": "Why some people prefer to work at night"
+    },
+    {
+      "key": "iii",
+      "text": "A short rest that divides opinion"
+    },
+    {
+      "key": "iv",
+      "text": "An internal timer that responds to light"
+    },
+    {
+      "key": "v",
+      "text": "The expense of brighter lighting at work"
+    },
+    {
+      "key": "vi",
+      "text": "Essential work at an unnatural time"
+    },
+    {
+      "key": "vii",
+      "text": "Light as an ally rather than an enemy"
+    },
+    {
+      "key": "viii",
+      "text": "Effects on both work and health"
+    },
+    {
+      "key": "ix",
+      "text": "Employers' reasons for resisting new rosters"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Paragraph B",
+      "answer": "iv",
+      "evidence": "This clock is set mainly by light.",
+      "explain": "Kalimat topik \"The difficulty lies in the body's internal clock\" lalu \"This clock is set mainly by light\" = an internal timer that responds to light. Contoh perawat yang terjaga saat pulang kerja hanya ilustrasi, bukan ide utama."
+    },
+    {
+      "n": 2,
+      "prompt": "Paragraph C",
+      "answer": "viii",
+      "evidence": "The consequences of fighting this clock go well beyond feeling tired.",
+      "explain": "\"Consequences\" = effects. Paragraf C memberi dua jenis akibat: reaksi lebih lambat dan lebih banyak kesalahan saat bekerja (work), serta pencernaan terganggu (health). Judul viii merangkum keduanya."
+    },
+    {
+      "n": 3,
+      "prompt": "Paragraph D",
+      "answer": "i",
+      "evidence": "The way shifts are arranged can make a considerable difference.",
+      "explain": "\"The way shifts are arranged\" = shift patterns, dan saran rotasi maju didasarkan pada cara tubuh beradaptasi (around the body clock). Judul ix pengecoh: teks hanya bilang banyak atasan masih memakai rotasi mundur, tanpa menjelaskan alasannya."
+    },
+    {
+      "n": 4,
+      "prompt": "Paragraph E",
+      "answer": "vii",
+      "evidence": "Light, the source of the problem, can also be part of the solution.",
+      "explain": "\"The source of the problem\" = enemy, dan \"part of the solution\" = ally. Seluruh paragraf memberi cara memakai atau menghindari cahaya untuk membantu pekerja malam. Judul v pengecoh: lampu terang disebut, tapi biayanya tidak."
+    },
+    {
+      "n": 5,
+      "prompt": "Paragraph F",
+      "answer": "iii",
+      "evidence": "A more controversial idea is the planned nap.",
+      "explain": "\"Controversial\" = divides opinion, dan \"the planned nap\" = a short rest. Paragraf F memberi pendapat pendukung (\"Supporters say\") lalu pendapat yang khawatir (\"Some managers, however, worry\"), jadi judul iii merangkum seluruhnya."
+    }
+  ]
+}

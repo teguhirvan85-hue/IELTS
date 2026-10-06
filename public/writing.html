@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Writing · IELTS Coach</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+</head>
+<body>
+<nav class="appnav" aria-label="Navigasi" data-page="writing"></nav>
+<main class="wrap">
+
+  <header class="top">
+    <div>
+      <p class="eyebrow" id="w-eyebrow">Writing</p>
+      <h1>Writing</h1>
+      <p class="sub">Pilih soal, tulis jawabanmu dengan waktu seperti ujian, lalu minta Claude menilainya per kriteria IELTS. Penilaian memakai Claude yang sudah login di Mac ini, tanpa API key.</p>
+    </div>
+    <div class="seg" role="group" aria-label="Bagian" id="w-tabs">
+      <button type="button" data-view="1">Task 1</button>
+      <button type="button" data-view="2">Task 2</button>
+      <button type="button" data-view="history">Riwayat</button>
+    </div>
+  </header>
+
+  <div id="w-main"></div>
+</main>
+<script type="module" src="/writing.js"></script>
+</body>
+</html>

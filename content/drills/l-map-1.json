@@ -1,0 +1,71 @@
+{
+  "id": "l-map-1",
+  "lesson": "l-map",
+  "skill": "listening",
+  "title": "A tour of Fernmoor Country Park",
+  "minutes": 5,
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear a park ranger talking to a group of visitors at the entrance to a country park. First, you have some time to look at questions 1 to 5." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 5." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "Good morning, everyone, and welcome to Fernmoor Country Park. I'm Sue, one of the rangers. Before you set off, I'll quickly explain where everything is, so have a look at the plan in your leaflet." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "We're standing at the main entrance, on the southern edge of the park. The main path in front of us goes straight north, all the way up to the lake. As you walk in, the visitor centre is the large building on your right." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "Now, a lot of people expect to find the café inside the visitor centre, but it moved last spring. It's now on your left, directly opposite the visitor centre, between the main path and the car park." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "If you'd like to hire a bike, don't go into the visitor centre itself. Bikes are kept in the shed on the east side of the visitor centre, right next to the building." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "Carry on up the main path and you'll come to a crossroads, where it meets the path that runs from east to west across the park. The toilets are just past the crossroads, on the right-hand side of the main path." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "On the other side, to the left of the main path, is the staff office, and I'm afraid that isn't open to the public." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "If anyone feels unwell or has an accident, turn right at the crossroads and follow that path east, past the picnic area. Keep going right to the end of the path, just below the woodland, and you'll find the first aid point." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "Finally, for the birdwatchers, there's a bird hide by the lake. Most people go looking for it on the east side, near the trees, but it's actually on the west side of the lake, right at the water's edge." },
+    { "speaker": "Ranger", "voice": "Karen", "text": "Oh, and the north-west corner of the park is closed at the moment while we plant a new hedge, so please keep out of that area. Right, enjoy your visit, and please take your litter home with you." }
+  ],
+  "image": "l-map-1.svg",
+  "imageAlt": "Plan of Fernmoor Country Park, with north at the top. The main entrance is in the middle of the south edge, and a main path runs north from it to a lake at the top. Near the entrance the car park is west of the path and the visitor centre east of it. Halfway up, a second path crosses from west to east. The playground is north-west of the crossroads, the picnic area north-east of it, and woodland fills the north-east of the park. Letters: A in the north-west corner of the park; B on the west shore of the lake; C on the east shore of the lake, next to the woodland; D on the east side of the visitor centre; E at the north-east corner of the crossroads; F at the east end of the cross path, below the woodland; G west of the main path, opposite the visitor centre; H at the north-west corner of the crossroads.",
+  "instruction": "Label the plan below. Write the correct letter, A–H, next to questions 1–5.",
+  "input": "choice",
+  "options": [
+    { "key": "A", "text": "A" },
+    { "key": "B", "text": "B" },
+    { "key": "C", "text": "C" },
+    { "key": "D", "text": "D" },
+    { "key": "E", "text": "E" },
+    { "key": "F", "text": "F" },
+    { "key": "G", "text": "G" },
+    { "key": "H", "text": "H" }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Café",
+      "answer": "G",
+      "evidence": "directly opposite the visitor centre, between the main path and the car park",
+      "explain": "Jebakan pertama: kafe dulu ada di dalam visitor centre, tapi sudah pindah (\"it moved last spring\"). Lokasi barunya \"on your left, directly opposite the visitor centre\", di antara jalan utama dan tempat parkir: G. D memang dekat visitor centre, tapi di sebelahnya, bukan di seberangnya."
+    },
+    {
+      "n": 2,
+      "prompt": "Bike hire",
+      "answer": "D",
+      "evidence": "Bikes are kept in the shed on the east side of the visitor centre",
+      "explain": "Kompas menunjukkan utara di atas, jadi \"east side\" = sisi kanan visitor centre di peta. Huruf yang menempel di sisi timur bangunan itu adalah D. G ada di seberang jalan, dan itu kafe."
+    },
+    {
+      "n": 3,
+      "prompt": "Toilets",
+      "answer": "E",
+      "evidence": "The toilets are just past the crossroads, on the right-hand side of the main path.",
+      "explain": "Pembicara berjalan ke utara, jadi \"on the right-hand side\" = timur. \"Just past the crossroads\" berarti sedikit setelah persimpangan: E. H ada di kiri jalan, dan itu kantor staf (\"staff office\") yang tidak dibuka untuk umum."
+    },
+    {
+      "n": 4,
+      "prompt": "First aid point",
+      "answer": "F",
+      "evidence": "Keep going right to the end of the path, just below the woodland, and you'll find the first aid point.",
+      "explain": "\"Turn right\" saat menghadap utara berarti belok ke timur. Ikuti jalan itu melewati picnic area sampai ujungnya (\"right to the end of the path\"): F. C juga dekat hutan, tapi tidak berada di ujung jalan."
+    },
+    {
+      "n": 5,
+      "prompt": "Bird hide",
+      "answer": "B",
+      "evidence": "it's actually on the west side of the lake, right at the water's edge",
+      "explain": "Banyak orang mencarinya di sisi timur dekat pohon (C), tapi ranger membantahnya: \"it's actually on the west side of the lake\". Di tepi barat danau ada B. A ada di pojok barat laut taman, jauh dari air, dan area itu sedang ditutup."
+    }
+  ]
+}

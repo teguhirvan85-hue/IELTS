@@ -1,0 +1,89 @@
+{
+  "id": "completion-1",
+  "lesson": "completion",
+  "skill": "reading",
+  "title": "Keeping cool before refrigerators",
+  "minutes": 7,
+  "passage": {
+    "title": "Keeping Cool Before Refrigerators",
+    "paragraphs": [
+      {
+        "text": "Long before electric refrigerators existed, people in regions with cold winters found a way to enjoy ice in the middle of summer. The solution was the ice house, a building designed to store ice cut from frozen lakes and rivers during the winter months. Wealthy families had kept small ice houses on their estates for centuries, but in the nineteenth century the trade in natural ice grew into a large industry."
+      },
+      {
+        "text": "Harvesting ice was hard and often dangerous work. Once a lake had frozen to a depth of at least thirty centimetres, workers cleared the snow from its surface and marked out a grid. The ice was then cut into large blocks with long saws, and these were floated along a channel to the shore. Horses pulled the blocks up wooden ramps and into storage, while any worker who fell through thin ice risked his life in the freezing water."
+      },
+      {
+        "text": "The key to keeping ice through the summer was insulation. Most ice houses were built partly underground, where the temperature stays fairly constant throughout the year. The walls were often double, with the space between them filled with sawdust, a cheap waste product from local timber mills. Blocks were packed tightly together, and a thick layer of straw was spread over the top. Good drainage was equally important, since meltwater lying at the bottom of the store would speed up the melting of the ice above it."
+      },
+      {
+        "text": "Even in a well-built ice house, some ice was lost. Owners expected up to a third of their stock to melt before it could be sold, and they accepted this as a normal cost of business. The remaining ice was delivered to homes, hotels and hospitals by horse-drawn carts, often several times a week. Fishermen were among the most important customers, as ice allowed them to keep their catch fresh on the way to distant markets."
+      },
+      {
+        "text": "The natural ice trade declined rapidly in the early twentieth century. Machines that could produce ice artificially became cheaper and more reliable, and growing pollution in many lakes and rivers made natural ice unsafe to use with food. By the middle of the century, most ice houses had been abandoned, although a few have since been restored and opened to visitors."
+      }
+    ]
+  },
+  "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+  "input": "text",
+  "wordLimit": 1,
+  "context": {
+    "kind": "notes",
+    "title": "The natural ice trade",
+    "lines": [
+      "# Harvesting",
+      "- lake ice had to be at least 30 cm thick",
+      "- ice cut into blocks with long [[1]]",
+      "- blocks floated to the shore, then pulled up ramps by horses",
+      "# Storage",
+      "- ice houses usually built partly [[2]] to keep the temperature steady",
+      "- space inside double walls filled with [[3]] from timber mills",
+      "- thick layer of straw spread over the blocks",
+      "- good [[4]] needed, as meltwater makes the ice melt faster",
+      "# Sales",
+      "- up to a [[5]] of the ice was expected to melt before it was sold",
+      "- ice delivered by cart to homes, hotels and hospitals",
+      "# Decline",
+      "- ice made by machines became cheaper and more reliable",
+      "- natural ice no longer safe for food because of [[6]] in lakes and rivers"
+    ]
+  },
+  "questions": [
+    {
+      "n": 1,
+      "answer": "saws",
+      "evidence": "The ice was then cut into large blocks with long saws",
+      "explain": "Setelah \"with long\" dibutuhkan kata benda (alat). Kata \"long\" sudah tertulis di catatan, jadi cukup tulis \"saws\". Menulis \"long saws\" berarti dua kata dan melebihi batas ONE WORD ONLY."
+    },
+    {
+      "n": 2,
+      "answer": "underground",
+      "evidence": "Most ice houses were built partly underground, where the temperature stays fairly constant throughout the year",
+      "explain": "\"Built partly ___\" butuh kata keterangan tempat. \"Stays fairly constant\" diparafrasekan menjadi \"keep the temperature steady\" di catatan."
+    },
+    {
+      "n": 3,
+      "answer": "sawdust",
+      "evidence": "with the space between them filled with sawdust, a cheap waste product from local timber mills",
+      "explain": "\"The space between them\" (di antara dua dinding) = space inside double walls. \"Timber mills\" sudah ada di catatan sebagai petunjuk lokasi, jadi jawabannya bahannya: \"sawdust\". Jangan tertukar dengan \"straw\", yang diletakkan di atas balok es."
+    },
+    {
+      "n": 4,
+      "answer": "drainage",
+      "evidence": "Good drainage was equally important, since meltwater lying at the bottom of the store would speed up the melting of the ice above it",
+      "explain": "\"Good ___\" butuh kata benda. \"Speed up the melting\" = makes the ice melt faster. \"Insulation\" juga kata benda yang penting di paragraf ini, tapi alasan tentang \"meltwater\" hanya cocok dengan \"drainage\"."
+    },
+    {
+      "n": 5,
+      "answer": "third",
+      "evidence": "Owners expected up to a third of their stock to melt before it could be sold",
+      "explain": "\"Up to a ___ of\" menunjukkan pecahan. Kata \"a\" sudah ada di catatan, jadi tulis \"third\" saja. \"A third\" adalah dua kata dan akan dinilai salah."
+    },
+    {
+      "n": 6,
+      "answer": "pollution",
+      "evidence": "growing pollution in many lakes and rivers made natural ice unsafe to use with food",
+      "explain": "\"Because of ___\" butuh kata benda. \"Made natural ice unsafe to use with food\" = no longer safe for food. Jangan menulis \"growing pollution\": itu dua kata."
+    }
+  ]
+}

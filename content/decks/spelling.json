@@ -1,0 +1,127 @@
+{
+  "id": "spelling",
+  "title": "Kata yang sering salah eja (Listening)",
+  "description": "Kata yang sering muncul sebagai jawaban Listening dan mudah salah eja. Bagian depan: artinya; tulis ejaannya dalam hati, lalu balik kartunya.",
+  "cards": [
+    {
+      "front": "akomodasi",
+      "back": "accommodation — cc dan mm"
+    },
+    {
+      "front": "pemerintah",
+      "back": "government — ada n sebelum m"
+    },
+    {
+      "front": "lingkungan",
+      "back": "environment — ada n sebelum m"
+    },
+    {
+      "front": "perpustakaan",
+      "back": "library — ada r setelah b"
+    },
+    {
+      "front": "Februari",
+      "back": "February — ada r setelah b"
+    },
+    {
+      "front": "Rabu",
+      "back": "Wednesday — d diam setelah e"
+    },
+    {
+      "front": "perlu",
+      "back": "necessary — satu c, dua s"
+    },
+    {
+      "front": "restoran",
+      "back": "restaurant — au di tengah"
+    },
+    {
+      "front": "suhu",
+      "back": "temperature — ada a: temp-er-a-ture"
+    },
+    {
+      "front": "kuesioner",
+      "back": "questionnaire — nn dan -aire"
+    },
+    {
+      "front": "kuitansi",
+      "back": "receipt — p diam"
+    },
+    {
+      "front": "jadwal",
+      "back": "schedule"
+    },
+    {
+      "front": "tetangga",
+      "back": "neighbour — UK; neighbor (US) juga diterima"
+    },
+    {
+      "front": "warna",
+      "back": "colour — UK; color (US) juga diterima"
+    },
+    {
+      "front": "pusat",
+      "back": "centre — UK; center (US) juga diterima"
+    },
+    {
+      "front": "program",
+      "back": "programme — UK; program (US) juga diterima"
+    },
+    {
+      "front": "sesekali",
+      "back": "occasionally — cc, satu s"
+    },
+    {
+      "front": "berbeda",
+      "back": "different — ff"
+    },
+    {
+      "front": "bisnis",
+      "back": "business — u setelah b, bukan i"
+    },
+    {
+      "front": "sukses",
+      "back": "successful — cc, ss, satu l"
+    },
+    {
+      "front": "alamat",
+      "back": "address — dd dan ss"
+    },
+    {
+      "front": "komite",
+      "back": "committee — mm, tt, ee"
+    },
+    {
+      "front": "taman kanak-kanak / TK",
+      "back": "kindergarten — garten, bukan garden"
+    },
+    {
+      "front": "pemandangan",
+      "back": "scenery — sc di depan"
+    },
+    {
+      "front": "rekomendasi",
+      "back": "recommendation — satu c, mm"
+    },
+    {
+      "front": "peralatan",
+      "back": "equipment — tidak berbentuk jamak (bukan equipments)"
+    },
+    {
+      "front": "informasi",
+      "back": "information — tidak berbentuk jamak (bukan informations)"
+    },
+    {
+      "front": "saran",
+      "back": "advice (kata benda) — advise adalah kata kerja"
+    },
+    {
+      "front": "kalender",
+      "back": "calendar — -dar, bukan -der"
+    },
+    {
+      "front": "parlemen",
+      "back": "parliament — ia di tengah"
+    }
+  ]
+}

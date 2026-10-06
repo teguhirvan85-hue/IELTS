@@ -1,0 +1,87 @@
+{
+  "id": "ynng-2",
+  "lesson": "ynng",
+  "skill": "reading",
+  "title": "Should hospitals publish waiting times?",
+  "minutes": 7,
+  "passage": {
+    "title": "Should Hospitals Publish Their Waiting Times?",
+    "paragraphs": [
+      {
+        "text": "In many countries, patients who need a planned operation, such as a hip replacement, have little idea how long they will have to wait. Some health authorities have started publishing the waiting times for each hospital online, and others are considering doing the same. Critics argue that the figures will confuse patients and put unfair pressure on staff. In my view, publication is the right decision, provided that it is done with care."
+      },
+      {
+        "text": "The strongest argument in its favour is a simple one: patients have a right to know. A person waiting in pain for surgery can plan their work and family life far better if they are told the wait will be about five months rather than 'as soon as possible'. Indeed, I would argue that uncertainty is often harder for patients to bear than the wait itself. Published figures may also allow patients, where the system permits it, to choose a hospital with a shorter list."
+      },
+      {
+        "text": "Opponents warn that hospitals will try to improve their numbers rather than their care. This danger is real. If managers are judged only on average waiting times, they may be tempted to treat quick, simple cases first and leave complex ones at the back of the queue. However, this is an argument for publishing better information, not less. Each hospital should report how long most patients wait for each type of treatment, rather than a single figure that hides the longest delays."
+      },
+      {
+        "text": "A second objection is that the public will compare hospitals unfairly. A large city hospital that takes the most difficult cases from a whole region will naturally have longer waits than a small local clinic. I accept that crude league tables would be misleading, and I would not support them. Instead, the figures should appear alongside a short explanation of what each hospital does, so that patients can understand why the numbers differ."
+      },
+      {
+        "text": "Finally, it would be naive to imagine that publishing waiting times will, by itself, make them shorter. Waiting lists grow when there are not enough surgeons, nurses and operating theatres, and no website can change that. What publication can do is make the problem visible, and that is often the first step towards persuading governments to pay for a solution."
+      }
+    ]
+  },
+  "instruction": "Do the following statements agree with the views of the writer in the passage? Choose YES, NO or NOT GIVEN.",
+  "input": "choice",
+  "options": [
+    {
+      "key": "YES",
+      "text": "YES"
+    },
+    {
+      "key": "NO",
+      "text": "NO"
+    },
+    {
+      "key": "NOT GIVEN",
+      "text": "NOT GIVEN"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "prompt": "Hospitals should make their waiting times public, as long as this is handled carefully.",
+      "answer": "YES",
+      "evidence": "In my view, publication is the right decision, provided that it is done with care.",
+      "explain": "\"In my view\" menandai pendapat penulis sendiri, setelah ia menyebut pendapat \"critics\". \"Provided that it is done with care\" = as long as this is handled carefully: YES."
+    },
+    {
+      "n": 2,
+      "prompt": "Not knowing how long they will wait can be more distressing for patients than the wait itself.",
+      "answer": "YES",
+      "evidence": "I would argue that uncertainty is often harder for patients to bear than the wait itself",
+      "explain": "\"Uncertainty\" = not knowing how long they will wait, dan \"harder for patients to bear\" = more distressing. Penanda \"I would argue\" menunjukkan ini pendapat penulis: YES."
+    },
+    {
+      "n": 3,
+      "prompt": "Most patients would be willing to travel to a distant hospital in order to be treated sooner.",
+      "answer": "NOT GIVEN",
+      "evidence": "Published figures may also allow patients, where the system permits it, to choose a hospital with a shorter list.",
+      "explain": "Penulis hanya bilang data yang dipublikasikan bisa membantu pasien memilih rumah sakit dengan antrean lebih pendek. Apakah kebanyakan pasien mau bepergian jauh tidak dibahas. Kata \"most\" dan \"distant\" tidak punya dasar di teks: NOT GIVEN."
+    },
+    {
+      "n": 4,
+      "prompt": "The concern that hospitals will put their figures before patient care is exaggerated.",
+      "answer": "NO",
+      "evidence": "This danger is real.",
+      "explain": "Penulis menanggapi kekhawatiran \"opponents\" itu dengan \"This danger is real\", artinya ia menganggapnya serius, bukan berlebihan. Ia hanya tidak setuju dengan solusi mereka. Pernyataan bertentangan dengan pendapat penulis: NO."
+    },
+    {
+      "n": 5,
+      "prompt": "Simple rankings of hospitals would help patients to make sensible choices.",
+      "answer": "NO",
+      "evidence": "I accept that crude league tables would be misleading, and I would not support them.",
+      "explain": "\"Crude league tables\" = simple rankings, dan penulis menyebutnya \"misleading\" serta tidak mendukungnya. Pernyataan bilang ranking seperti itu membantu pasien: NO."
+    },
+    {
+      "n": 6,
+      "prompt": "Training more surgeons should take priority over building new operating theatres.",
+      "answer": "NOT GIVEN",
+      "evidence": null,
+      "explain": "Penulis menyebut kekurangan dokter bedah, perawat, dan ruang operasi sebagai penyebab antrean, tapi tidak membandingkan mana yang lebih penting. Tidak ada pendapat tentang prioritas: NOT GIVEN."
+    }
+  ]
+}

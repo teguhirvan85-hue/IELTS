@@ -1,0 +1,87 @@
+{
+  "id": "l-completion-1",
+  "lesson": "l-completion",
+  "skill": "listening",
+  "title": "Booking an evening course",
+  "minutes": 5,
+  "script": [
+    { "speaker": "Narrator", "voice": "Daniel", "text": "You will hear a man phoning an arts centre to book a place on an evening course. First, you have some time to look at questions 1 to 6." },
+    { "speaker": "Narrator", "voice": "Daniel", "text": "Now listen carefully and answer questions 1 to 6." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "Good afternoon, Kestrel Bay Arts Centre, Jenny speaking. How can I help?" },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Oh, hello. I'm ringing about your evening courses. I'd like to book a place for the autumn term, if there's still space." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "Of course. Let me just open the booking form. Can I take your name first?" },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Yes, it's Martin Browne. That's Browne with an E on the end, so B, R, O, W, N, E." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "Thank you, Mr Browne. And which course are you interested in?" },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Well, I did look at life drawing, but I think I'd rather make something I can actually use at home. So, pottery, please. I've never done it before." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "That's fine, the pottery course is designed for complete beginners. We run two groups, one on Tuesday evenings and one on Thursday evenings, both from seven till nine." },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Tuesday would be best for me, because I often work late on Thursdays." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "Let me just check. Oh dear, I'm afraid the Tuesday group filled up this morning. There are still a few places on Thursday, though." },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Ah, that's a shame. Well, I'm sure I can sort something out with my manager. Put me down for Thursday, then." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "Lovely. The course runs for ten weeks. The fee is seventy pounds, and there's a separate charge of fifteen pounds for the clay and glazes." },
+    { "speaker": "Martin", "voice": "Rishi", "text": "So that's eighty-five pounds altogether?" },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "That's right, eighty-five pounds in total. You can pay online or here at reception." },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Great. Do I need to bring any tools or anything?" },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "No, we supply all the tools, and there are aprons in the studio. The only thing you need to bring is a small towel, because your hands get very muddy." },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Good to know. And one last thing, is there anywhere to park?" },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "Our own car park is closed for repairs until December, unfortunately. Don't use the one opposite the library, because that charges all evening. The best place is the car park behind the swimming pool. It's free after six o'clock." },
+    { "speaker": "Martin", "voice": "Rishi", "text": "Behind the swimming pool, right. Thanks very much for your help." },
+    { "speaker": "Receptionist", "voice": "Karen", "text": "You're welcome, Mr Browne. We'll see you in October." }
+  ],
+  "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+  "input": "text",
+  "wordLimit": 2,
+  "context": {
+    "kind": "form",
+    "title": "Kestrel Bay Arts Centre: Evening Course Booking",
+    "lines": [
+      "Name: Martin [[1]]",
+      "Course: [[2]] (beginners)",
+      "Day: [[3]] evenings, 7–9 pm",
+      "Length of course: 10 weeks",
+      "Total cost: £[[4]] (including materials)",
+      "Students should bring: a [[5]]",
+      "Parking: use the car park behind the [[6]]"
+    ]
+  },
+  "questions": [
+    {
+      "n": 1,
+      "answer": "Browne",
+      "evidence": "B, R, O, W, N, E",
+      "explain": "Nama keluarga dieja huruf per huruf: B, R, O, W, N, E. Martin menegaskan ada huruf E di akhir (\"with an E on the end\"), jadi \"Brown\" tanpa E salah. Di Part 1, nama yang dieja hampir selalu jadi jawaban."
+    },
+    {
+      "n": 2,
+      "answer": "pottery",
+      "evidence": "So, pottery, please.",
+      "explain": "Martin sempat menyebut \"life drawing\", tapi kalimatnya berlanjut dengan \"but I think I'd rather…\", jadi pilihan itu ditolak. Kata \"beginners\" sudah tercetak di formulir, jadi cukup tulis \"pottery\"."
+    },
+    {
+      "n": 3,
+      "answer": "Thursday",
+      "evidence": "Put me down for Thursday, then.",
+      "explain": "Jebakan koreksi: Martin minta \"Tuesday\", tapi kelas Selasa sudah penuh (\"filled up this morning\"). Ia akhirnya setuju \"Thursday\". Tulis informasi terakhir yang disepakati, bukan yang pertama disebut."
+    },
+    {
+      "n": 4,
+      "answer": "85",
+      "accept": ["eighty-five"],
+      "evidence": "eighty-five pounds in total",
+      "explain": "Ada tiga angka: 70 (biaya kursus saja), 15 (tanah liat dan glasir), dan 85. Label \"Total cost … (including materials)\" berarti jumlah keduanya, dan resepsionis menegaskan \"eighty-five pounds in total\". Simbol £ sudah tercetak, jadi tulis angkanya saja."
+    },
+    {
+      "n": 5,
+      "answer": "small towel",
+      "accept": ["towel"],
+      "evidence": "The only thing you need to bring is a small towel",
+      "explain": "\"Tools\" dan \"aprons\" disebut, tapi keduanya disediakan oleh pusat seni, jadi bukan jawaban. Yang harus dibawa: \"a small towel\". Formulir memakai \"a\", jadi jawabannya tunggal: towel, bukan towels."
+    },
+    {
+      "n": 6,
+      "answer": "swimming pool",
+      "accept": ["pool"],
+      "evidence": "The best place is the car park behind the swimming pool.",
+      "explain": "Tiga tempat parkir disebut. Parkiran milik pusat seni sedang ditutup, dan yang di seberang \"library\" mahal (\"charges all evening\"). Kata \"behind\" di formulir cocok dengan \"the car park behind the swimming pool\"."
+    }
+  ]
+}
