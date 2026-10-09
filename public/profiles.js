@@ -1,5 +1,5 @@
 import { formatBand, daysUntil, todayISO } from "/shared.js";
-import { $, h, api, icon } from "/ui.js";
+import { $, h, api, icon, themeToggle } from "/ui.js";
 
 const MODULE = { general: "General Training", academic: "Academic" };
 const next = new URLSearchParams(location.search).get("next");
@@ -36,6 +36,7 @@ function lineOfTheDay() {
 }
 
 $("#picker-mark").append(icon("logo"));
+$("#picker-theme").replaceWith(themeToggle());
 
 const TILES = ["blue", "pink", "lime"];
 

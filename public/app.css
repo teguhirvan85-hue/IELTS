@@ -12,7 +12,7 @@
 
 /* ================= tokens ================= */
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
   --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
@@ -100,75 +100,76 @@
   --ring-core: linear-gradient(160deg, #5AA2FF 0%, #1F6FEB 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #F5F5F7;
-    --ink-2: #C7C7CC;
-    --muted: #98989F;
-    --line: rgba(255, 255, 255, 0.08);
-    --line-strong: rgba(255, 255, 255, 0.16);
-    --track: rgba(118, 118, 128, 0.28);
-    --fill: rgba(118, 118, 128, 0.18);
-    --well: #2A2A2E;
-    --well-hover: #333338;
-    --primary-bg: #F5F5F7;
-    --primary-bg-hover: #FFFFFF;
-    --primary-ink: #1D1D1F;
+/* Dark mode is a manual choice (the toggle in the navigation sets data-theme="dark" on <html>);
+   the app is light by default, whatever the phone is set to. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #F5F5F7;
+  --ink-2: #C7C7CC;
+  --muted: #98989F;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --track: rgba(118, 118, 128, 0.28);
+  --fill: rgba(118, 118, 128, 0.18);
+  --well: #2A2A2E;
+  --well-hover: #333338;
+  --primary-bg: #F5F5F7;
+  --primary-bg-hover: #FFFFFF;
+  --primary-ink: #1D1D1F;
 
-    --accent: #0A84FF;
-    --accent-strong: #0A84FF;
-    --accent-ink: #64B0FF;
-    --accent-wash: rgba(10, 132, 255, 0.2);
-    --wrong: #FF9F0A;
-    --wrong-ink: #FFB547;
-    --wrong-wash: rgba(255, 159, 10, 0.18);
-    --danger: #FF6961;
-    --danger-wash: rgba(255, 69, 58, 0.2);
-    --highlight: rgba(255, 214, 10, 0.3);
+  --accent: #0A84FF;
+  --accent-strong: #0A84FF;
+  --accent-ink: #64B0FF;
+  --accent-wash: rgba(10, 132, 255, 0.2);
+  --wrong: #FF9F0A;
+  --wrong-ink: #FFB547;
+  --wrong-wash: rgba(255, 159, 10, 0.18);
+  --danger: #FF6961;
+  --danger-wash: rgba(255, 69, 58, 0.2);
+  --highlight: rgba(255, 214, 10, 0.3);
 
-    --chart-1: #3987E5;
-    --chart-surface: #1C1C1E;
-    --neutral-mark: #8E8E93;
-    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
-    --series-5: #d55181; --series-6: #008300; --series-7: #9085e9; --series-8: #e66767;
+  --chart-1: #3987E5;
+  --chart-surface: #1C1C1E;
+  --neutral-mark: #8E8E93;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  --series-5: #d55181; --series-6: #008300; --series-7: #9085e9; --series-8: #e66767;
 
-    --mat-clear: rgba(255, 255, 255, 0.07);
-    --mat-clear-hover: rgba(255, 255, 255, 0.12);
-    --mat-regular: #1C1C1E;
-    --mat-thick: rgba(40, 40, 44, 0.9);
-    --mat-lens: #3A3A3F;
-    --mat-field: rgba(255, 255, 255, 0.06);
-    --btn-bg: #2C2C30;
-    --btn-bg-hover: #36363B;
-    --rim: linear-gradient(150deg, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.1) 28%, rgba(255, 255, 255, 0.03) 58%, rgba(255, 255, 255, 0.14) 100%);
-    --rim-soft: linear-gradient(160deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.08) 100%);
-    --spec: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(255, 255, 255, 0.03);
-    --edge: 0 0 0 1px rgba(255, 255, 255, 0.06);
-    --shadow-ctl: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 14px -8px rgba(0, 0, 0, 0.5);
-    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 18px 40px -22px rgba(0, 0, 0, 0.7);
-    --shadow-float: 0 2px 8px rgba(0, 0, 0, 0.35), 0 26px 64px -22px rgba(0, 0, 0, 0.8);
+  --mat-clear: rgba(255, 255, 255, 0.07);
+  --mat-clear-hover: rgba(255, 255, 255, 0.12);
+  --mat-regular: #1C1C1E;
+  --mat-thick: rgba(40, 40, 44, 0.9);
+  --mat-lens: #3A3A3F;
+  --mat-field: rgba(255, 255, 255, 0.06);
+  --btn-bg: #2C2C30;
+  --btn-bg-hover: #36363B;
+  --rim: linear-gradient(150deg, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.1) 28%, rgba(255, 255, 255, 0.03) 58%, rgba(255, 255, 255, 0.14) 100%);
+  --rim-soft: linear-gradient(160deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.08) 100%);
+  --spec: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+  --edge: 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --shadow-ctl: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 14px -8px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 18px 40px -22px rgba(0, 0, 0, 0.7);
+  --shadow-float: 0 2px 8px rgba(0, 0, 0, 0.35), 0 26px 64px -22px rgba(0, 0, 0, 0.8);
 
-    --wall-base: linear-gradient(180deg, #08080A 0%, #0C0C0F 100%);
-    --wall-1: rgba(255, 130, 80, 0.04);
-    --wall-2: rgba(60, 110, 255, 0.12);
-    --wall-3: rgba(30, 170, 150, 0.04);
-    --wall-4: rgba(130, 90, 255, 0.07);
+  --wall-base: linear-gradient(180deg, #08080A 0%, #0C0C0F 100%);
+  --wall-1: rgba(255, 130, 80, 0.04);
+  --wall-2: rgba(60, 110, 255, 0.12);
+  --wall-3: rgba(30, 170, 150, 0.04);
+  --wall-4: rgba(130, 90, 255, 0.07);
 
-    --tile-lime: linear-gradient(160deg, #2E3D13 0%, #23300D 100%);
-    --tile-pink: linear-gradient(165deg, #3C2134 0%, #2D2343 100%);
-    --tile-blue: linear-gradient(170deg, #1B2841 0%, #193360 100%);
-    --tile-chip: rgba(255, 255, 255, 0.08);
-    --tile-muted: rgba(255, 255, 255, 0.64);
-    --tone-blue: #3987E5;
-    --tone-orange: #D95926;
-    --tone-pink: #D55181;
-    --tone-green: #199E70;
-    --seg-on: #4C9AFF;
-    --seg-off: rgba(255, 255, 255, 0.1);
-    --ring-track: rgba(255, 255, 255, 0.14);
-    --ring-fill: #4C9AFF;
-    --ring-core: linear-gradient(160deg, #4C9AFF 0%, #1F6FEB 100%);
-  }
+  --tile-lime: linear-gradient(160deg, #2E3D13 0%, #23300D 100%);
+  --tile-pink: linear-gradient(165deg, #3C2134 0%, #2D2343 100%);
+  --tile-blue: linear-gradient(170deg, #1B2841 0%, #193360 100%);
+  --tile-chip: rgba(255, 255, 255, 0.08);
+  --tile-muted: rgba(255, 255, 255, 0.64);
+  --tone-blue: #3987E5;
+  --tone-orange: #D95926;
+  --tone-pink: #D55181;
+  --tone-green: #199E70;
+  --seg-on: #4C9AFF;
+  --seg-off: rgba(255, 255, 255, 0.1);
+  --ring-track: rgba(255, 255, 255, 0.14);
+  --ring-fill: #4C9AFF;
+  --ring-core: linear-gradient(160deg, #4C9AFF 0%, #1F6FEB 100%);
 }
 
 /* "Reduce transparency" in System Settings: solid surfaces, no blur. */
@@ -1160,6 +1161,7 @@ mark.ev sup { margin-right: 3px; font: 700 10px var(--font-num); color: var(--ac
 
 /* ================= who's studying? ================= */
 .picker { max-width: 880px; margin: 0 auto; padding: 28px 24px 56px; display: flex; flex-direction: column; gap: 22px; }
+.picker-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .picker-top .brand { font-size: 15px; }
 .picker-head { margin-top: 4vh; }
 .picker-head .eyebrow { margin-bottom: 8px; font-size: 15px; }
@@ -1323,12 +1325,10 @@ mark.ev sup { margin-right: 3px; font: 700 10px var(--font-num); color: var(--ac
 .lc-thumb.t1 { --th-bg: linear-gradient(160deg, #DFF5E9, #CFE6FF); --th-glass: linear-gradient(150deg, rgba(185, 150, 255, 0.96), rgba(112, 82, 232, 0.9)); --th-icon: #FFE07A; --th-shadow: rgba(112, 82, 232, 0.55); }
 .lc-thumb.t2 { --th-bg: linear-gradient(160deg, #FFF3C8, #FFE1C4); --th-glass: linear-gradient(150deg, rgba(255, 145, 195, 0.96), rgba(228, 72, 142, 0.9)); --th-icon: #FFFFFF; --th-shadow: rgba(228, 72, 142, 0.5); }
 .lc-thumb.t3 { --th-bg: linear-gradient(160deg, #E5E8FF, #F6DEFF); --th-glass: linear-gradient(150deg, rgba(95, 215, 190, 0.96), rgba(20, 160, 140, 0.9)); --th-icon: #FFF6B0; --th-shadow: rgba(20, 160, 140, 0.5); }
-@media (prefers-color-scheme: dark) {
-  .lc-thumb.t0 { --th-bg: linear-gradient(160deg, #3A2430, #3B2A22); }
-  .lc-thumb.t1 { --th-bg: linear-gradient(160deg, #1F3329, #1D2C3D); }
-  .lc-thumb.t2 { --th-bg: linear-gradient(160deg, #3A3320, #3A2C20); }
-  .lc-thumb.t3 { --th-bg: linear-gradient(160deg, #26283F, #33243D); }
-}
+[data-theme="dark"] .lc-thumb.t0 { --th-bg: linear-gradient(160deg, #3A2430, #3B2A22); }
+[data-theme="dark"] .lc-thumb.t1 { --th-bg: linear-gradient(160deg, #1F3329, #1D2C3D); }
+[data-theme="dark"] .lc-thumb.t2 { --th-bg: linear-gradient(160deg, #3A3320, #3A2C20); }
+[data-theme="dark"] .lc-thumb.t3 { --th-bg: linear-gradient(160deg, #26283F, #33243D); }
 
 /* progress: one segment per drill question, filled once the drill is done */
 .segbar { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 7px; border-radius: 12px; background: var(--mat-regular); box-shadow: var(--edge); }

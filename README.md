@@ -91,8 +91,9 @@ npm run audio    # buat audio Listening dari skrip (suara macOS + ffmpeg)
 Gaya Apple macOS/iOS (Liquid Glass): sidebar kaca melayang di kiri (di HP jadi tab bar di
 bawah plus bar atas), kontrol berbentuk kapsul kaca dengan kilau di tepi, kartu konten dari
 kaca yang lebih pekat supaya teks tetap terbaca, font sistem Apple (SF Pro / SF Rounded,
-teks bacaan New York atau Newsreader). Mengikuti mode terang/gelap sistem; kalau "Reduce
-transparency" aktif, kaca menjadi solid. Navigasi dirender dari satu tempat (`public/ui.js`).
+teks bacaan New York atau Newsreader). Selalu terang secara default, apa pun pengaturan HP;
+mode gelap dipilih manual lewat tombol bulan/matahari di navigasi (disimpan per perangkat,
+`data-theme="dark"` di `<html>`). Kalau "Reduce transparency" aktif, kaca menjadi solid. Navigasi dirender dari satu tempat (`public/ui.js`).
 
 ## Speaking
 

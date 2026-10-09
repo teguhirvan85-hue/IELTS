@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
+<script>try{if(localStorage.getItem("ielts-theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
 <title>Pilih peranmu · IELTS Coach</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -18,6 +19,7 @@
 <main class="picker">
   <header class="picker-top">
     <span class="brand"><span class="brand-mark" id="picker-mark"></span><span>IELTS Coach</span></span>
+    <span id="picker-theme"></span>
   </header>
   <div class="picker-head">
     <p class="eyebrow" id="greeting">Semangat!</p>
