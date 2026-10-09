@@ -1,4 +1,4 @@
-import { WRITING_MIN_WORDS, WRITING_MINUTES, essayWords, formatBand } from "/shared.js";
+import { WRITING_MIN_WORDS, WRITING_MINUTES, essayWords, formatBand, letterOpening } from "/shared.js";
 import { $, h, api, fmtDate, armedButton } from "/ui.js";
 import { renderMarkdown } from "/md.js";
 import { renderChart } from "/chart.js";
@@ -109,7 +109,7 @@ function promptView(p, task) {
       h("ul", {}, p.bullets.map((b) => h("li", { text: b }))),
       h("p", { class: "tp-small", text: "Write at least 150 words. You do NOT need to write any addresses." }),
       h("p", { class: "tp-small", text: "Begin your letter as follows:" }),
-      h("p", { class: "tp-opening", text: p.opening }));
+      h("p", { class: "tp-opening", text: letterOpening(p) }));
   }
   if (p.module === "academic") {
     return h("div", { class: "task-prompt" }, h("p", { text: p.prompt }), h("p", { class: "tp-small", text: "Write at least 150 words." }), renderChart(p.kind, p.chart));
@@ -145,7 +145,7 @@ function workspace(task) {
     ? h("textarea", { class: "tf custom-prompt", rows: "5", maxlength: "4000", placeholder: task === 1 && task1Module === "academic" ? "Tempel soalnya di sini. Untuk grafik, tulis juga angka-angka utamanya supaya Claude bisa memeriksa ketepatan datamu." : "Tempel atau ketik soalnya di sini." })
     : null;
   if (custom) custom.value = draft.custom || "";
-  const area = h("textarea", { class: "essay", spellcheck: "true", "aria-label": "Jawabanmu", placeholder: task === 1 && task1Module === "general" ? (p?.opening || "Dear …") : "Mulai menulis di sini…" });
+  const area = h("textarea", { class: "essay", spellcheck: "true", "aria-label": "Jawabanmu", placeholder: task === 1 && task1Module === "general" ? (p ? letterOpening(p) : "Dear …") : "Mulai menulis di sini…" });
   area.value = draft.text || "";
   const count = h("span", { class: "wc" });
   const updateCount = () => {

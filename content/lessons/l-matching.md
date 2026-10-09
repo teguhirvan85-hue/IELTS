@@ -10,7 +10,7 @@ order: 14
 
 Kamu mendapat **daftar item** bernomor (misalnya kegiatan, orang, atau tempat) dan sebuah **kotak pilihan** berhuruf A–G (komentar, pendapat, atau ciri). Tugasmu memasangkan setiap item dengan satu huruf. Contoh instruksi: *"What does the speaker say about each of the following…? Choose FIVE answers from the box."*
 
-Kadang soalnya dibalik, misalnya *"Which person is responsible for…?"*, tapi prinsipnya sama. Tipe ini muncul di Part 2 dan Part 3. Yang diuji: menangkap informasi tentang beberapa hal sekaligus dan mengenali parafrase.
+Kadang soalnya dibalik, misalnya *"Which person is responsible for…?"*, tapi prinsipnya sama. Tipe ini paling sering muncul di Part 2 dan Part 3. Yang diuji: menangkap informasi tentang beberapa hal sekaligus dan mengenali parafrase.
 
 ## Item berurutan, pilihan tidak
 
@@ -18,7 +18,7 @@ Ini kunci tipe ini:
 
 - **Item** (nomor 1, 2, 3…) dibahas sesuai urutan rekaman.
 - **Pilihan** di kotak (A–G) **tidak** berurutan, dan ditulis dengan kata yang berbeda dari rekaman.
-- Pilihan lebih banyak daripada item, jadi ada pilihan yang tidak terpakai. Biasanya satu huruf hanya dipakai sekali.
+- Biasanya pilihan lebih banyak daripada item, jadi ada pilihan yang tidak terpakai, dan satu huruf hanya dipakai sekali. Kalau pilihannya justru lebih sedikit daripada item (misalnya hanya tiga orang, A–C), satu huruf bisa dipakai lebih dari sekali.
 
 Artinya, nama item adalah penanda ("sekarang soal 3"), sedangkan isi komentarnya yang harus kamu cocokkan dengan kotak.
 

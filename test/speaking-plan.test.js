@@ -31,6 +31,15 @@ test("the examiner prompt carries timing and speaking rate", () => {
   assert.deepEqual(answerStats({ transcript: "a b c", seconds: 2 }), { words: 3, wpm: null });
 });
 
+test("typed answers carry no speaking time", () => {
+  const p = buildSpeakingPrompt({ ...session, typed: true }, { targetBand: 7 });
+  assert.match(p, /answers were TYPED/);
+  assert.match(p, /Typed answer · 19 words/);
+  assert.doesNotMatch(p, /Speaking time|words per minute/);
+  assert.equal(cleanSpeaking({ ...session, typed: true }).typed, true);
+  assert.equal(cleanSpeaking(session).typed, false);
+});
+
 test("speaking feedback: three criteria in order, band without pronunciation", () => {
   const raw = {
     criteria: [{ key: "lr", band: 6, comment: "l" }, { key: "fc", band: 5, comment: "f" }, { key: "gra", band: 6, comment: "g" }],

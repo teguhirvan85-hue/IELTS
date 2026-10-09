@@ -14,7 +14,7 @@
         "text": "The strongest argument in its favour is a simple one: patients have a right to know. A person waiting in pain for surgery can plan their work and family life far better if they are told the wait will be about five months rather than 'as soon as possible'. Indeed, I would argue that uncertainty is often harder for patients to bear than the wait itself. Published figures may also allow patients, where the system permits it, to choose a hospital with a shorter list."
       },
       {
-        "text": "Opponents warn that hospitals will try to improve their numbers rather than their care. This danger is real. If managers are judged only on average waiting times, they may be tempted to treat quick, simple cases first and leave complex ones at the back of the queue. However, this is an argument for publishing better information, not less. Each hospital should report how long most patients wait for each type of treatment, rather than a single figure that hides the longest delays."
+        "text": "Opponents warn that hospitals will try to improve their numbers rather than their care. This danger is real. If managers are judged only on average waiting times, they may be tempted to treat quick, simple cases first and leave complex ones at the back of the queue. However, this is an argument for publishing better information, not less. Each hospital should report waiting times for each type of treatment separately, including the longest waits, rather than a single average that hides them."
       },
       {
         "text": "A second objection is that the public will compare hospitals unfairly. A large city hospital that takes the most difficult cases from a whole region will naturally have longer waits than a small local clinic. I accept that crude league tables would be misleading, and I would not support them. Instead, the figures should appear alongside a short explanation of what each hospital does, so that patients can understand why the numbers differ."
@@ -24,7 +24,7 @@
       }
     ]
   },
-  "instruction": "Do the following statements agree with the views of the writer in the passage? Choose YES, NO or NOT GIVEN.",
+  "instruction": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
   "input": "choice",
   "options": [
     {

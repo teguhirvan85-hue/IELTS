@@ -29,7 +29,7 @@
     { "speaker": "Leila", "voice": "Karen", "text": "The managers would never agree to that, and honestly, I don't think it would change much." },
     { "speaker": "Tom", "voice": "Daniel", "text": "So we'd be building something that most staff simply wouldn't use. Fine, it goes to the bottom of the list." }
   ],
-  "instruction": "What opinion do the speakers give about each of the following training options? Choose FIVE answers from the box and write the correct letter, A–F, next to questions 1–5.",
+  "instruction": "What opinion do the speakers give about each of the following training options? Choose FIVE answers from the box and write the correct letter, A–G, next to questions 1–5.",
   "input": "choice",
   "optionsTitle": "Opinions",
   "options": [
@@ -38,7 +38,8 @@
     { "key": "C", "text": "It would quickly become out of date." },
     { "key": "D", "text": "Staff are unlikely to use it." },
     { "key": "E", "text": "It should be compulsory for everyone." },
-    { "key": "F", "text": "It would keep staff away from patients for too long." }
+    { "key": "F", "text": "It would keep staff away from patients for too long." },
+    { "key": "G", "text": "Ward managers would welcome it." }
   ],
   "questions": [
     {
@@ -53,7 +54,7 @@
       "prompt": "Classroom workshops",
       "answer": "F",
       "evidence": "That's a whole day when those nurses aren't caring for patients.",
-      "explain": "Leila bilang workshop murah, dan Tom menjawab \"Cost isn't the issue\", jadi bukan A. Masalahnya: perawat meninggalkan bangsal seharian, \"a whole day when those nurses aren't caring for patients\" = away from patients for too long."
+      "explain": "Leila bilang workshop murah, dan Tom menjawab \"Cost isn't the issue\", jadi bukan A. Masalahnya: perawat meninggalkan bangsal seharian, \"a whole day when those nurses aren't caring for patients\" = away from patients for too long. G juga jebakan: para manajer justru mengeluh (\"The managers complained about exactly that\")."
     },
     {
       "n": 3,

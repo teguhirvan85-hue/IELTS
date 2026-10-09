@@ -4,8 +4,8 @@ Task 2 menyumbang dua pertiga nilai Writing. Penguji memakai empat kriteria berb
 
 - **Task Response.** Band 6 menyentuh semua bagian soal, tetapi ada yang dibahas sekilas, posisinya kadang kabur, dan beberapa ide hanya disebut. Band 7 menjawab setiap bagian, posisinya jelas dari pendahuluan sampai kesimpulan, dan ide utamanya diperluas dengan alasan serta contoh.
 - **Coherence and Cohesion.** Band 6 sudah berparagraf dan bisa diikuti, tetapi penghubungnya terasa mekanis atau kadang keliru. Band 7 punya satu ide pusat per paragraf, alurnya maju secara logis, dan penghubung serta kata rujukan (*this, such, these*) dipakai wajar.
-- **Lexical Resource.** Band 6 punya kosakata yang cukup dan mencoba kata yang kurang umum, tetapi sering kurang tepat. Band 7 lebih presisi, memakai kolokasi yang alami (*a heavy workload*, *raise awareness*), dan hanya sesekali salah pilih kata atau ejaan.
-- **Grammatical Range and Accuracy.** Band 6 mencampur kalimat sederhana dan kompleks, tetapi yang kompleks sering salah. Band 7 memakai beragam struktur kompleks dengan kendali yang baik, sehingga banyak kalimat yang bebas kesalahan.
+- **Lexical Resource.** Band 6 punya kosakata yang cukup dan mencoba kata yang kurang umum, tetapi masih ada yang kurang tepat. Band 7 lebih presisi, memakai kolokasi yang alami (*a heavy workload*, *raise awareness*), dan hanya sesekali salah pilih kata atau ejaan.
+- **Grammatical Range and Accuracy.** Band 6 mencampur kalimat sederhana dan kompleks, dan masih ada kesalahan, meski jarang mengganggu makna. Band 7 memakai beragam struktur kompleks dengan kendali yang baik, sehingga banyak kalimat yang bebas kesalahan.
 
 ## Lima jenis soal
 
@@ -24,7 +24,7 @@ Kenali jenisnya dari kalimat terakhir soal. Jenis soal menentukan isi body parag
 Empat atau lima paragraf, sekitar 270–300 kata.
 
 1. **Pendahuluan (2 kalimat).** Parafrasekan topik soal, lalu tulis tesis: jawaban langsung atas pertanyaan. Lewati pembuka umum seperti *"Nowadays, technology is everywhere."*
-2. **Body paragraph (2 atau 3).** Satu paragraf, satu ide utama, sekitar 90–110 kata.
+2. **Body paragraph (2 atau 3).** Satu paragraf, satu ide utama: sekitar 90–110 kata jika dua paragraf, sekitar 70–80 kata jika tiga.
 3. **Kesimpulan (1–2 kalimat).** Ulangi posisimu dengan kata lain. Jangan menambah ide baru.
 
 Pola setiap body paragraph:

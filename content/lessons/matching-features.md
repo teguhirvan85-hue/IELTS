@@ -16,7 +16,7 @@ Yang diuji ada dua: kemampuan **scanning** untuk menemukan nama dengan cepat, da
 
 ## Mulai dari nama, bukan dari pernyataan
 
-Pernyataan di soal **tidak** mengikuti urutan teks. Sebaliknya, nama di daftar mudah ditemukan karena diawali huruf kapital. Jadi, jadikan nama sebagai titik awal.
+Pernyataan di soal **biasanya tidak** mengikuti urutan teks. Sebaliknya, nama di daftar mudah ditemukan karena diawali huruf kapital. Jadi, jadikan nama sebagai titik awal.
 
 - Scan teks dan tandai **setiap** kemunculan setiap nama. Satu orang bisa muncul di paragraf kedua, lalu muncul lagi di paragraf terakhir.
 - Setelah disebut sekali, orang itu sering dirujuk dengan *she, he, the researcher, the linguist, her team*. Pendapatnya bisa berlanjut beberapa kalimat setelah namanya.

@@ -253,8 +253,9 @@ export function gradeDrill(drill, answers = {}) {
     let max = 1;
     let overLimit = false;
     if (Array.isArray(q.answer)) {
-      const picked = new Set(Array.isArray(given) ? given : []);
       max = q.answer.length;
+      // Only as many letters as there are answers count, as on the answer sheet.
+      const picked = new Set((Array.isArray(given) ? given : []).slice(0, max));
       points = q.answer.filter((a) => picked.has(a)).length;
     } else if ((q.input || drill.input) === "text") {
       overLimit = Boolean(drill.wordLimit) && limitWords(drill, given) > drill.wordLimit;
@@ -416,6 +417,12 @@ export function taskBand(criteria) {
   return Math.floor((bands.reduce((a, b) => a + b, 0) / bands.length) * 2) / 2;
 }
 
+// As on the real paper: a formal letter prints "Dear Sir or Madam,"; for anyone the writer
+// knows, the line is left for the candidate to fill in, so choosing the greeting is part of the task.
+export function letterOpening(p) {
+  return p.kind === "formal" ? p.opening : "Dear ……………,";
+}
+
 // The full task as the candidate sees it, in plain text (also sent to the examiner).
 export function promptText(p) {
   if (!p) return "";
@@ -430,7 +437,7 @@ export function promptText(p) {
       "Write at least 150 words.",
       "You do NOT need to write any addresses.",
       "Begin your letter as follows:",
-      p.opening,
+      letterOpening(p),
     ].join("\n");
   }
   if (p.module === "academic") return [p.prompt, "", "Write at least 150 words.", "", chartAsText(p.kind, p.chart)].join("\n");

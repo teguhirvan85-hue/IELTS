@@ -8,7 +8,7 @@
     "title": "The Return of the Night Train",
     "paragraphs": [
       {
-        "text": "For much of the twentieth century, overnight trains were a common way to travel between Europe's major cities. By the early 2000s, however, many routes had been cancelled. Low-cost airlines offered fares that rail operators could not match, and the ageing sleeping cars were expensive to maintain. In 2016, one of Europe's largest national railways withdrew from the night-train business altogether."
+        "text": "For much of the twentieth century, overnight trains were a common way to travel between Europe's major cities. By the early 2000s, however, many routes had been cancelled. The reasons were largely financial: low-cost airlines offered fares that rail operators could not match, and the ageing sleeping cars were expensive to maintain. In 2016, one of Europe's largest national railways withdrew from the night-train business altogether."
       },
       {
         "text": "A smaller state operator in central Europe took a different view. It bought a number of the unwanted carriages and relaunched several routes under its own brand. Within three years, passenger numbers on these services had risen by more than a third, and the company announced plans to order new trains rather than continue refurbishing old ones."
@@ -21,7 +21,7 @@
       }
     ]
   },
-  "instruction": "Do the following statements agree with the information given in the passage? Choose TRUE, FALSE or NOT GIVEN.",
+  "instruction": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
   "input": "choice",
   "options": [
     {
@@ -42,8 +42,8 @@
       "n": 1,
       "prompt": "Cheaper air travel was one reason why many night-train routes were cancelled.",
       "answer": "TRUE",
-      "evidence": "Low-cost airlines offered fares that rail operators could not match",
-      "explain": "\"Low-cost airlines\" = cheaper air travel, dan kalimat itu menjelaskan alasan rute dibatalkan. Maknanya sama, jadi TRUE."
+      "evidence": "low-cost airlines offered fares that rail operators could not match",
+      "explain": "\"Low-cost airlines\" = cheaper air travel, dan teks menyebutnya sebagai salah satu alasan rute dibatalkan (\"The reasons were largely financial\"). Maknanya sama, jadi TRUE."
     },
     {
       "n": 2,
@@ -68,10 +68,10 @@
     },
     {
       "n": 5,
-      "prompt": "A night-train passenger always produces the same amount of emissions, wherever they travel.",
+      "prompt": "The emissions produced per night-train passenger are always the same.",
       "answer": "FALSE",
       "evidence": "exact figures depend on how the electricity powering the train is generated",
-      "explain": "Teks bilang angkanya tergantung cara listrik dihasilkan, jadi tidak selalu sama. Kata \"always\" di pernyataan bertentangan dengan teks: FALSE."
+      "explain": "Teks bilang angka pastinya (\"exact figures\") tergantung cara listrik untuk kereta dihasilkan, jadi tidak selalu sama. Kata \"always\" di pernyataan bertentangan dengan teks: FALSE."
     },
     {
       "n": 6,

@@ -42,6 +42,9 @@ function show(v) {
 }
 
 const pick = (list) => list[Math.floor(Math.random() * list.length)];
+const shuffle = (list) => list.map((x) => [Math.random(), x]).sort((a, b) => a[0] - b[0]).map(([, x]) => x);
+// Part 1 topics an examiner starts with.
+const OPENERS = new Set(["p1-01", "p1-02", "p1-03"]);
 function cueText(card) {
   return [card.cue, "You should say:", ...card.bullets.map((b) => `• ${b}`), card.last].join("\n");
 }
@@ -64,11 +67,13 @@ function showHome() {
     } else {
       const c = mode === "full" ? pick(bank.part2) : bank.part2.find((x) => x.id === card.value);
       if (mode === "full") {
-        const t = pick(bank.part1);
-        items = t.questions.slice(0, 4).map((q) => ({ part: 1, question: q }));
+        // As in the exam: Part 1 opens with work/studies or home/hometown, then two more topics.
+        const opener = pick(bank.part1.filter((t) => OPENERS.has(t.id)));
+        const others = shuffle(bank.part1.filter((t) => !OPENERS.has(t.id))).slice(0, 2);
+        items = [...opener.questions.slice(0, 4), ...others.flatMap((t) => t.questions.slice(0, 3))].map((q) => ({ part: 1, question: q }));
       }
       items.push({ part: 2, question: cueText(c), card: c });
-      items.push(...c.part3.slice(0, 5).map((q) => ({ part: 3, question: q })));
+      items.push(...c.part3.map((q) => ({ part: 3, question: q })));
       title = mode === "full" ? `Tes lengkap: ${c.cue.replace(/^Describe /, "")}` : `Part 2 & 3: ${c.cue.replace(/^Describe /, "")}`;
     }
     runSession({ mode, title, items, typed: typed.checked || (!Recognition && !navigator.mediaDevices) });
@@ -86,9 +91,9 @@ function showHome() {
     h("section", { class: "card" },
       h("div", { class: "card-head" }, h("div", {}, h("h2", { text: "Pilih latihan" }), h("p", { class: "card-note", text: "Speaking IELTS berlangsung 11–14 menit dalam tiga bagian. Latih per bagian, atau coba simulasi lengkap." }))),
       h("div", { class: "mode-grid" },
-        tile("Part 1 · Wawancara", "4–5 pertanyaan · ±4 menit", "Pertanyaan singkat tentang dirimu. Jawab 2–4 kalimat: jawaban langsung, alasan, lalu contoh.", h("label", { class: "fl" }, "Topik", topic), "part1"),
+        tile("Part 1 · Wawancara", "1 topik · 5 pertanyaan · ±3 menit", "Pertanyaan singkat tentang dirimu. Jawab 2–4 kalimat: jawaban langsung, alasan, lalu contoh.", h("label", { class: "fl" }, "Topik", topic), "part1"),
         tile("Part 2 & 3 · Cue card", "1 menit persiapan · 2 menit bicara · diskusi", "Bicara sendiri selama 1–2 menit tentang satu topik, lalu diskusi yang lebih abstrak.", h("label", { class: "fl" }, "Kartu", card), "part2"),
-        tile("Tes lengkap", "Part 1, 2, 3 · ±12 menit", "Simulasi seperti hari ujian dengan topik acak. Cocok untuk minggu-minggu terakhir.", null, "full")),
+        tile("Tes lengkap", "Part 1, 2, 3 · ±13 menit", "Simulasi seperti hari ujian: tiga topik Part 1, satu cue card, lalu diskusi Part 3. Cocok untuk minggu-minggu terakhir.", null, "full")),
       h("div", { class: "s-options" },
         h("label", { class: "check" }, voice, h("span", { text: "Pertanyaan dibacakan suara examiner" })),
         h("label", { class: "check" }, typed, h("span", { text: "Ketik jawaban (tanpa mikrofon)" })),
@@ -313,7 +318,7 @@ function review() {
     try {
       const created = await api("/api/speaking/sessions", {
         method: "POST",
-        body: { mode: session.mode, title: session.title, answers: session.answers.map(({ part, question, transcript, seconds }) => ({ part, question, transcript, seconds })) },
+        body: { mode: session.mode, title: session.title, typed: Boolean(session.typed), answers: session.answers.map(({ part, question, transcript, seconds }) => ({ part, question, transcript, seconds })) },
       });
       // Recordings go up one by one; marking only needs the transcripts.
       for (const [i, a] of session.answers.entries()) {
@@ -381,10 +386,10 @@ async function showResult(id) {
 function answersView(s) {
   return h("ol", { class: "answer-list" }, s.answers.map((a, i) => {
     const words = (a.transcript.match(/\S+/g) || []).length;
-    const wpm = a.seconds >= 5 ? Math.round((words / a.seconds) * 60) : null;
+    const wpm = !s.typed && a.seconds >= 5 ? Math.round((words / a.seconds) * 60) : null;
     return h("li", {},
       h("p", { class: "a-q", text: a.part === 2 ? a.question.split("\n")[0] : a.question }),
-      h("p", { class: "hint", text: `Part ${a.part} · ${fmtClock(a.seconds)} · ${words} kata${wpm ? ` · ${wpm} kata/menit` : ""}` }),
+      h("p", { class: "hint", text: s.typed ? `Part ${a.part} · diketik · ${words} kata` : `Part ${a.part} · ${fmtClock(a.seconds)} · ${words} kata${wpm ? ` · ${wpm} kata/menit` : ""}` }),
       a.audio ? h("audio", { controls: true, preload: "none", src: `/api/speaking/sessions/${s.id}/audio/${i}` }) : null,
       h("p", { class: "a-t", text: a.transcript || "(tidak ada jawaban)" }));
   }));

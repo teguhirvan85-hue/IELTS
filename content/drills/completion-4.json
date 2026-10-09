@@ -81,7 +81,7 @@
       "n": 5,
       "answer": "Wednesday",
       "evidence": "The fire alarm is tested every Wednesday at 11 a.m.",
-      "explain": "Jam 11 a.m. sudah tertulis di catatan, jadi yang hilang adalah harinya. Nama hari selalu diawali huruf kapital dalam bahasa Inggris, dan ejaannya sering salah: Wed-nes-day."
+      "explain": "Jam 11 a.m. sudah tertulis di catatan, jadi yang hilang adalah harinya. Huruf besar atau kecil tidak memengaruhi nilai, tapi ejaannya harus tepat dan sering salah: Wed-nes-day."
     },
     {
       "n": 6,

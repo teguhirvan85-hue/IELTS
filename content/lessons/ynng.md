@@ -16,7 +16,7 @@ Bentuknya mirip True / False / Not Given, tapi instruksinya berbeda: *"Do the fo
 | **NO** | Pernyataan bertentangan dengan pendapat atau klaim penulis. |
 | **NOT GIVEN** | Tidak mungkin tahu apa pendapat penulis tentang hal itu. |
 
-Tipe ini hampir selalu muncul pada teks argumentatif: artikel opini, ulasan, atau esai yang membela satu posisi. Biasanya di Passage 2 atau 3.
+Tipe ini hampir selalu muncul pada teks argumentatif: artikel opini, ulasan, atau esai yang membela satu posisi. Di Academic biasanya di Passage 2 atau 3; di General Training, kalau muncul, biasanya di Section 3.
 
 ## Suara siapa ini?
 

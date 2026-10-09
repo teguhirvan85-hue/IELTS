@@ -1,5 +1,5 @@
-import { SKILLS, typeStats, scoreAttempt, gradeDrill, questionKey, countQuestions, normalizeAnswer } from "/shared.js";
-import { $, h, api } from "/ui.js";
+import { SKILLS, typeStats, scoreAttempt, gradeDrill, questionKey, countQuestions, normalizeAnswer, todayISO } from "/shared.js";
+import { $, h, api, fmtDate } from "/ui.js";
 import { renderMarkdown } from "/md.js";
 
 const lessonId = location.pathname.split("/").pop();
@@ -55,23 +55,31 @@ function renderDrills(drills, history) {
   // Open the first drill this learner hasn't tried yet.
   const firstNew = drills.findIndex((d) => !history.some((a) => a.drill === d.id));
   let current = firstNew === -1 ? 0 : firstNew;
-  const show = () => host.replaceChildren(drillCard(drills[current], history, drills, current, (i) => { current = i; show(); }));
+  // switchTo(i) opens drill i fresh; switchTo(i, attempt) shows a saved attempt with its key and explanations.
+  const show = (review = null) => host.replaceChildren(drillCard(drills[current], history, drills, current, (i, attempt) => { current = i; show(attempt); }, review));
   show();
   // The drill is rendered after the page loads, so follow a #latihan link by hand.
   if (location.hash === "#latihan") host.scrollIntoView();
 }
 
 // ---------- one drill ----------
-function drillCard(drill, history, all, index, switchTo) {
-  const answers = {};
-  const last = history.filter((a) => a.drill === drill.id).at(-1);
+// `review` is a saved attempt: the drill opens already marked, with that attempt's answers.
+function drillCard(drill, history, all, index, switchTo, review = null) {
+  const answers = review ? JSON.parse(JSON.stringify(review.answers || {})) : {};
+  const attempts = history.filter((a) => a.drill === drill.id);
+  const last = attempts.at(-1);
   const count = countQuestions(drill);
 
   const tabs = all.length > 1
     ? h("div", { class: "seg", role: "group", "aria-label": "Pilih latihan" },
         all.map((d, i) => h("button", { type: "button", "aria-pressed": String(i === index), onclick: () => switchTo(i), text: `Latihan ${i + 1}${isGT(d) ? " · GT" : ""}${history.some((a) => a.drill === d.id) ? " ✓" : ""}` })))
     : null;
-  const note = h("p", { class: "card-note", text: [drill.variant, `${count} soal · ±${drill.minutes} menit`, last ? `terakhir ${last.correct}/${last.total} benar` : null].filter(Boolean).join(" · ") });
+  const reviewLink = last && !review
+    ? h("button", { class: "link-btn inline", type: "button", text: "Lihat pembahasannya", onclick: () => switchTo(index, last) })
+    : null;
+  const note = h("p", { class: "card-note" },
+    [drill.variant, `${count} soal · ±${drill.minutes} menit`, last ? `terakhir ${last.correct}/${last.total} benar` : null].filter(Boolean).join(" · "),
+    reviewLink ? " · " : null, reviewLink);
   const source = renderSource(drill);
   const qs = renderQuestions(drill, answers, () => updateProgress());
   const progress = h("span", { class: "hint" });
@@ -90,28 +98,60 @@ function drillCard(drill, history, all, index, switchTo) {
   }
   updateProgress();
 
-  checkBtn.addEventListener("click", async () => {
-    const result = gradeDrill(drill, answers);
+  // Marks the drill: key and explanation under every question, evidence highlighted in the
+  // text, and a row of numbers (✓/✗) that jump to each explanation.
+  function finish(result, status, controls) {
     qs.lock(result.results);
     source.reveal();
-    const status = h("span", { class: "hint", text: "Menyimpan…" });
-    const again = h("button", { class: "btn", type: "button", text: "Ulangi", onclick: () => switchTo(index) });
-    const next = all.length > index + 1 ? h("button", { class: "btn", type: "button", text: "Latihan berikutnya", onclick: () => switchTo(index + 1) }) : null;
+    const jumps = drill.questions.map((q) => {
+      const key = questionKey(q);
+      const r = result.results[key];
+      const label = Array.isArray(q.n) ? `${q.n[0]}–${q.n.at(-1)}` : String(q.n);
+      return h("button", {
+        class: `jump ${r.ok ? "ok" : "bad"}`,
+        type: "button",
+        title: r.ok ? `Soal ${label} benar` : `Soal ${label} salah, lihat pembahasan`,
+        onclick: () => qs.focus(key),
+        text: `${r.ok ? "✓" : "✗"} ${label}`,
+      });
+    });
+    const wrong = drill.questions.filter((q) => !result.results[questionKey(q)].ok).length;
     foot.replaceChildren(
-      h("div", { class: "score" }, h("span", { class: "big", text: `${result.correct}/${result.total}` }), h("small", { text: "benar" }), status),
-      h("div", { class: "controls" }, again, next)
-    );
+      h("div", { class: "drill-result" },
+        h("div", { class: "score" }, h("span", { class: "big", text: `${result.correct}/${result.total}` }), h("small", { text: "benar" }), status),
+        h("p", { class: "hint", text: wrong ? "Klik nomornya untuk melihat kunci dan pembahasan." : "Semua benar. Pembahasannya tetap bisa dibaca di setiap soal." }),
+        h("div", { class: "jumps" }, jumps)),
+      h("div", { class: "controls" }, controls));
+  }
+
+  const nextBtn = () => (all.length > index + 1 ? h("button", { class: "btn", type: "button", text: "Latihan berikutnya", onclick: () => switchTo(index + 1) }) : null);
+
+  checkBtn.addEventListener("click", async () => {
+    const status = h("span", { class: "hint", text: "Menyimpan…" });
+    finish(gradeDrill(drill, answers), status, [h("button", { class: "btn", type: "button", text: "Ulangi", onclick: () => switchTo(index) }), nextBtn()]);
     try {
       const saved = await api(`/api/drills/${drill.id}/attempts`, { method: "POST", body: { answers } });
       history.push(saved);
       status.textContent = "Tersimpan";
+      const tab = tabs?.children[index];
+      if (tab && !tab.textContent.endsWith("✓")) tab.textContent += " ✓";
     } catch (err) {
       status.textContent = `Gagal menyimpan: ${err.message}`;
     }
   });
 
+  if (review) {
+    // Older attempts of this drill, newest first.
+    const picker = attempts.length > 1
+      ? h("select", { class: "tf sm", "aria-label": "Pilih percobaan" }, [...attempts].reverse().map((a) => h("option", { value: a.id, selected: a.id === review.id, text: `${fmtDate(todayISO(new Date(a.createdAt)))} · ${a.correct}/${a.total}` })))
+      : null;
+    picker?.addEventListener("change", () => switchTo(index, attempts.find((a) => a.id === picker.value)));
+    finish(gradeDrill(drill, answers), h("span", { class: "hint", text: `Percobaan ${fmtDate(todayISO(new Date(review.createdAt)))}` }),
+      [picker, h("button", { class: "btn primary", type: "button", text: "Kerjakan ulang", onclick: () => switchTo(index) }), nextBtn()]);
+  }
+
   return h("article", { class: "card drill" },
-    h("div", { class: "card-head" }, h("div", {}, h("p", { class: "eyebrow", text: "Latihan mini" }), h("h2", { text: drill.title }), note), tabs),
+    h("div", { class: "card-head" }, h("div", {}, h("p", { class: "eyebrow", text: review ? "Pembahasan" : "Latihan mini" }), h("h2", { text: drill.title }), note), tabs),
     h("div", { class: `drill-body ${drill.skill}` }, source.el, qs.el),
     foot
   );
@@ -191,6 +231,7 @@ function isLabelled(options) {
 function renderQuestions(drill, answers, onChange) {
   const lockers = [];
   const blocks = [];
+  const targets = new Map(); // question key → element holding its explanation
   blocks.push(h("p", { class: "drill-instr", text: drill.instruction }));
 
   if (drill.options && isLabelled(drill.options)) {
@@ -204,6 +245,7 @@ function renderQuestions(drill, answers, onChange) {
     const gap = (n) => {
       const q = drill.questions.find((x) => x.n === n);
       const input = h("input", { class: "gap-input", type: "text", autocomplete: "off", autocapitalize: "off", spellcheck: "false", maxlength: "60", "aria-label": `Soal ${n}` });
+      input.value = answers[String(n)] ?? "";
       input.addEventListener("input", () => { answers[String(n)] = input.value; onChange(); });
       const mark = h("span", { class: "gap-mark" });
       inputs.set(n, { input, mark, q });
@@ -226,18 +268,30 @@ function renderQuestions(drill, answers, onChange) {
         const verdict = r.ok
           ? `✓ ${n}. Benar: ${given}${normalizeAnswer(given) !== normalizeAnswer(q.answer) ? ` (jawaban lengkap: ${q.answer})` : ""}.`
           : `✗ ${n}. ${given ? `Jawabanmu "${given}"` : "Belum dijawab"}${r.overLimit ? ` (lebih dari ${drill.wordLimit} kata)` : ""}. Jawaban: ${[q.answer, ...(q.accept || [])].join(" / ")}.`;
-        resultList.append(h("li", { class: r.ok ? "ok" : "bad" }, h("strong", { text: verdict }), " ", q.explain));
+        const item = h("li", { class: r.ok ? "ok" : "bad", tabindex: "-1" }, h("strong", { text: verdict }), " ", q.explain);
+        targets.set(String(n), item);
+        resultList.append(item);
       }
       resultList.hidden = false;
     });
   } else {
     for (const q of drill.questions) {
       const { el, lock } = choiceQuestion(drill, q, answers, onChange);
+      targets.set(questionKey(q), el);
       blocks.push(el);
       lockers.push(lock);
     }
   }
-  return { el: h("div", { class: "drill-questions" }, blocks), lock: (results) => lockers.forEach((l) => l(results)) };
+  function focus(key) {
+    const el = targets.get(key);
+    if (!el) return;
+    el.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
+    el.classList.remove("row-pulse");
+    void el.offsetWidth; // restart the pulse
+    el.classList.add("row-pulse");
+    el.focus({ preventScroll: true });
+  }
+  return { el: h("div", { class: "drill-questions" }, blocks), lock: (results) => lockers.forEach((l) => l(results)), focus };
 }
 
 function withGaps(text, gap) {
@@ -277,11 +331,12 @@ function choiceQuestion(drill, q, answers, onChange) {
   const pick = multi ? q.n.length : 1;
   const labelled = isLabelled(options);
   const rows = Boolean(q.choices); // multiple choice: letter + full text per line
+  const initial = new Set([].concat(answers[key] || []));
   const buttons = options.map((o) => {
     const b = h("button", {
       class: rows ? "opt-row" : "pill",
       type: "button",
-      "aria-pressed": "false",
+      "aria-pressed": String(initial.has(o.key)),
       "data-key": o.key,
     }, rows ? [h("b", { text: o.key }), h("span", { text: o.text })] : (labelled ? o.key : o.text));
     b.addEventListener("click", () => {
@@ -299,7 +354,7 @@ function choiceQuestion(drill, q, answers, onChange) {
   });
   const label = multi ? `${q.n[0]}–${q.n.at(-1)}` : String(q.n);
   const result = h("div", { class: "dq-result", hidden: true });
-  const el = h("div", { class: "dq" },
+  const el = h("div", { class: "dq", tabindex: "-1" },
     h("div", { class: "dq-head" }, h("span", { class: "qbadge", text: label }), h("p", { class: "dq-prompt", text: q.prompt || "" })),
     multi ? h("p", { class: "hint", text: `Pilih ${pick === 2 ? "DUA" : pick === 3 ? "TIGA" : pick} jawaban.` }) : null,
     h("div", { class: rows ? "opt-rows" : "pills" }, buttons),

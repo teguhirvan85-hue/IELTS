@@ -15,6 +15,8 @@ Ada dua bentuk soal pilihan ganda di Reading:
 | **Satu jawaban** | Pertanyaan atau awal kalimat (*stem*) dengan empat pilihan A–D. Pilih satu. |
 | **Choose TWO** | Lima pilihan A–E, pilih dua. Setiap jawaban benar bernilai satu poin, urutannya bebas. |
 
+Kadang muncul juga *Choose THREE* dari tujuh pilihan A–G. Caranya sama dengan Choose TWO.
+
 Soal ini bisa menanyakan detail, alasan, ide utama, atau pendapat penulis. Pilihan yang salah dibuat sangat meyakinkan: hampir semuanya memakai kata-kata yang memang ada di teks.
 
 ## Apa yang sebenarnya ditanya?
@@ -38,7 +40,7 @@ Teks: *"The town's first library opened in 1905. Although the building was small
 - C. It opened at times that suited working people.
 - D. It was built close to the factories.
 
-A benar menurut teks, tapi bukan alasan library itu populer. B bertentangan dengan *small*. D memakai kata *factory* dari teks dengan makna lain. Jawabannya **C**: *stayed open in the evenings, after factory workers had finished* = *opened at times that suited working people*.
+A benar menurut teks, tapi bukan alasan library itu populer. B bertentangan dengan *small*. D memakai kata *factory* dari teks, tapi teks tidak menyebut lokasi gedungnya. Jawabannya **C**: *stayed open in the evenings, after factory workers had finished* = *opened at times that suited working people*.
 :::
 
 ## Choose TWO

@@ -67,3 +67,11 @@ test("word count and task band", () => {
   assert.equal(taskBand([{ band: 6 }, { band: 6 }, { band: 6 }, { band: 7 }]), 6);
   assert.equal(taskBand([{ band: 7 }, { band: 7 }, { band: 7 }, { band: 6 }]), 6.5);
 });
+
+test("letters print the salutation only when formal, as on the real paper", async () => {
+  const { letterOpening, promptText } = await import("../public/shared.js");
+  const base = { module: "general", situation: "s", recipient: "r", bullets: ["a", "b", "c"] };
+  assert.equal(letterOpening({ ...base, kind: "formal", opening: "Dear Sir or Madam," }), "Dear Sir or Madam,");
+  assert.equal(letterOpening({ ...base, kind: "informal", opening: "Dear Alex," }), "Dear ……………,");
+  assert.match(promptText({ ...base, kind: "semi-formal", opening: "Dear Ms Whitfield," }), /Begin your letter as follows:\nDear ……………,$/);
+});

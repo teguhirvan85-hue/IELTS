@@ -120,6 +120,27 @@ Di dashboard, "Rencana hari ini" menyusun tugas dari tanggal ujian, waktu belaja
   pekerjaannya terdeteksi (review kartu, latihan, esai, sesi Speaking, tes yang dicatat),
   atau dicentang manual. Ada strip minggu ini dan hitungan hari berturut-turut.
 
+## Akses dari HP (Tailscale)
+
+Server tetap hanya mendengarkan di `127.0.0.1:3232`. HP dan laptop lain membukanya lewat
+Tailscale: Mac ini menjalankan `tailscale serve --bg http://127.0.0.1:3232`, sehingga
+aplikasi tersedia lewat HTTPS di alamat `https://<nama-mac>.<tailnet>.ts.net`. Alamat itu hanya
+bisa dijangkau perangkat di tailnet yang sama, dan HTTPS-nya membuat mikrofon untuk Speaking
+tetap jalan. Setiap orang login ke Tailscale dengan akunnya sendiri (diundang lewat
+Users → Invite users); profil di aplikasi tetap dipilih lewat `/pilih` atau `/p/<nama>`.
+
+- Tanpa password: browser di Mac itu sendiri (`localhost`) dan permintaan lewat Tailscale
+  Serve, yang membawa header `Tailscale-User-Login` (lihat `isTrusted` di `lib/auth.js`).
+- Semua jalur lain, misalnya tunnel publik, minta password dulu (`/masuk`). Login berlaku 30
+  hari; setelah 8 kali salah, percobaan dikunci 15 menit.
+- `npm run password`: buat atau ganti password itu, dijalankan sendiri di Terminal. Yang
+  disimpan hanya hash-nya, di `data/auth.json`. Password baru membuat semua perangkat keluar.
+  Tanpa `data/auth.json`, jalur selain Tailscale tertutup sama sekali.
+- Ikon layar utama: `public/apple-touch-icon.png`, `icon-512.png`, `manifest.webmanifest`.
+
+Aplikasi ini tidak bisa di-deploy ke Vercel apa adanya: data disimpan sebagai file, rekaman
+juga, dan penilaian memakai Claude Code yang login di Mac.
+
 ## Ide berikutnya
 
 - Akses dari HP (jaringan rumah atau tunnel) dengan password.

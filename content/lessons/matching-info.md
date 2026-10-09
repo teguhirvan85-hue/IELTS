@@ -20,7 +20,7 @@ Tiga ciri penting:
 
 ## Jenis informasi
 
-Setiap soal diawali kata benda yang memberitahu **jenis** informasi yang dicari. Kenali jenisnya dulu, karena itu menentukan bentuk kalimat yang harus kamu temukan di teks.
+Setiap soal diawali kata benda yang memberi tahu **jenis** informasi yang dicari. Kenali jenisnya dulu, karena itu menentukan bentuk kalimat yang harus kamu temukan di teks.
 
 | Di soal | Yang dicari di teks |
 | --- | --- |
@@ -66,7 +66,7 @@ Mencari satu soal di seluruh teks berarti membaca ulang teks enam kali untuk ena
 
 ## Di General Training
 
-Di General Training Section 1, tipe ini biasanya berupa beberapa teks pendek berlabel A–F, misalnya enam iklan kursus, enam restoran, atau enam tempat sewa. Instruksinya berbunyi *"For which course are the following statements true?"*, bukan *"Which paragraph contains…?"*. Setiap teks diawali nama, dan soalnya menanyakan detail praktis seperti harga, jadwal, syarat peserta, atau apa yang disediakan. Karena teks-teksnya mirip, kata yang sama (*free, home, beginners*) sering muncul di dua atau tiga teks. Jawabannya hanya teks yang cocok dengan **seluruh** pernyataan.
+Di General Training Section 1, tipe ini biasanya berupa beberapa teks pendek berlabel huruf (misalnya A–F), seperti enam iklan kursus, enam restoran, atau enam tempat sewa. Instruksinya menyesuaikan jenis teksnya, misalnya *"For which course are the following statements true?"*, bukan *"Which paragraph contains…?"*. Setiap teks diawali nama, dan soalnya menanyakan detail praktis seperti harga, jadwal, syarat peserta, atau apa yang disediakan. Karena teks-teksnya mirip, kata yang sama (*free, home, beginners*) sering muncul di dua atau tiga teks. Jawabannya hanya teks yang cocok dengan **seluruh** pernyataan.
 
 ::: tip Cek teks lain sebelum menjawab
 Setelah menemukan teks yang tampak cocok, scan cepat teks lain untuk nama, angka, atau kata yang sama. Sering ada teks pengecoh yang hanya memuat setengah informasinya.

@@ -3,7 +3,7 @@
   "lesson": "tfng",
   "skill": "reading",
   "title": "Wild neighbours in the city",
-  "minutes": 8,
+  "minutes": 9,
   "passage": {
     "title": "Wild Neighbours: How Animals Adapt to City Life",
     "paragraphs": [
@@ -24,7 +24,7 @@
       }
     ]
   },
-  "instruction": "Do the following statements agree with the information given in the passage? Choose TRUE, FALSE or NOT GIVEN.",
+  "instruction": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
   "input": "choice",
   "options": [
     {
@@ -50,41 +50,48 @@
     },
     {
       "n": 2,
+      "prompt": "Studies over recent decades have shown that only a few kinds of wild animal can live in cities.",
+      "answer": "FALSE",
+      "evidence": "ecologists have recorded a surprising variety of wild animals living alongside people in towns",
+      "explain": "Teks bilang para ahli ekologi justru mencatat \"a surprising variety of wild animals\" yang hidup di kota. \"Only a few kinds\" bertentangan dengan \"a surprising variety\": FALSE. Perhatikan \"however\": keyakinan lama di kalimat pertama dibantah oleh temuan baru."
+    },
+    {
+      "n": 3,
       "prompt": "Birds living near busy roads sing at a lower pitch than birds of the same species in forests.",
       "answer": "FALSE",
       "evidence": "birds living near busy roads tended to sing at a higher pitch than birds of the same species in quiet forests",
       "explain": "Teks bilang burung di dekat jalan ramai bernyanyi dengan nada lebih tinggi (\"a higher pitch\"). Pernyataan memakai \"lower\", kebalikannya: FALSE. Hampir semua kata lain sama persis, jadi satu kata perbandingan inilah yang menentukan."
     },
     {
-      "n": 3,
+      "n": 4,
       "prompt": "Traffic noise has caused a fall in the number of songbirds in cities.",
       "answer": "NOT GIVEN",
       "evidence": null,
-      "explain": "Paragraf ini membahas bagaimana burung mengubah cara bernyanyi, bukan apakah jumlah burung kicau berkurang. Kebisingan memang disebut, tapi tidak ada informasi tentang populasi. Ini juga jebakan sebab-akibat: NOT GIVEN."
+      "explain": "Paragraf tentang kebisingan membahas bagaimana burung mengubah cara bernyanyi, bukan apakah jumlah burung kicau berkurang. Kebisingan memang disebut, tapi tidak ada informasi tentang populasi. Ini juga jebakan sebab-akibat: NOT GIVEN."
     },
     {
-      "n": 4,
+      "n": 5,
       "prompt": "One study found that foxes in cities cover less ground at night than those in the countryside.",
       "answer": "TRUE",
       "evidence": "they travelled much shorter distances each night than foxes in the countryside",
       "explain": "\"Travelled much shorter distances each night\" = cover less ground at night, dan \"one long-term study\" di teks sepadan dengan \"one study\". Maknanya sama: TRUE."
     },
     {
-      "n": 5,
-      "prompt": "Animals that feed at the same site are less likely to spread disease to each other.",
-      "answer": "FALSE",
+      "n": 6,
+      "prompt": "Disease can spread more readily among animals that use the same feeding sites.",
+      "answer": "TRUE",
       "evidence": "animals that gather at the same feeding sites can pass diseases to one another more easily",
-      "explain": "Teks bilang hewan yang berkumpul di tempat makan yang sama justru lebih mudah menularkan penyakit (\"more easily\"). Pernyataan bilang \"less likely\", bertentangan dengan teks: FALSE."
+      "explain": "\"Gather at the same feeding sites\" = use the same feeding sites, dan \"pass diseases to one another more easily\" = disease can spread more readily. Maknanya sama: TRUE. Kalimat \"Easy meals come at a price\" sebelumnya memberi tanda bahwa bagian ini membahas kerugian."
     },
     {
-      "n": 6,
+      "n": 7,
       "prompt": "Peregrine falcons that nest on buildings raise more young than those that nest on cliffs.",
       "answer": "NOT GIVEN",
       "evidence": "now breed on church towers and office blocks in many large cities",
       "explain": "Teks hanya bilang falcon kini berkembang biak (\"breed\") di menara dan gedung kantor. Jumlah anak dan perbandingan dengan yang bersarang di tebing tidak disebut. Topiknya punya \"lokasi\", tapi detail yang ditanya tidak ada: NOT GIVEN."
     },
     {
-      "n": 7,
+      "n": 8,
       "prompt": "Ecologists recommend removing animals that cause problems for residents.",
       "answer": "FALSE",
       "evidence": "they recommend that residents stop feeding wildlife deliberately rather than trying to remove the animals",

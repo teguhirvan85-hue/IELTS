@@ -21,6 +21,9 @@ test("choice and choose-TWO marking", () => {
   assert.equal(r.total, 4);
   assert.deepEqual(r.results["3-4"], { points: 1, max: 2, ok: false, overLimit: false });
   assert.equal(countQuestions(choice), 4);
+  // Picking every letter doesn't earn both points: only the first two count.
+  assert.equal(gradeDrill(choice, { "3-4": ["A", "C", "B", "D"] }).results["3-4"].points, 0);
+  assert.equal(gradeDrill(choice, { "3-4": ["B", "D", "A"] }).results["3-4"].points, 2);
 });
 
 test("gap-fill marking: case, spacing, variants and the word limit", () => {

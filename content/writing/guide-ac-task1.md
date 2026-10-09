@@ -90,7 +90,7 @@ Grafik garis: jumlah pinjaman di perpustakaan umum sebuah kota, dalam ribuan, 20
 ::: example Pendahuluan, overview, dan satu paragraf detail
 The line graph compares the number of printed books, e-books and audiobooks borrowed from the public libraries of one city over a twenty-year period starting in 2000.
 
-Overall, borrowing of printed books declined steadily, while e-book loans grew rapidly and overtook printed books towards the end of the period. Audiobooks remained the least popular format throughout, although their use also increased.
+Overall, borrowing of printed books fell continuously, while e-book loans grew rapidly and overtook printed books towards the end of the period. Audiobooks remained the least popular format throughout, although their use also increased.
 
 In 2000, printed books accounted for almost all loans, at 400,000, compared with just 10,000 e-books. Over the next two decades, printed book loans fell gradually at first and then more sharply, reaching 180,000 in 2020, less than half the original figure. E-book loans, by contrast, rose slowly until 2005 and then climbed dramatically to 210,000 in 2015. Five years later, they stood at 320,000, well above the figure for printed books.
 :::

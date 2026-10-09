@@ -27,7 +27,7 @@
       }
     ]
   },
-  "instruction": "Complete each sentence with the correct ending, A–G, below.",
+  "instruction": "Complete each sentence with the correct ending, A–H, below.",
   "input": "choice",
   "optionsTitle": "Sentence endings",
   "options": [
@@ -37,7 +37,8 @@
     { "key": "D", "text": "doctors have the results when they visit patients later that morning." },
     { "key": "E", "text": "spend more time in deep sleep." },
     { "key": "F", "text": "fear that they may not hear a nurse talking to them." },
-    { "key": "G", "text": "have not been shown to benefit patients whose condition is stable." }
+    { "key": "G", "text": "have not been shown to benefit patients whose condition is stable." },
+    { "key": "H", "text": "several checks can be carried out at the same time." }
   ],
   "questions": [
     {
@@ -59,7 +60,7 @@
       "prompt": "Blood samples are often taken early in the morning so that…",
       "answer": "D",
       "evidence": "blood samples are often taken at five or six in the morning so that the results are ready for the doctors' morning rounds",
-      "explain": "Setelah \"so that\" dibutuhkan klausa lengkap dengan subjek, dan hanya D yang punya subjek sendiri (\"doctors\"). \"Morning rounds\" = waktu dokter mengunjungi pasien di pagi hari, jadi \"the results are ready\" = doctors have the results when they visit patients."
+      "explain": "Setelah \"so that\" dibutuhkan klausa lengkap dengan subjek, jadi tinggal D dan H. H adalah fakta dari paragraf lain: pemeriksaan dikelompokkan (\"checks were grouped together\") di bangsal Belanda, bukan alasan sampel darah diambil pagi-pagi. \"The results are ready for the doctors' morning rounds\" = doctors have the results when they visit patients later that morning."
     },
     {
       "n": 4,

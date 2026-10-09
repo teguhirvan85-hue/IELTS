@@ -15,6 +15,7 @@ import { loadBank, markSpeaking } from "./lib/speaking.js";
 import { loadPrompts, loadGuide, markEssay } from "./lib/writing.js";
 import { createContent } from "./lib/content.js";
 import { buildJournal, pruneMistakes } from "./lib/journal.js";
+import { createAuth, createLimiter, isTrusted, AUTH_COOKIE } from "./lib/auth.js";
 import { gradeDrill, newSrs, schedule, reviewQueue, todayISO, essayWords, slugify, planStreak } from "./public/shared.js";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -44,15 +45,44 @@ const PAGES = {
   "/dashboard.js": "dashboard.js",
   "/log.js": "log.js",
   "/favicon.svg": "favicon.svg",
+  "/apple-touch-icon.png": "apple-touch-icon.png",
+  "/icon-512.png": "icon-512.png",
+  "/manifest.webmanifest": "manifest.webmanifest",
   "/pilih": "profiles.html",
   "/profiles.js": "profiles.js",
+  "/masuk": "masuk.html",
+  "/masuk.js": "masuk.js",
 };
-const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png", ".m4a": "audio/mp4" };
+const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png", ".m4a": "audio/mp4", ".webmanifest": "application/manifest+json" };
 const content = createContent(path.join(ROOT, "content"));
 const LESSON_RE = /^[a-z0-9-]{1,40}$/;
 
 // DATA_DIR lets a second copy run on sample data without touching the real data/.
 const store = createStore(process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(ROOT, "data"));
+
+// ---------- access from outside the Mac ----------
+// The Mac itself and devices on the Tailscale network go straight in (isTrusted); anything
+// else, such as a Cloudflare tunnel, needs the password from `npm run password`.
+const auth = createAuth(store.dir);
+const limiter = createLimiter();
+// What the login page needs before anyone is signed in.
+const OPEN_PATHS = new Set(["/masuk", "/masuk.js", "/ui.js", "/app.css", "/favicon.svg", "/apple-touch-icon.png", "/icon-512.png", "/manifest.webmanifest"]);
+
+async function login(req, res) {
+  const key = req.headers["cf-connecting-ip"] || req.socket.remoteAddress;
+  const wait = limiter.blocked(key);
+  if (wait) return send(res, 429, { error: `Terlalu banyak percobaan. Coba lagi ${wait} menit lagi.` });
+  if (!auth.enabled()) return send(res, 403, { error: "Akses dari luar belum diaktifkan. Buat password dulu di Mac dengan: npm run password" });
+  const { password } = await readJson(req);
+  if (!auth.checkPassword(password)) {
+    limiter.fail(key);
+    return send(res, 401, { error: "Password salah." });
+  }
+  limiter.clear(key);
+  const { value, maxAge } = auth.issue();
+  const https = req.headers["x-forwarded-proto"] === "https" || /https/.test(String(req.headers["cf-visitor"] || ""));
+  return send(res, 200, { ok: true }, undefined, { "set-cookie": `${AUTH_COOKIE}=${value}; Path=/; Max-Age=${maxAge}; SameSite=Lax; HttpOnly${https ? "; Secure" : ""}` });
+}
 
 // ---------- marking queue ----------
 // Essays and Speaking sessions are marked one at a time by the Claude CLI. Anything still
@@ -498,6 +528,12 @@ function sendFile(req, res, file, type) {
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://localhost");
   try {
+    if (url.pathname === "/api/masuk" && req.method === "POST") return await login(req, res);
+    if (!isTrusted(req.headers) && !auth.valid(cookies(req)[AUTH_COOKIE]) && !OPEN_PATHS.has(url.pathname)) {
+      if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/content/")) return send(res, 401, { error: "Perlu masuk dulu." });
+      res.writeHead(302, { location: `/masuk?next=${encodeURIComponent(url.pathname + url.search)}`, "cache-control": "no-store" });
+      return res.end();
+    }
     if (url.pathname.startsWith("/api/")) return await api(req, res, url);
     if (url.pathname.startsWith("/content/")) return sendContentFile(req, res, url.pathname);
 
@@ -510,7 +546,7 @@ const server = http.createServer(async (req, res) => {
     }
     const file = /^\/learn\/[a-z0-9-]+$/.test(url.pathname) ? "lesson.html" : PAGES[url.pathname];
     // With more than one learner, a browser that hasn't picked a profile starts at "who's studying?".
-    if (file?.endsWith(".html") && file !== "profiles.html" && Object.keys(store.db.profiles).length > 1 && !store.db.profiles[cookies(req).profile]) {
+    if (file?.endsWith(".html") && file !== "profiles.html" && file !== "masuk.html" && Object.keys(store.db.profiles).length > 1 && !store.db.profiles[cookies(req).profile]) {
       res.writeHead(302, { location: `/pilih?next=${encodeURIComponent(url.pathname + url.search)}` });
       return res.end();
     }

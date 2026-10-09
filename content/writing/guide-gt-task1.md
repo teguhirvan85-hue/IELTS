@@ -6,14 +6,14 @@ Suratmu dinilai dengan empat kriteria yang bobotnya sama. Untuk band 7, keempatn
 | --- | --- | --- |
 | **Task Achievement** (isi dan nada) | Semua poin disentuh, tapi ada yang tipis; nada kadang naik turun. | Ketiga poin dibahas dengan detail, tujuan jelas sejak awal, nada konsisten. |
 | **Coherence and Cohesion** (alur) | Urutan masuk akal, tapi kata penghubung terasa kaku atau berlebihan. | Alur logis, satu paragraf satu ide, kata penghubung bervariasi dan secukupnya. |
-| **Lexical Resource** (kosakata) | Cukup untuk menyampaikan maksud; kata yang kurang umum sering meleset. | Cukup luas dan tepat, kolokasinya alami, sesuai register. |
-| **Grammatical Range and Accuracy** (tata bahasa) | Ada kalimat kompleks, tapi kesalahan masih cukup sering. | Kalimat kompleks bervariasi, dan sebagian besar kalimat bebas kesalahan. |
+| **Lexical Resource** (kosakata) | Cukup untuk menyampaikan maksud; kata yang kurang umum kadang meleset. | Cukup luas dan tepat, kolokasinya alami, sesuai register. |
+| **Grammatical Range and Accuracy** (tata bahasa) | Campuran kalimat sederhana dan kompleks; masih ada kesalahan, tapi jarang mengganggu makna. | Kalimat kompleks bervariasi, banyak kalimat yang bebas kesalahan, dan sisa kesalahannya sedikit. |
 
 Ringkasnya: band 6 *menjawab soal*, band 7 menjawabnya *dengan lengkap, rapi, dan dengan nada yang tepat*.
 
 ## Struktur
 
-1. **Salam pembuka**: salin persis dari soal.
+1. **Salam pembuka**: salin dari soal. Di ujian asli, surat formal diberi *Dear Sir or Madam,*; untuk orang yang kamu kenal, soal biasanya hanya menulis *Dear ……,* dan kamu sendiri yang mengisi namanya.
 2. **Kalimat tujuan**: satu atau dua kalimat yang langsung menjelaskan kenapa kamu menulis. Surat informal boleh diawali satu kalimat sapaan.
 3. **Satu paragraf per poin**: tiga poin, tiga paragraf, masing-masing dengan satu atau dua detail (alasan, contoh, tanggal).
 4. **Kalimat penutup**: apa yang kamu harapkan selanjutnya.
@@ -23,7 +23,7 @@ Alamat dan tanggal tidak perlu ditulis.
 
 ### Nada menurut jenis surat
 
-Jenis surat bisa langsung dibaca dari salam pembuka di soal.
+Tentukan jenis surat dari penerimanya: perusahaan atau orang yang tidak kamu kenal berarti formal, orang yang kamu kenal dalam urusan kerja atau sewa berarti semi-formal, teman atau keluarga berarti informal. Di aplikasi ini sama seperti ujian: hanya surat formal yang diberi *Dear Sir or Madam,*; selain itu kamu sendiri yang memilih salam pembukanya, misalnya *Dear Mr Lee,* atau *Dear Sam,*.
 
 | Jenis | Pembuka | Penutup | Ciri bahasa | Singkatan (*I'm, don't*) |
 | --- | --- | --- | --- | --- |
@@ -90,6 +90,6 @@ Task 2 bobotnya dua kali Task 1, jadi batasi Task 1 di **20 menit**.
 
 | Menit | Kegiatan |
 | --- | --- |
-| 0–3 | **Rencana.** Tentukan jenis surat dari salam pembuka, lalu catat satu atau dua detail untuk setiap poin. |
+| 0–3 | **Rencana.** Tentukan jenis surat dari penerima dan salam pembuka, lalu catat satu atau dua detail untuk setiap poin. |
 | 3–17 | **Tulis.** Kalimat tujuan, tiga paragraf poin, penutup. Jangan berhenti lama mencari kata yang sempurna. |
 | 17–20 | **Cek.** Ketiga poin terjawab? Nada dan salam penutup cocok? Lebih dari 150 kata? Lalu periksa *-s*, *a/the*, dan tense. |

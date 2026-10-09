@@ -57,7 +57,7 @@ Setelah kata sifat *higher* dibutuhkan kata benda. *Rainfall is more reliable* =
 ## Summary: dari teks atau dari daftar kata?
 
 - **Dari teks**: salin kata persis seperti di teks, dengan ejaan dan bentuk yang sama.
-- **Dari daftar kata** (A–H): kata di daftar biasanya sinonim, bukan kata yang sama dengan teks. Tulis hurufnya. Daftarnya lebih panjang daripada jumlah celah, dan biasanya ada dua kata yang jenisnya sama tapi maknanya berlawanan.
+- **Dari daftar kata** (A–H): kata di daftar biasanya sinonim, bukan kata yang sama dengan teks. Tulis hurufnya. Daftarnya lebih panjang daripada jumlah celah, dan sering ada dua kata yang jenisnya sama tapi maknanya berlawanan.
 - **Short answer**: jawab pertanyaannya dengan kata dari teks, sesuai batas kata. Tidak perlu kalimat lengkap.
 
 ## Jebakan yang sering muncul
@@ -76,7 +76,7 @@ Teks: *"built from locally produced steel"*. Celah *built from locally produced 
 1. Baca instruksi dan lingkari batas katanya.
 2. Baca judul dan sub-judul catatan atau tabel untuk tahu bagian teks mana yang dibahas.
 3. Untuk setiap celah, tebak jenis kata dan cari kata kunci di sekitarnya.
-4. Scan teks untuk kata kunci itu. Jawaban biasanya **mengikuti urutan teks**. Pada tabel dan diagram, urutannya bisa per kolom atau mengikuti gambar.
+4. Scan teks untuk kata kunci itu. Sentence completion dan short answer **mengikuti urutan teks**. Pada summary, notes, table, flow-chart dan diagram, urutannya **tidak dijamin**, tapi jawabannya biasanya dari satu bagian teks saja.
 5. Baca kalimatnya dengan teliti, lalu salin kata yang mengisi celah.
 6. Cek tiga hal: tata bahasa, batas kata, dan ejaan.
 

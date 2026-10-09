@@ -8,7 +8,7 @@ order: 13
 ---
 ## Apa yang diuji
 
-Kamu melihat denah (taman, gedung, kampus, museum) atau diagram (mesin, alat). Beberapa tempat sudah diberi nama, sisanya ditandai huruf A–H. Pembicara menjelaskan letak setiap tempat, dan kamu memilih huruf yang tepat. Tipe ini biasanya muncul di Part 2, kadang di Part 1.
+Kamu melihat denah (taman, gedung, kampus, museum) atau diagram (mesin, alat). Beberapa tempat sudah diberi nama, sisanya ditandai huruf A–H. Pembicara menjelaskan letak setiap tempat, dan kamu memilih huruf yang tepat. Denah paling sering muncul di Part 2, tapi tipe ini bisa muncul di part lain; diagram alat atau proses kadang muncul di Part 3 atau Part 4.
 
 Yang diuji: memahami **bahasa arah** dan mengikuti rute di gambar secepat pembicara berbicara. Jumlah huruf lebih banyak daripada jumlah soal, jadi beberapa huruf tidak dipakai.
 
@@ -36,7 +36,7 @@ Waktu membaca paling penting di tipe ini. Sebelum audio dimulai:
 | *at the crossroads / junction* | di persimpangan |
 
 ::: example Contoh
-Denah (utara di atas): jalan utama lurus ke utara dari gerbang, dan ada toko buku di tengah jalan itu. Huruf B di kiri jalan **sebelum** toko buku. Huruf C di kanan dan D di kiri jalan, **setelah** toko buku.
+Denah (utara di atas): jalan utama lurus ke utara dari gerbang, dan ada toko buku kira-kira di pertengahan jalan itu. Huruf B di kiri jalan **sebelum** toko buku. Huruf C di kanan dan D di kiri jalan, **setelah** toko buku.
 
 Rekaman: *"Walk north from the gate. Just past the bookshop, the information desk is on your left."*
 

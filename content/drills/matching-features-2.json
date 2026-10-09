@@ -47,7 +47,7 @@
       "prompt": "Workers had to light each lamp individually every evening.",
       "answer": "B",
       "evidence": "Each lamp, however, had to be lit by hand: at dusk, lamplighters walked their routes with long poles",
-      "explain": "\"At dusk\" = every evening, \"lit by hand\" = light each lamp individually, dan \"lamplighters\" = workers. Jebakannya C: batang karbon lampu busur juga diganti \"every day\", tapi itu mengganti suku cadang, bukan menyalakan lampu."
+      "explain": "\"At dusk\" = every evening, \"Each lamp ... had to be lit by hand\" = light each lamp individually, dan \"lamplighters\" = workers. Jebakannya C: batang karbon lampu busur juga diganti \"every day\", tapi itu mengganti suku cadang, bukan menyalakan lampu."
     },
     {
       "n": 3,
@@ -61,7 +61,7 @@
       "prompt": "People were required to provide lighting outside their own homes.",
       "answer": "A",
       "evidence": "Some city authorities ordered householders to hang a candle or oil lamp outside their front door on winter evenings",
-      "explain": "\"Ordered householders\" = people were required, \"outside their front door\" = outside their own homes. Teks menulis \"the 1700s\", dan tahun 1700-an adalah abad ke-18 (eighteenth century). Paragraf B juga menyebut \"homes\", tapi tentang orang yang menolak gas masuk ke rumahnya."
+      "explain": "\"Ordered householders\" = people were required, \"outside their front door\" = outside their own homes. Teks menulis \"the 1700s\", dan tahun 1700-an adalah abad ke-18 (eighteenth century). Paragraf kedua juga menyebut \"homes\", tapi tentang orang yang menolak gas masuk ke rumahnya."
     },
     {
       "n": 5,

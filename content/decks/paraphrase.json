@@ -9,7 +9,7 @@
     },
     {
       "front": "decline (v/n)",
-      "back": "decrease · fall · drop — menurun"
+      "back": "decrease · fall · drop — menurun, penurunan"
     },
     {
       "front": "significant",
@@ -76,8 +76,8 @@
       "back": "expect · predict · foresee — memperkirakan"
     },
     {
-      "front": "attempt",
-      "back": "try · effort — mencoba, usaha"
+      "front": "attempt (v/n)",
+      "back": "try · make an effort · an effort (n) — mencoba; usaha"
     },
     {
       "front": "cease",
@@ -97,7 +97,7 @@
     },
     {
       "front": "emerge",
-      "back": "appear · come out · develop — muncul"
+      "back": "appear · come out · become known — muncul, terungkap"
     },
     {
       "front": "enhance",
@@ -105,7 +105,7 @@
     },
     {
       "front": "evidence",
-      "back": "proof · data · signs — bukti"
+      "back": "proof · signs · indication — bukti, tanda (catatan: proof lebih kuat daripada evidence)"
     },
     {
       "front": "expand",
@@ -137,7 +137,7 @@
     },
     {
       "front": "maintain",
-      "back": "keep · preserve · continue — mempertahankan, merawat"
+      "back": "keep · preserve · continue — mempertahankan, merawat (juga: claim · insist — bersikeras menyatakan)"
     },
     {
       "front": "negligible",
@@ -145,7 +145,7 @@
     },
     {
       "front": "numerous",
-      "back": "many · a large number of · countless — banyak"
+      "back": "many · a large number of · a great many — banyak"
     },
     {
       "front": "obsolete",
@@ -193,7 +193,7 @@
     },
     {
       "front": "widespread",
-      "back": "common · extensive · found in many places — meluas"
+      "back": "common · extensive · found in many places — tersebar luas, umum"
     },
     {
       "front": "youngsters",
@@ -201,7 +201,7 @@
     },
     {
       "front": "contemporary",
-      "back": "modern · present-day · current — masa kini"
+      "back": "modern · present-day · current — masa kini (awas: bisa juga berarti sezaman, from the same period)"
     },
     {
       "front": "deteriorate",
@@ -225,7 +225,7 @@
     },
     {
       "front": "in the long run",
-      "back": "eventually · over time · in the future — dalam jangka panjang"
+      "back": "in the long term · eventually · over time — dalam jangka panjang"
     },
     {
       "front": "a fraction of",

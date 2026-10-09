@@ -8,7 +8,7 @@ order: 3
 ---
 ## Apa yang diuji
 
-Kamu mendapat daftar judul (*List of Headings*) bernomor romawi i, ii, iii, dan seterusnya. Untuk setiap paragraf atau bagian teks, pilih satu judul yang paling tepat. Judulnya selalu lebih banyak daripada paragrafnya, jadi beberapa judul tidak dipakai sama sekali.
+Kamu mendapat daftar judul (*List of Headings*) bernomor Romawi i, ii, iii, dan seterusnya. Untuk setiap paragraf atau bagian teks, pilih satu judul yang paling tepat. Judulnya selalu lebih banyak daripada paragrafnya, jadi beberapa judul tidak dipakai sama sekali.
 
 Yang diuji adalah kemampuan menangkap **ide utama**: apa yang ingin disampaikan penulis di paragraf itu secara keseluruhan. Kamu tidak perlu memahami setiap kata.
 

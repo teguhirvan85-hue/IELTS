@@ -24,7 +24,7 @@
       }
     ]
   },
-  "instruction": "Do the following statements agree with the views of the writer in the passage? Choose YES, NO or NOT GIVEN.",
+  "instruction": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
   "input": "choice",
   "options": [
     {
@@ -43,10 +43,10 @@
   "questions": [
     {
       "n": 1,
-      "prompt": "The objections raised by motorists' groups are mostly unjustified.",
-      "answer": "YES",
-      "evidence": "In my view, these fears are largely misplaced",
-      "explain": "\"These fears\" merujuk pada keberatan kelompok pengendara (\"motorists' groups\"), dan \"largely misplaced\" = mostly unjustified. Penanda \"In my view\" menunjukkan ini suara penulis sendiri: YES."
+      "prompt": "Residents should be asked for their opinion before a city lowers its speed limit.",
+      "answer": "NOT GIVEN",
+      "evidence": "local governments are debating whether to lower the default speed limit on urban streets from 50 to 30 kilometres per hour",
+      "explain": "Penulis menyebut pemerintah kota sedang berdebat dan kelompok pengendara marah, tapi tidak pernah membahas apakah warga perlu dimintai pendapat. Pernyataan ini terdengar seperti sesuatu yang mungkin disetujui penulis, tapi ia tidak bersikap tentang hal itu: NOT GIVEN."
     },
     {
       "n": 2,
@@ -78,10 +78,10 @@
     },
     {
       "n": 6,
-      "prompt": "The cost of redesigning streets should be shared between city and national governments.",
-      "answer": "NOT GIVEN",
-      "evidence": null,
-      "explain": "Penulis bilang kota perlu mempersempit jalan, menanam pohon, dan melebarkan trotoar, tapi tidak pernah membahas biaya atau siapa yang harus membayar. Penulis tidak bersikap tentang hal ini: NOT GIVEN."
+      "prompt": "Streets will need to be physically changed if a lower speed limit is to work.",
+      "answer": "YES",
+      "evidence": "Cities that are serious about the change will need to narrow roads, plant trees and widen pavements",
+      "explain": "Menurut penulis, rambu baru saja (\"new signs alone\") tidak cukup. Kota \"will need to narrow roads, plant trees and widen pavements\" = jalan harus diubah secara fisik (\"physically changed\") supaya pengendara benar-benar melambat. Sesuai pendapat penulis: YES."
     }
   ]
 }
